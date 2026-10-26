@@ -2,7 +2,7 @@
 
 跨项目、跨平台的设计方法与验收指南。目标是让设计决定有依据、实现可追溯、质量可验证，而不是让所有产品长得一样。
 
-**版本：v0.1 / `0.1.0-draft.1`。状态：REVIEW_CANDIDATE，尚未独立复核或正式发布。**
+**版本：v0.1 / `0.1.0-draft.2`。状态：REVIEW_CANDIDATE，尚未完成独立复核或正式发布。**
 
 适用于 Web/HTML、Apple 原生客户端和 Android 的设计规划、交接与验收。框架、操作系统、字体和渲染方式不同，不能保证一套数值或一个工具流程直接适用所有项目。本仓库不是平台官方规范，也不是“安装即提高审美”的技能包。
 
@@ -18,8 +18,11 @@
 | 从设计到真实运行验收 | [08 实现与验收](docs/08-implementation-acceptance.md) |
 | 判断资料是否可信、是否适用 | [09 来源与经验](docs/09-reference-library.md)、[来源登记](references/sources.md) |
 | 项目采用、例外、更新与退出 | [10 采用与维护](docs/10-adoption-maintenance.md) |
+| 用技能执行设计方向或自适应审阅 | [技能目录与复用边界](skills/README.md)、[边界案例](skills/review-cases.md) |
 
 可直接讨论的材料：[设计 brief](templates/design-brief.md)、[采用记录](templates/adoption-record.md)、[验收记录](templates/verification-record.md)、[匿名合成案例](examples/anonymous-cases.md)。
+
+`skills/` 内新增两个自包含的原创审阅技能；它们仍是候选，没有全局安装、自动注册或启用到现有项目。已有第三方设计插件只作能力索引，不随本仓库分发。
 
 ## 四种声明，不混在一起
 

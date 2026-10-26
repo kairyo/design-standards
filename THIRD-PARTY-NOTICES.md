@@ -10,6 +10,9 @@
 | W3C WCAG / WCAG2ICT | W3C；遵守相应文档的版权与使用声明，不把参考摘要当作完整标准。 |
 | Design Tokens Community Group | DTCG 及贡献者；2025.10 报告标明 W3C Community Final Specification Agreement。它不是 W3C Recommendation。 |
 | Material Components for Android | 仓库标明 Apache-2.0；这里只引用维护状态，不携带源码。链接仓库不代表本仓库采用同一许可证。 |
+| OpenAI 技能说明 | OpenAI；只引用技能格式与发现路径的公开说明，未复制系统技能、脚本或插件内容。 |
+
+技能目录提及的 Taste、Figma 与平台实现技能只是能力索引，不是 vendored 依赖。Taste 所读包级和 taste 组件许可为 MIT；这里只记录该观察，没有复制实现，未来引入仍须核对具体文件的版权链与通知。其余本地技能的独立再分发许可未由此次盘点建立，因此没有原样收录。新增两个审阅技能为原创，沿用本仓库许可待定状态。
 
 具体来源、所读章节与采用范围见 [来源登记](references/sources.md)。来源未明确展示的许可事项标为未核定，不据此推断可以再分发。
 
