@@ -109,8 +109,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 17)}:
-        errors.append("source registry must contain S01 through S16")
+    if source_ids != {f"S{i:02d}" for i in range(1, 18)}:
+        errors.append("source registry must contain S01 through S17")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1
