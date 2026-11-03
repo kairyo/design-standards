@@ -24,7 +24,7 @@ This repository supports design planning, handoff, and acceptance for Web/HTML, 
 | Adopt, make exceptions, update, or exit | [10 Adoption and maintenance](docs/10-adoption-maintenance.md) |
 | Review design direction or adaptive interfaces with skills | [Skills and reuse boundaries](skills/README.md), [Boundary cases](skills/review-cases.md) |
 
-Materials for discussion: [Design brief](templates/design-brief.md), [Adoption record](templates/adoption-record.md), [Verification record](templates/verification-record.md), and [Synthetic anonymous cases](examples/anonymous-cases.md).
+Materials for discussion: [Design brief](templates/design-brief.md), [Adoption record](templates/adoption-record.md), [Verification record](templates/verification-record.md), [Synthetic anonymous cases](examples/anonymous-cases.md), [Complete form submission and correction example](examples/form-submit-recovery.md), and [Stepped-form return example](examples/stepped-form-branch-return.md). The complete example connects chapters 02, 04, 07, and 08; the stepped example adds checks for drafts, active data, and focus when moving back and forth. All product checks remain unexecuted; these examples do not establish that the repository contains a runnable form.
 
 The `skills/` directory contains two self-contained, original review skills. They remain candidates and have not been globally installed, automatically registered, or enabled in existing projects. Existing third-party design plugins are indexed only; they are not distributed here.
 

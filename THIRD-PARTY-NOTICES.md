@@ -11,6 +11,10 @@
 | Design Tokens Community Group | DTCG 及贡献者；2025.10 报告标明 W3C Community Final Specification Agreement。它不是 W3C Recommendation。 |
 | Material Components for Android | 仓库标明 Apache-2.0；这里只引用维护状态，不携带源码。链接仓库不代表本仓库采用同一许可证。 |
 | OpenAI 技能说明 | OpenAI；只引用技能格式与发现路径的公开说明，未复制系统技能、脚本或插件内容。 |
+| Ant Design 表单研究 | Ant Design / 相应贡献者；所读固定提交根 LICENSE 为 MIT。这里只作有限原创归纳，不复制表单图像、模板或源码，外链素材权利不由根许可推定。 |
+| Style Dictionary 文档 | Style Dictionary / 相应权利人；仅链接并归纳 token 追踪方法。网页全文再分发许可未核定，未复制 schema 或代码。 |
+| React Aria Quality | Adobe / 相应权利人；仅链接并归纳组件能力与产品验证边界。网页全文再分发许可未核定，未携带组件实现。 |
+| axe-core README | Deque / 相应贡献者；所读固定提交 LICENSE 标示 MPL-2.0。这里只说明自动检查边界，不复制源码、规则或报告。 |
 
 技能目录提及的 Taste、Figma 与平台实现技能只是能力索引，不是 vendored 依赖。Taste 所读包级和 taste 组件许可为 MIT；这里只记录该观察，没有复制实现，未来引入仍须核对具体文件的版权链与通知。其余本地技能的独立再分发许可未由此次盘点建立，因此没有原样收录。新增两个审阅技能为原创，沿用本仓库许可待定状态。
 

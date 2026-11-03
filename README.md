@@ -24,7 +24,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 | 项目采用、例外、更新与退出 | [10 采用与维护](docs/10-adoption-maintenance.md) |
 | 用技能执行设计方向或自适应审阅 | [技能目录与复用边界](skills/README.md)、[边界案例](skills/review-cases.md) |
 
-可直接讨论的材料：[设计 brief](templates/design-brief.md)、[采用记录](templates/adoption-record.md)、[验收记录](templates/verification-record.md)、[匿名合成案例](examples/anonymous-cases.md)。
+可直接讨论的材料：[设计 brief](templates/design-brief.md)、[采用记录](templates/adoption-record.md)、[验收记录](templates/verification-record.md)、[匿名合成案例](examples/anonymous-cases.md)、[表单提交与纠错完整示例](examples/form-submit-recovery.md)、[分步表单往返示例](examples/stepped-form-branch-return.md)。完整示例串联 02、04、07、08 章，分步示例补充草稿、有效数据和焦点的往返检查；所有产品检查均未执行，不表示本仓库已有可运行表单。
 
 `skills/` 内新增两个自包含的原创审阅技能；它们仍是候选，没有全局安装、自动注册或启用到现有项目。已有第三方设计插件只作能力索引，不随本仓库分发。
 

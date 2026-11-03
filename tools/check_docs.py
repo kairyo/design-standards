@@ -18,6 +18,7 @@ EXPECTED = (
     "docs/10-adoption-maintenance.md", "references/sources.md",
     "templates/design-brief.md", "templates/adoption-record.md",
     "templates/verification-record.md", "examples/anonymous-cases.md",
+    "examples/form-submit-recovery.md", "examples/stepped-form-branch-return.md",
     "skills/README.md", "skills/review-cases.md",
     "skills/design-direction-review/SKILL.md",
     "skills/design-direction-review/agents/openai.yaml",
@@ -35,6 +36,12 @@ SKILL_NAMES = {"design-direction-review", "adaptive-ui-review"}
 ALLOWED_SOURCE_HOSTS = {
     "developer.apple.com", "developer.android.com", "help.figma.com",
     "www.w3.org", "www.designtokens.org", "github.com", "learn.chatgpt.com",
+    "styledictionary.com", "react-aria.adobe.com",
+}
+ALLOWED_GITHUB_PATHS = {
+    "/material-components/material-components-android",
+    "/ant-design/ant-design/blob/46f0421cb8db963e35a41b822ceb9232d5c8ef57/docs/spec/research-form.zh-CN.md",
+    "/dequelabs/axe-core/blob/6b52b841461bd23345970b91ec75fdaff6bad31a/README.md",
 }
 LINK = re.compile(r"(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)")
 REPOSITORY_GITHUB_PATH = re.compile(
@@ -114,7 +121,7 @@ def main():
                 continue
             if parsed.hostname not in ALLOWED_SOURCE_HOSTS:
                 errors.append(f"unregistered external host in {relative}: {parsed.hostname}")
-            if parsed.hostname == "github.com" and parsed.path.rstrip("/") != "/material-components/material-components-android":
+            if parsed.hostname == "github.com" and parsed.path.rstrip("/") not in ALLOWED_GITHUB_PATHS:
                 errors.append(f"unregistered GitHub reference in {relative}")
             if parsed.query or parsed.username or parsed.password:
                 errors.append(f"review URL parameters/identity in {relative}")
@@ -123,8 +130,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 18)}:
-        errors.append("source registry must contain S01 through S17")
+    if source_ids != {f"S{i:02d}" for i in range(1, 22)}:
+        errors.append("source registry must contain S01 through S21")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1
