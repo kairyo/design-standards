@@ -24,6 +24,11 @@ EXPECTED = (
     "skills/adaptive-ui-review/SKILL.md",
     "skills/adaptive-ui-review/agents/openai.yaml",
     "skills/adaptive-ui-review/references/platform-sources.md",
+    "README.en.md", "PROJECT_MANAGEMENT.md",
+    ".github/ISSUE_TEMPLATE/documentation-change.md",
+    ".github/ISSUE_TEMPLATE/validation-report.md",
+    ".github/pull_request_template.md",
+    "reviews/2026-11-03-github-management.md",
     "tools/check_docs.py",
 )
 SKILL_NAMES = {"design-direction-review", "adaptive-ui-review"}
@@ -32,6 +37,9 @@ ALLOWED_SOURCE_HOSTS = {
     "www.w3.org", "www.designtokens.org", "github.com", "learn.chatgpt.com",
 }
 LINK = re.compile(r"(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)")
+REPOSITORY_GITHUB_PATH = re.compile(
+    r"/kairyo/design-standards/(?:issues(?:/\d+)?|pulls|pull/\d+|milestones|milestone/\d+)"
+)
 URL = re.compile(r"https?://[^\s<>)\]，；。]+")
 PRIVATE_PATH = re.compile(r"/(?:Users|home)/[^\s/]+/|(?:file|vscode)://")
 SECRET = re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{30,}")
@@ -98,6 +106,12 @@ def main():
                     errors.append(f"skill-local link escapes package in {relative}: {target}")
         for url in URL.findall(content):
             parsed = urlsplit(url)
+            # Repository tracking links are separate from external source references.
+            if (parsed.scheme == "https" and parsed.netloc.lower() == "github.com"
+                    and REPOSITORY_GITHUB_PATH.fullmatch(parsed.path.rstrip("/"))):
+                if parsed.query or parsed.username or parsed.password:
+                    errors.append(f"review URL parameters/identity in {relative}")
+                continue
             if parsed.hostname not in ALLOWED_SOURCE_HOSTS:
                 errors.append(f"unregistered external host in {relative}: {parsed.hostname}")
             if parsed.hostname == "github.com" and parsed.path.rstrip("/") != "/material-components/material-components-android":

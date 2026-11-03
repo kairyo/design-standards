@@ -1,21 +1,25 @@
-# 贡献与公开检查
+# 贡献与公开检查 / Contributing and publication checks
+
+## 中文
+
+Issue、分支、PR、状态和双语要求见 [项目管理约定](PROJECT_MANAGEMENT.md)。
 
 目前为审阅稿，内容许可尚待维护者决定。请先讨论变更范围与许可安排，再提交第三方或多人贡献；不要默认贡献即同意任何未声明的再许可。
 
-## 一项改进的最小输入
+### 一项改进的最小输入
 
 说明问题、受影响章节、适用平台、建议分类、公开来源及读取范围、预期收益和不适用情形。以能审查的范围提交；不要把技术迁移或生产项目修改夹在文档 PR 中。
 
 官方网页的标题、链接或搜索摘要不足以证明正文已读取。写明阅读日期和具体章节；对于持续更新网页，保留来源标注版本/日期，并承认它不是不可变快照。需要更新时人工比较差异。
 
-## 写作要求
+### 写作要求
 
 - 采用原创解释与小型合成案例；避免大段转载官方文档或第三方代码。
 - 说明建议为什么有用、在哪种条件下失效、如何验证；不靠“高级”“有审美”等形容词充当标准。
 - 数值注明平台单位、适用组件与版本。不把一个项目的语言数量、品牌色、字号或设备矩阵推广为默认值。
 - 例外必须解释边界，不能以“项目选择”为名伪造对外符合性声明。
 
-## 发布前检查
+### 发布前检查
 
 1. 检查整棵候选文件树，而不只是最后一次 diff。确认不存在媒体、字体、UI 套件、内部截图或未审阅二进制。
 2. 检查分支上全部待公开提交、提交信息与作者元数据；私密内容曾进入历史时，不能仅在最终文件删除后就发布。
@@ -27,3 +31,35 @@
 技能变更另需检查名称与触发描述、完整文件夹的自包含性、界面元数据和许可状态；可用时运行宿主提供的技能格式校验器。用适用与相邻不适用请求检查决定边界，并标明是作者推演还是实际独立执行。结构检查通过不等于自动选择、跨客户端兼容或审美收益已经验证；不得为了测试擅自安装到用户全局目录或修改消费项目。
 
 遇到疑似敏感信息，先阻止进一步传播，使用已有私密沟通渠道处理。不要把敏感内容复制进公开 issue 来解释问题。
+
+## English
+
+See [Project management](PROJECT_MANAGEMENT.md) for issue, branch, PR, status, and bilingual conventions.
+
+This is a review draft, with content licensing still to be decided by the maintainer. Discuss scope and licensing arrangements before submitting third-party or multi-author contributions. Do not assume that contributing implies agreement to unstated relicensing terms.
+
+### Minimum input for an improvement
+
+Describe the problem, affected chapters, applicable platforms, claim category, public sources and reading scope, expected benefit, and cases where the proposal does not apply. Keep changes reviewable; do not include technology migrations or production-project modifications in a documentation PR.
+
+An official page title, link, or search snippet does not establish that its body was read. Record the reading date and specific sections. For continuously updated pages, preserve the source's stated version/date and acknowledge that it is not an immutable snapshot. Compare changes manually when updating.
+
+### Writing requirements
+
+- Use original explanations and small synthetic examples. Avoid lengthy reproduction of official documents or third-party code.
+- Explain why a recommendation helps, when it fails, and how to verify it. Adjectives such as “advanced” or “aesthetic” are not standards.
+- Specify platform units, applicable components, and versions for numerical values. Do not generalize one project's language count, brand colors, type sizes, or device matrix into defaults.
+- Explain exception boundaries. A project choice cannot justify a false public conformance claim.
+
+### Before publication
+
+1. Review the entire candidate tree, not just the last diff. Check for media, fonts, UI kits, internal screenshots, or unreviewed binaries.
+2. Review all commits to be published, their messages, and author metadata. Deleting private content from the final tree is insufficient if it remains in history.
+3. Review text, examples, filenames, links, and PR titles/bodies for private addresses, internal project names, device identifiers, and real data. Cite only registered public sources.
+4. Check licensing and attribution; access does not establish redistribution rights.
+5. Run `python3 tools/check_docs.py` with Python 3.9 or newer, and `git diff --check`; then read the key chapters manually.
+6. The author records self-check results and outstanding work, an independent reviewer checks facts, applicability, and public boundaries, and the maintainer decides merging/release.
+
+For skill changes, also check names and trigger descriptions, complete-folder self-containment, interface metadata, and licensing. Run the host's skill-format validator when available. Check decision boundaries with applicable and adjacent inapplicable requests, distinguishing author walkthroughs from actual independent execution. Structural success does not establish automatic selection, cross-client compatibility, or visual-quality benefit. Testing does not authorize global installation or consumer-project changes.
+
+If sensitive information is suspected, prevent further propagation and use an existing private communication channel. Do not copy sensitive details into a public issue to explain the problem.

@@ -1,5 +1,9 @@
 # Design Standards
 
+[English](README.en.md) · [项目管理](PROJECT_MANAGEMENT.md) · [任务](https://github.com/kairyo/design-standards/issues) · [PR](https://github.com/kairyo/design-standards/pulls)
+
+GitHub 协作内容与入口提供中英双语；十章正文、设计记录模板、示例、技能和历史证据暂保留中文。两个 README 同步维护，翻译不扩大声明或授权。
+
 跨项目、跨平台的设计方法与验收指南。目标是让设计决定有依据、实现可追溯、质量可验证，而不是让所有产品长得一样。
 
 **版本：v0.1 / `0.1.0-draft.3`。状态：REVIEW_CANDIDATE，尚未完成独立复核或正式发布。**
@@ -43,6 +47,9 @@
 
 ## 维护与状态
 
+- [GitHub 项目管理与双语约定](PROJECT_MANAGEMENT.md)
+- [项目总议题](https://github.com/kairyo/design-standards/issues/1)、[里程碑](https://github.com/kairyo/design-standards/milestones)
+- [协作整理验证记录](reviews/2026-11-03-github-management.md)
 - [贡献与公开检查](CONTRIBUTING.md)
 - [本仓库 Agent 维护入口](AGENTS.md)
 - [变更记录](CHANGELOG.md)
