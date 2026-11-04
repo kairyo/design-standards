@@ -54,6 +54,6 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 - [本仓库 Agent 维护入口](AGENTS.md)
 - [变更记录](CHANGELOG.md)
 - [审阅记录与未完成项](REVIEW.md)
-- [许可待定说明](LICENSE-NOTICE.md)、[第三方资料声明](THIRD-PARTY-NOTICES.md)
+- [许可范围与署名](LICENSE-NOTICE.md)、[第三方资料声明](THIRD-PARTY-NOTICES.md)
 
-公开可读不等于已授予统一开源许可；许可由维护者另行决定。本审阅稿不宣称已被任何生产项目采用。
+本版本的原创文档、模板、示例和技能文本采用 [CC BY 4.0](LICENSE)，原创检查代码采用 [MIT](tools/LICENSE)；具体文件范围、署名方式与第三方例外见许可说明。贡献者按对应许可提供有权提交的内容。许可授予与质量验收分别记录；本审阅稿不宣称已被任何生产项目采用。

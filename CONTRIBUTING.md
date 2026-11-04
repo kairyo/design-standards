@@ -4,7 +4,14 @@
 
 Issue、分支、PR、状态和双语要求见 [项目管理约定](PROJECT_MANAGEMENT.md)。
 
-目前为审阅稿，内容许可尚待维护者决定。请先讨论变更范围与许可安排，再提交第三方或多人贡献；不要默认贡献即同意任何未声明的再许可。
+本仓库仍为审阅稿；原创文档采用 CC BY 4.0，原创代码采用 MIT，文件范围见 [许可与署名](LICENSE-NOTICE.md)。提交拟合入的 PR 时，请确认下列贡献条件：
+
+- 你拥有所提交内容的相应权利，或已取得足以按对应许可提交的授权；需要雇主或其他权利人同意时，先取得同意。
+- 你有意提交的原创文档按 CC BY 4.0、原创代码按 MIT 提供给本项目及接收者；你保留版权和应保留的署名，不要求版权转让、额外再许可权或另签贡献者协议。
+- 第三方内容单独注明作者、原始地址、版本、许可、修改及必要通知，并说明授权依据。先讨论是否适合纳入；不要把他人的内容重新标为本项目原创，或仅凭可访问就提交。
+- 新增代码明确标注 MIT，并附相应许可通知；技能包被单独复制时仍应携带许可原文与署名。来源不明或无权按对应条件提供的内容，先保留为讨论，不合入。
+
+这些是向本仓库提供贡献的条件，不改变标准许可证对复用者授予的权利。PR 接收、合并、正式发布和消费项目采用仍按各自的授权及验收执行。
 
 ### 一项改进的最小输入
 
@@ -36,7 +43,14 @@ Issue、分支、PR、状态和双语要求见 [项目管理约定](PROJECT_MANA
 
 See [Project management](PROJECT_MANAGEMENT.md) for issue, branch, PR, status, and bilingual conventions.
 
-This is a review draft, with content licensing still to be decided by the maintainer. Discuss scope and licensing arrangements before submitting third-party or multi-author contributions. Do not assume that contributing implies agreement to unstated relicensing terms.
+This repository remains a review draft. Original documentation uses CC BY 4.0 and original code uses MIT; see [Licensing and attribution](LICENSE-NOTICE.md) for file scope. When submitting a PR intended for inclusion, confirm these contribution terms:
+
+- You hold the relevant rights or have authorization sufficient to submit under the applicable license. Obtain any required employer or other rights-holder consent first.
+- Original documentation you intentionally contribute is provided under CC BY 4.0, and original code under MIT, to this project and its recipients. You retain copyright and applicable attribution; no copyright assignment, additional relicensing rights, or separate contributor agreement is required.
+- Identify third-party authors, original URLs, versions, licenses, changes, required notices, and the basis for authorization separately. Discuss suitability before inclusion; do not relabel another party's work as this project's original material or submit solely because you can access it.
+- Explicitly mark new code MIT and provide the corresponding notices. Independently copied skill packages should still carry the full license and attribution. Material with unclear provenance or insufficient permission remains a discussion item until resolved, rather than being merged.
+
+These conditions govern contributions to this repository; they do not change the rights granted to reusers by the standard licenses. PR acceptance, merging, formal release, and consumer-project adoption retain their respective authorization and acceptance requirements.
 
 ### Minimum input for an improvement
 

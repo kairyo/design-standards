@@ -54,6 +54,6 @@ Only original methods, public source links, and short applicability notes belong
 - [Agent maintenance instructions for this repository](AGENTS.md)
 - [Changelog](CHANGELOG.md)
 - [Review record and outstanding work](REVIEW.md)
-- [Pending license notice](LICENSE-NOTICE.md), [Third-party notices](THIRD-PARTY-NOTICES.md)
+- [License scope and attribution](LICENSE-NOTICE.md), [Third-party notices](THIRD-PARTY-NOTICES.md)
 
-Public readability does not grant a repository-wide open-source license; the maintainer will decide licensing separately. This review candidate makes no claim of adoption by any production project.
+This version's original documentation, templates, examples, and skill text use [CC BY 4.0](LICENSE); original checking code uses [MIT](tools/LICENSE). See the license notice for file scope, attribution, and third-party exceptions. Contributors provide material they are entitled to submit under the corresponding license. License grants and quality acceptance are recorded separately; this review candidate makes no claim of adoption by any production project.

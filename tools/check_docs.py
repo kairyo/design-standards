@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
+# Copyright (c) 2026 kairyo and contributors
 """Read-only structural checks; not a security or content certification."""
 
+import hashlib
 from pathlib import Path
 import re
 import sys
@@ -31,7 +34,21 @@ EXPECTED = (
     ".github/pull_request_template.md",
     "reviews/2026-11-03-github-management.md",
     "tools/check_docs.py",
+    "LICENSE", "tools/LICENSE",
+    "skills/design-direction-review/LICENSE",
+    "skills/adaptive-ui-review/LICENSE",
 )
+LICENSE_SHA256 = {
+    "LICENSE": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "skills/design-direction-review/LICENSE": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "skills/adaptive-ui-review/LICENSE": "9e5f1b3c610b9c2da5c313bf81d577a7d1acec686bdb0384edefa6df0f90cd94",
+    "tools/LICENSE": "b8bd3684691b6a6d9a73328b7fa4bf492a354dbabd1b3cea219c3e3f7f2b65ab",
+}
+# Exact licensing and attribution URLs, separate from the design-source registry.
+LICENSE_REFERENCE_URLS = {
+    "https://creativecommons.org/licenses/by/4.0/",
+    "https://github.com/kairyo/design-standards",
+}
 SKILL_NAMES = {"design-direction-review", "adaptive-ui-review"}
 ALLOWED_SOURCE_HOSTS = {
     "developer.apple.com", "developer.android.com", "help.figma.com",
@@ -80,6 +97,9 @@ def main():
             continue
         if PRIVATE_PATH.search(content) or SECRET.search(content):
             errors.append(f"potential private material: {name}")
+        if (name in LICENSE_SHA256
+                and hashlib.sha256(content.encode("utf-8")).hexdigest() != LICENSE_SHA256[name]):
+            errors.append(f"license text differs from reviewed copy: {name}")
         text_contents[name] = content
     documents = sorted(
         ROOT / name for name in text_contents if name.endswith(".md")
@@ -113,6 +133,8 @@ def main():
                     errors.append(f"skill-local link escapes package in {relative}: {target}")
         for url in URL.findall(content):
             parsed = urlsplit(url)
+            if url in LICENSE_REFERENCE_URLS:
+                continue
             # Repository tracking links are separate from external source references.
             if (parsed.scheme == "https" and parsed.netloc.lower() == "github.com"
                     and REPOSITORY_GITHUB_PATH.fullmatch(parsed.path.rstrip("/"))):

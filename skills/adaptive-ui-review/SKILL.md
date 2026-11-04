@@ -1,7 +1,7 @@
 ---
 name: adaptive-ui-review
 description: "Review responsive or adaptive UI behavior across window resizing, split views, fold states and changing content or input on Web, Apple or Android. Use for layout and state-continuity reviews, not unrelated style edits, build-only work or API-only migrations."
-license: "License pending; no general redistribution license is granted."
+license: "CC-BY-4.0; see LICENSE and attribution below."
 metadata:
   version: "0.1.0-draft.2"
   provenance: "Original design-standards workflow; not an official platform skill."
@@ -41,3 +41,9 @@ metadata:
 给出需保留的行为、具体适配风险和下一步验证。每个关键发现说明条件、证据、用户影响及最小建议；无证据的假设单列。将设计建议、代码检查、实际运行结果分开，不用一种证据替代另一种。
 
 达到本次约定的审阅范围即收尾；对未跑的平台或状态写明未验证。审阅本身不改变项目的最终放行权或独立审查要求。
+
+## 许可与署名 / License and attribution
+
+本包原创技能文本、引用说明及界面描述元数据采用 [CC BY 4.0](LICENSE)。Copyright (c) 2026 kairyo and contributors。来源：[Design Standards](https://github.com/kairyo/design-standards)。分享时按许可保留署名、来源、许可及免责声明信息，并注明修改；外部链接材料保留原权利。原内容按许可原文“现状”提供。
+
+Original skill text, reference notes, and interface-description metadata in this package use [CC BY 4.0](LICENSE). Copyright (c) 2026 kairyo and contributors. Source: [Design Standards](https://github.com/kairyo/design-standards). When sharing, retain attribution, source, license, and disclaimer information as required, and indicate changes. Linked external material retains its original rights. The original material is provided as-is under the full license.

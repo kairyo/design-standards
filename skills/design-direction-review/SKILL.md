@@ -1,7 +1,7 @@
 ---
 name: design-direction-review
 description: "Review visual hierarchy, aesthetic coherence and design directions for Web or native interfaces using supplied evidence. Use for visual critique or comparing directions, not build-only work, implementation-only requests or a formal accessibility audit."
-license: "License pending; no general redistribution license is granted."
+license: "CC-BY-4.0; see LICENSE and attribution below."
 metadata:
   version: "0.1.0-draft.2"
   provenance: "Original design-standards workflow; not an official platform skill."
@@ -39,3 +39,9 @@ metadata:
 先给总体判断与最影响任务的发现，再给证据、建议和验证方法。多个发现可用“位置/状态—观察—影响—建议—待验证”的短表；没有实际问题时不制造清单。
 
 明确区分可见事实、推断、可选方向和未验证项。若用户只要求审阅，到建议与缺口即结束；另有实施授权时，按项目流程实施并核对实际画面，不把本次建议写成已完成修改。项目要求的独立审查仍需由独立执行者完成。
+
+## 许可与署名 / License and attribution
+
+本包原创技能文本、引用说明及界面描述元数据采用 [CC BY 4.0](LICENSE)。Copyright (c) 2026 kairyo and contributors。来源：[Design Standards](https://github.com/kairyo/design-standards)。分享时按许可保留署名、来源、许可及免责声明信息，并注明修改；外部链接材料保留原权利。原内容按许可原文“现状”提供。
+
+Original skill text, reference notes, and interface-description metadata in this package use [CC BY 4.0](LICENSE). Copyright (c) 2026 kairyo and contributors. Source: [Design Standards](https://github.com/kairyo/design-standards). When sharing, retain attribution, source, license, and disclaimer information as required, and indicate changes. Linked external material retains its original rights. The original material is provided as-is under the full license.

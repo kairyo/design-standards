@@ -1,5 +1,21 @@
 # 变更记录
 
+## 未发布 — 许可与贡献条件 / Unreleased licensing and contribution terms
+
+2026-11-04，按维护者决定为包含本变更的版本明确许可范围；版本号及审阅候选状态保持不变。
+
+- 原创文档、模板、示例和技能文本采用 CC BY 4.0；现有检查脚本采用 MIT。随附标准许可全文，并明确第三方例外、署名和修改说明。
+- 两个技能包各自携带 CC BY 4.0 许可原文和署名，界面描述元数据一并明确归属；技能行为与描述保持不变。
+- 同步双语 README、许可说明、贡献指南、第三方声明、项目说明与 PR 模板。贡献者保留版权，按对应许可提供有权提交的内容；历史许可待定记录保留。
+- 检查器增加许可文件清单、已核对文本的完整性检查及两个精确许可/署名 URL；设计来源登记与原有检查边界保留。
+
+On 2026-11-04, the maintainer's decision defines license scope for versions carrying this change. The version number and review-candidate status remain unchanged.
+
+- Original documentation, templates, examples, and skill text use CC BY 4.0; the existing checker uses MIT. Include the standard full texts and define third-party exceptions, attribution, and modification notices.
+- Each skill package carries the CC BY 4.0 text and attribution, with interface-description metadata explicitly covered; skill behavior and descriptions are unchanged.
+- Align both READMEs, the bilingual license notice, contribution guide, third-party notices, project guidance, and PR template. Contributors retain copyright and submit authorized material under the applicable license; historical pending-license records are preserved.
+- Extend the checker with the license-file inventory, integrity checks for reviewed texts, and two exact licensing/attribution URLs. Preserve the design-source registry and existing checking boundaries.
+
 ## 未发布 — 表单提交与纠错（功能分支审阅）
 
 基于 `0.1.0-draft.3` 增补 02、04、07、08 章，版本号与正式发布状态不变。

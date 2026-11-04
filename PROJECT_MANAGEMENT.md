@@ -44,7 +44,7 @@
 
 翻译保留相同日期、版本、数量、出处、授权和未验证项。历史 PR 可补译并注明历史快照，不改变原结论、合并状态或提交历史。局部独立复核与文字案例通过，不能替代全库复核或真实产品验收。
 
-许可待定时不默认接受再许可；疑似敏感资料不复制到公开 Issue。其他公开检查见 [CONTRIBUTING](CONTRIBUTING.md)。
+原创文档与代码的许可范围见 [许可说明](LICENSE-NOTICE.md)；贡献条件见 [CONTRIBUTING](CONTRIBUTING.md)。第三方内容单独核对授权，贡献不包含未声明的额外再许可权。疑似敏感资料不复制到公开 Issue。
 
 ## English
 
@@ -90,4 +90,4 @@ The ten chapters, design record templates, examples, skills, and historical evid
 
 Translations preserve dates, versions, counts, provenance, authorization, and unverified work. Historical PRs may receive translations with a historical-snapshot note; do not alter their conclusions, merge state, or commit history. Scoped independent review and text-case results do not replace repository-wide review or real-product acceptance.
 
-While licensing is undecided, do not assume agreement to relicensing. Never copy suspected sensitive material into public issues. See [CONTRIBUTING](CONTRIBUTING.md) for other publication checks.
+See the [license notice](LICENSE-NOTICE.md) for the scope of original documentation and code, and [CONTRIBUTING](CONTRIBUTING.md) for contribution terms. Check third-party permissions separately; contributions do not include undeclared additional relicensing rights. Never copy suspected sensitive material into public issues.
