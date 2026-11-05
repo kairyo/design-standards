@@ -1,6 +1,6 @@
 # 公开来源登记
 
-实际读取日期按条目保留：**S01–S16 首次读取为 2026-10-26，S17 为 2026-11-02，S18–S21 为 2026-11-03**；S12 的 2026-11-03 补读范围另列。新增来源不表示旧来源已全部重新核对。以下均为 `READ_SCOPED`，只表示读取了列出的部分；不表示全文、嵌入视频、附件或子链接均已读，也不表示任何产品已采用或通过验证。
+实际读取日期按条目保留：**S01–S16 首次读取为 2026-10-26，S17 为 2026-11-02，S18–S21 为 2026-11-03，S22–S23 为 2026-11-05**；S12 的 2026-11-03 补读范围另列。新增来源不表示旧来源已全部重新核对。以下均为 `READ_SCOPED`，只表示读取了列出的部分；不表示全文、嵌入视频、附件或子链接均已读，也不表示任何产品已采用或通过验证。
 
 未标不可变版本的网页为动态资料，核对日期不是永久快照。内容只作短摘要和链接，不保存第三方正文。独立复核按 [审阅记录](../REVIEW.md)的具体范围分别记录，读取或复核来源不表示项目已批准采用。权利边界见 [第三方资料声明](../THIRD-PARTY-NOTICES.md)。
 
@@ -194,6 +194,26 @@
 - 分类 / 状态：`TEAM_RECOMMENDATION` 中的工具能力边界依据；`READ_SCOPED`，没有运行扫描。
 - 许可：同一提交 LICENSE 标示 MPL-2.0；未复制源码、规则或原始报告，不将该许可传递成本仓库统一许可。
 
+## S22
+
+- 发布者 / 标题：Elaya — ai-design-skills 中的 figma-designer、landing-page-design。
+- URL：[figma-designer](https://github.com/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/figma-designer/SKILL.md)、[landing-page-design](https://github.com/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/landing-page-design/SKILL.md)、[根 LICENSE](https://github.com/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/LICENSE)。
+- 版本 / 读取日期：固定提交 `456d9e0d3e2d84c748bb143c6ca3d90c45e16213`；2026-11-05 读取两个技能的完整文字及根 LICENSE。采用范围限于基础样本与实际变量关联，以及落地页的受众、来访入口、主要动作、顾虑和证据组织；未执行技能或外部脚本，未审图像素材。
+- 平台 / 采用范围：03、04、08 章的合成 Figma 示例及 02 章的可选落地页 brief 附页。主题恢复、断绑对照和本库表格为原创归纳；不采用固定字体/字号、完整色板、组件变体数量、全局 Auto Layout、固定章节数或动效偏好，不宣称方法提高转化率。
+- 分类 / 状态：`TEAM_RECOMMENDATION` 的第三方方法参考；具体数值和业务假设为合成 `PROJECT_CHOICE`。`READ_SCOPED`，不是 Figma 官方要求、安装记录或效果验证。
+- 许可：根文件为 MIT，署名 Copyright (c) 2026 Elaya；landing-page-design 内另保留 Taste 的许可/署名说明。本库只链接并原创归纳，不复制技能正文、表格、模板、代码或资产；不把本库 CC BY 4.0 扩展到这些外部文件，也不由根许可推定外链素材权利。
+
+## S23
+
+- 发布者 / 标题：Figma — Modes for variables；Apply variables to designs。
+- URL：[Modes for variables](https://help.figma.com/hc/en-us/articles/15343816063383-Modes-for-variables)、[Apply variables to designs](https://help.figma.com/hc/en-us/articles/15343107263511-Apply-variables-to-designs)。
+- 版本 / 读取日期：动态帮助页，2026-11-05 核对。前者读取模式概念及访问前提、默认模式、Switch between modes、Auto 继承与 Mode conflicts；后者读取编辑/库访问前提及颜色、数值变量应用，含填充/描边、尺寸、间距、内边距和圆角。未观看视频或逐项核对所有可绑定属性。
+- 平台 / 采用范围：Figma Design；新示例中的变量关联、容器模式选择、Auto 父级/默认模式继承及模式版本冲突检查。实际权限、模式可用性、库版本及对象支持在消费项目另验；未验证任何账户、文件或界面操作，不据此声称 API、导入导出或 DTCG 兼容。
+- 分类 / 状态：用于 `TEAM_RECOMMENDATION` 的官方产品能力依据；`READ_SCOPED`，不是 `OFFICIAL_REQUIREMENT` 或产品验收。
+- 许可：Figma 资料，全文再分发许可未核定；仅链接和原创短摘要，不转载正文、截图或设计文件。
+
 ## 原创部分与未验证项
 
 探索流程、交接包结构、分层验收、匿名案例、完整表单示例、维护方法和新增审阅技能为本仓库原创团队建议，不声称出自平台官方。表单状态、校验时机、查询/防重复前提及文案是合成项目选择；没有产品或服务实现证据。平台实际 SDK 兼容性、账户功能、技能自动选择、产品质量和方法效果均未由本次文档编写验证；具体项目采用前继续记录为 `UNVERIFIED`。
+
+Figma 变量示例与落地页附页依据 S22–S23 作选择性原创归纳；示例数据、文案与检查表没有来自真实项目，不构成实测记录。设计文件验证与营销主张核实仍由实际项目取得证据。

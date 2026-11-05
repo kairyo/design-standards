@@ -4,7 +4,7 @@
 
 除随附的标准许可证全文外，本仓库只提供公开链接与原创、有限的适用说明，没有打包或镜像第三方设计文档、图片、视频、字体、图标、设计文件、SDK 或技能导出文件。没有声明任何平台对本仓库的认可。
 
-本仓库的 CC BY 4.0 / MIT 只覆盖 [许可说明](LICENSE-NOTICE.md) 中有权许可的原创部分，不覆盖所链接的外部材料。下表沿用既有来源读取记录，本轮未重新审计外站全部许可，也未扩大资料采用范围。
+本仓库的 CC BY 4.0 / MIT 只覆盖 [许可说明](LICENSE-NOTICE.md) 中有权许可的原创部分，不覆盖所链接的外部材料。下表按来源登记的版本与实际读取范围记录归属，不表示外站全部许可已经审计。
 
 | 来源 | 归属与本仓库处理方式 |
 | --- | --- |
@@ -19,6 +19,7 @@
 | Style Dictionary 文档 | Style Dictionary / 相应权利人；仅链接并归纳 token 追踪方法。网页全文再分发许可未核定，未复制 schema 或代码。 |
 | React Aria Quality | Adobe / 相应权利人；仅链接并归纳组件能力与产品验证边界。网页全文再分发许可未核定，未携带组件实现。 |
 | axe-core README | Deque / 相应贡献者；所读固定提交 LICENSE 标示 MPL-2.0。这里只说明自动检查边界，不复制源码、规则或报告。 |
+| Elaya ai-design-skills | S22 固定提交根 LICENSE 为 MIT，署名 Elaya；落地页技能内另保留 Taste 的许可/署名说明。本库仅选择性原创归纳样本绑定与落地页 brief 方法，不复制技能文件、表格、模板或资产。 |
 
 技能目录提及的 Taste、Figma 与平台实现技能只是能力索引，不是 vendored 依赖。Taste 所读包级和 taste 组件许可为 MIT；这里只记录该观察，没有复制实现，未来引入仍须核对具体文件的版权链与通知。其余本地技能的独立再分发许可未由此次盘点建立，因此没有原样收录。两个审阅技能的原创文本及界面描述元数据采用 CC BY 4.0，具体范围见许可说明；不包含上述第三方技能的导出文件。
 
@@ -32,7 +33,7 @@
 
 Apart from the included standard license texts, this repository provides public links and original, limited applicability notes. It does not package or mirror third-party design documents, images, videos, fonts, icons, design files, SDKs, or exported skills, and claims no platform endorsement.
 
-This repository's CC BY 4.0 / MIT grants cover only the original material licensors are entitled to license under the [license notice](LICENSE-NOTICE.md), not linked external material. The table preserves prior source-reading records. This change neither re-audits all external licenses nor expands source adoption.
+This repository's CC BY 4.0 / MIT grants cover only the original material licensors are entitled to license under the [license notice](LICENSE-NOTICE.md), not linked external material. The table records attribution according to the versions and actual reading scope in the source registry; it does not establish an audit of all external licenses.
 
 | Source | Ownership and treatment in this repository |
 | --- | --- |
@@ -47,6 +48,7 @@ This repository's CC BY 4.0 / MIT grants cover only the original material licens
 | Style Dictionary documentation | Style Dictionary / respective rights holders; links and summaries of token-traceability methods only. Permission to redistribute full web pages was not established; schemas and code are not copied. |
 | React Aria Quality | Adobe / respective rights holders; links and summaries of component capability and product-validation boundaries only. Permission to redistribute full web pages was not established; no component implementation is included. |
 | axe-core README | Deque / respective contributors; the LICENSE at the fixed commit read identifies MPL-2.0. Only automated-checking limits are described; source, rules, and reports are not copied. |
+| Elaya ai-design-skills | The root LICENSE at S22's fixed commit is MIT, attributed to Elaya; the landing-page skill also retains Taste licensing/attribution. This repository provides only selective original synthesis of bound samples and landing-page brief methods, without copying skill files, tables, templates, or assets. |
 
 Taste, Figma, and platform implementation skills mentioned in the skill directory are capability references, not vendored dependencies. The Taste package-level and taste component licenses read were MIT; this records that observation without copying implementations. Future inclusion still requires file-level provenance and notice checks. Independent redistribution rights for the other local skills were not established by that inventory, so they were not imported. The two original review skills' text and interface-description metadata use CC BY 4.0 as scoped in the license notice; they do not contain exports of those third-party skills.
 

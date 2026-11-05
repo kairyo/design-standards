@@ -28,6 +28,8 @@ Materials for discussion: [Design brief](templates/design-brief.md), [Adoption r
 
 The `skills/` directory contains two self-contained, original review skills. They remain candidates and have not been globally installed, automatically registered, or enabled in existing projects. Existing third-party design plugins are indexed only; they are not distributed here.
 
+Focused additions: [Figma variable-binding and theme-switching example](examples/figma-variable-theme.md) and [Optional landing-page brief appendix](templates/landing-page-brief.md). The former connects samples, consumers, modes, and restoration across chapters 03, 04, and 08; the latter extends chapter 02 with visitor entry context, the primary action, and evidence for claims. Both contain original methods and synthetic content, without actual Figma execution or landing-page effectiveness validation.
+
 ## Four distinct claim categories
 
 - `OFFICIAL_REQUIREMENT`: an official normative requirement with a clear source and applicability conditions. Not every official recommendation belongs here.
@@ -50,6 +52,7 @@ Only original methods, public source links, and short applicability notes belong
 - [GitHub project management and bilingual conventions](PROJECT_MANAGEMENT.md)
 - [Project tracking issue](https://github.com/kairyo/design-standards/issues/1), [Milestones](https://github.com/kairyo/design-standards/milestones)
 - [Collaboration maintenance verification record](reviews/2026-11-03-github-management.md)
+- [Variable example and landing-page appendix verification record](reviews/2026-11-05-figma-landing.md)
 - [Contributing and publication checks](CONTRIBUTING.md)
 - [Agent maintenance instructions for this repository](AGENTS.md)
 - [Changelog](CHANGELOG.md)

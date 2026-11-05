@@ -22,6 +22,7 @@ EXPECTED = (
     "templates/design-brief.md", "templates/adoption-record.md",
     "templates/verification-record.md", "examples/anonymous-cases.md",
     "examples/form-submit-recovery.md", "examples/stepped-form-branch-return.md",
+    "examples/figma-variable-theme.md", "templates/landing-page-brief.md",
     "skills/README.md", "skills/review-cases.md",
     "skills/design-direction-review/SKILL.md",
     "skills/design-direction-review/agents/openai.yaml",
@@ -33,6 +34,7 @@ EXPECTED = (
     ".github/ISSUE_TEMPLATE/validation-report.md",
     ".github/pull_request_template.md",
     "reviews/2026-11-03-github-management.md",
+    "reviews/2026-11-05-figma-landing.md",
     "tools/check_docs.py",
     "LICENSE", "tools/LICENSE",
     "skills/design-direction-review/LICENSE",
@@ -59,6 +61,9 @@ ALLOWED_GITHUB_PATHS = {
     "/material-components/material-components-android",
     "/ant-design/ant-design/blob/46f0421cb8db963e35a41b822ceb9232d5c8ef57/docs/spec/research-form.zh-CN.md",
     "/dequelabs/axe-core/blob/6b52b841461bd23345970b91ec75fdaff6bad31a/README.md",
+    "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/figma-designer/SKILL.md",
+    "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/landing-page-design/SKILL.md",
+    "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/LICENSE",
 }
 LINK = re.compile(r"(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)")
 REPOSITORY_GITHUB_PATH = re.compile(
@@ -152,8 +157,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 22)}:
-        errors.append("source registry must contain S01 through S21")
+    if source_ids != {f"S{i:02d}" for i in range(1, 24)}:
+        errors.append("source registry must contain S01 through S23")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1
