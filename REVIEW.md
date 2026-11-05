@@ -8,6 +8,10 @@
 
 十个主题已形成正文，另有来源登记、三个模板和六个匿名合成案例。`0.1.0-draft.2` 新增两个原创审阅技能、能力目录与九个技能边界案例；`0.1.0-draft.3` 补充 03 章的 Figma 画布边界、空间组织和整理验证。当前未发布的本地增补扩展 02、04、07、08 章及两个现有模板，新增完整表单合成示例及分步往返示例。官方资料仅以公开链接及短摘要引用；没有复刻设计资源或原样复制第三方文档。
 
+2026-11-05，本地追加 Figma 变量与主题示例、落地页 brief 附页及相关入口。增量范围、文字走查、独立复核与未执行项见 [本轮验证记录](reviews/2026-11-05-figma-landing.md)。它不重写旧轮次成绩，也不表示实际 Figma 或产品检查通过。
+
+On 2026-11-05, local additions introduce a Figma variable/theme example, an optional landing-page brief appendix, and related entry points. See the [verification record](reviews/2026-11-05-figma-landing.md) for the incremental scope, document walkthrough, independent review, and unexecuted checks. This does not rewrite earlier scores or establish actual Figma or product acceptance.
+
 ## 自检记录
 
 2026-10-26，作者对候选内容完成下列自检；它不是独立复核。

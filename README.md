@@ -28,6 +28,8 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 
 `skills/` 内新增两个自包含的原创审阅技能；它们仍是候选，没有全局安装、自动注册或启用到现有项目。已有第三方设计插件只作能力索引，不随本仓库分发。
 
+专项补充：[Figma 变量绑定与主题切换示例](examples/figma-variable-theme.md)、[落地页 brief 可选附页](templates/landing-page-brief.md)。前者串联 03、04、08 章的样本、消费者、模式与恢复；后者补充 02 章的来访入口、主要动作和主张证据。两者均为原创方法与合成内容，尚无实际 Figma 操作或落地页效果验证。
+
 ## 四种声明，不混在一起
 
 - `OFFICIAL_REQUIREMENT`：有明确出处与适用条件的官方规范性要求；不是所有官方建议都属于此类。
@@ -50,6 +52,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 - [GitHub 项目管理与双语约定](PROJECT_MANAGEMENT.md)
 - [项目总议题](https://github.com/kairyo/design-standards/issues/1)、[里程碑](https://github.com/kairyo/design-standards/milestones)
 - [协作整理验证记录](reviews/2026-11-03-github-management.md)
+- [变量示例与落地页附页验证记录](reviews/2026-11-05-figma-landing.md)
 - [贡献与公开检查](CONTRIBUTING.md)
 - [本仓库 Agent 维护入口](AGENTS.md)
 - [变更记录](CHANGELOG.md)

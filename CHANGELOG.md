@@ -1,5 +1,19 @@
 # 变更记录
 
+## 未发布 — Figma 变量示例与落地页附页 / Unreleased Figma variable example and landing-page appendix
+
+2026-11-05，新增两项设计文档补充，版本、许可与发布状态不变。
+
+- 新增最小 Figma 变量/样式关联、基础样本、Light/Dark 往返、单变量传播与恢复示例；七项实操仍为 NOT_RUN，不替代代码主题或原有十八项产品验收。
+- 新增落地页 brief 可选附页及合成填写示例，补充来访入口、主要动作、顾虑、主张证据和收敛条件；不覆盖批准设计或冒充转化效果验证。
+- 连接 02、03、04、08 章与现有模板，同步双语入口、第三方归属和验证记录；新增固定版本方法参考 S22 与官方能力来源 S23。检查器仅扩展文件/来源清单及三个精确 GitHub 地址，没有安装或执行外部技能。
+
+On 2026-11-05, add two design documentation supplements. Version, licenses, and release status are unchanged.
+
+- Add a minimal example covering Figma variable/style associations, bound samples, Light/Dark round trips, propagation of a single-variable change, and restoration. Seven execution checks remain NOT_RUN; they do not replace code-theme checks or the existing eighteen product checks.
+- Add an optional landing-page brief appendix and synthetic filled example covering visitor entry, the primary action, objections, claim evidence, and convergence. It neither overrides approved designs nor establishes conversion effectiveness.
+- Connect chapters 02, 03, 04, and 08 with existing templates; align bilingual entry points, third-party attribution, and the verification record. Add pinned method reference S22 and official capability source S23. Extend only checker inventories and three exact GitHub URLs, without installing or executing external skills.
+
 ## 未发布 — 许可与贡献条件 / Unreleased licensing and contribution terms
 
 2026-11-04，按维护者决定为包含本变更的版本明确许可范围；版本号及审阅候选状态保持不变。
