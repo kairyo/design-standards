@@ -1,5 +1,19 @@
 # 变更记录
 
+## 未发布 — 全库复核后续 / Unreleased repository-review follow-ups
+
+2026-11-05 入库整理：以已合并 PR #12 的 main 为基线，保留下面的原轮结果；题面与判据作为可选维护材料，原答和历史评分不作为当前组合的新验证。补记配置证据边界，未重跑历史案例。
+
+Publication preparation on 2026-11-05 uses main after PR #12, preserving the original results below. Prompts and criteria are optional maintenance material; original responses and historical scores are not new validation of the combined candidate. Clarify configuration-evidence limits without rerunning historical cases.
+
+- 保存对 `4102b2bf8ce2bd29a69c0cde5436aa8fba64f322` 的首轮全库独立内容复核及21条来源的实际核对范围；保留真实产品、技能加载与效果验证缺口。
+- 限定历史报告的时点及技能 WCAG 来源说明的主语；第03章增加普通卡片、有意溢出与漂浮说明的合成短例，保留原保护边界。
+- 增加题面、判据与运行记录分开的最小文字案例包及双语使用说明；同步入口和结构检查。版本号、许可和正式发布状态不变。
+
+- Preserve the first repository-wide independent content review of `4102b2bf8ce2bd29a69c0cde5436aa8fba64f322` and actual checking scope for 21 sources; retain gaps in real-product, skill-loading, and effectiveness evidence.
+- Date historical report statements and clarify the subject of the skill's WCAG source scope. Add a short synthetic chapter-03 example distinguishing ordinary cards, intentional overflow, and floating annotations while preserving protection boundaries.
+- Add a minimal text-case suite with separate prompts, criteria, and run records plus bilingual instructions; align entry points and structural checks. Version, licenses, and formal-release state are unchanged.
+
 ## 未发布 — Figma 变量示例与落地页附页 / Unreleased Figma variable example and landing-page appendix
 
 2026-11-05，新增两项设计文档补充，版本、许可与发布状态不变。

@@ -6,7 +6,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 
 跨项目、跨平台的设计方法与验收指南。目标是让设计决定有依据、实现可追溯、质量可验证，而不是让所有产品长得一样。
 
-**版本：v0.1 / `0.1.0-draft.3`。状态：REVIEW_CANDIDATE，尚未完成独立复核或正式发布。**
+**版本：v0.1 / `0.1.0-draft.3`。状态：REVIEW_CANDIDATE。首轮全库独立内容复核已完成，实际效果验证与正式发布仍待完成；版本与范围见 [复核记录](reviews/2026-11-04-repository-review.md)。**
 
 适用于 Web/HTML、Apple 原生客户端和 Android 的设计规划、交接与验收。框架、操作系统、字体和渲染方式不同，不能保证一套数值或一个工具流程直接适用所有项目。本仓库不是平台官方规范，也不是“安装即提高审美”的技能包。
 
@@ -53,6 +53,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 - [项目总议题](https://github.com/kairyo/design-standards/issues/1)、[里程碑](https://github.com/kairyo/design-standards/milestones)
 - [协作整理验证记录](reviews/2026-11-03-github-management.md)
 - [变量示例与落地页附页验证记录](reviews/2026-11-05-figma-landing.md)
+- [全库独立内容复核](reviews/2026-11-04-repository-review.md)、[最小文字案例包](reviews/text-cases/README.md)
 - [贡献与公开检查](CONTRIBUTING.md)
 - [本仓库 Agent 维护入口](AGENTS.md)
 - [变更记录](CHANGELOG.md)

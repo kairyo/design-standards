@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "instruction": "只依据所给规范文件和题面，按顺序回答每个案例。每题给出判断、理由、下一步和证据限制，并引用相关规范文件与段落。不要实际修改项目、操作产品或设备，不联网或继续读取链接目标；所给材料不足时说明未知，不补造观察或通过结果。一次答完，不读取判据、历史报告或参考回答。",
+  "specification_files": [
+    "docs/01-principles.md",
+    "docs/02-exploration.md",
+    "docs/03-figma-handoff.md",
+    "docs/04-design-systems.md",
+    "docs/05-apple.md",
+    "docs/06-android.md",
+    "docs/07-inclusive-design.md",
+    "docs/08-implementation-acceptance.md",
+    "docs/09-reference-library.md",
+    "docs/10-adoption-maintenance.md",
+    "examples/anonymous-cases.md",
+    "examples/form-submit-recovery.md",
+    "examples/stepped-form-branch-return.md",
+    "templates/adoption-record.md",
+    "templates/design-brief.md",
+    "templates/verification-record.md",
+    "references/sources.md",
+    "skills/design-direction-review/SKILL.md",
+    "skills/adaptive-ui-review/SKILL.md",
+    "skills/adaptive-ui-review/references/platform-sources.md"
+  ],
+  "cases": [
+    {
+      "id": "T1",
+      "category": "normal",
+      "prompt": "一个预约服务已有品牌及主要流程批准。用户只要求比较“单页分组”和“分步”两种组织方式；6个输入中3个只在选择上门服务时出现，用户常回看费用。现有证据只有访谈文字，无真实界面或可用性数据。请按设计方向审阅方法给决定和下一步。"
+    },
+    {
+      "id": "T2",
+      "category": "abnormal",
+      "prompt": "Figma 交接文件中，普通卡片与组件都在父Frame内，但一个已批准下拉菜单需要视觉溢出父Frame；另有无语义父子关系的说明卡确实漂浮。你只有节点结构、位置和文字记录，没有渲染截图；用户说“先审阅，不要动”。请给有边界的交接审阅结果。"
+    },
+    {
+      "id": "T3",
+      "category": "insufficient_information",
+      "prompt": "Web表单切到阿拉伯语时问题描述为“右侧按钮挤在一起”；只提供中文布局截图的文字描述和CSS构建通过日志，没有RTL运行、键盘或读屏证据。产品负责人要求据此签署多语言和无障碍通过。请按自适应审阅方法答复。"
+    },
+    {
+      "id": "T4",
+      "category": "supplemental",
+      "prompt": "现有Android Views应用已批准保留技术栈，目标SDK和依赖版本未知。折叠态选中一条记录，展开为两栏后选中态丢失；用户只授权审阅。请给调查/改进/验收建议，并说明你能得出的结论。"
+    },
+    {
+      "id": "T5",
+      "category": "supplemental",
+      "prompt": "Token导出中error.border引用semantic.critical，后者在暗色主题引用回error.border；两个来源又对同名token各提供一个值。Figma预览颜色“看起来正常”，导出器运行结果缺失。请按规范给交接与验收意见。"
+    },
+    {
+      "id": "T6",
+      "category": "boundary",
+      "prompt": "项目引用WCAG2.2，自动扫描0条违规，账单表单的最后确认页已手工通过，但前两步没有测试；桌面版本经测，窄窗口与读屏未测。只依据现规范，给该项目是否可以声称整体符合及还缺什么证据的简短答复。"
+    }
+  ]
+}

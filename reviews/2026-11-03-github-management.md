@@ -1,5 +1,9 @@
 # GitHub 协作整理验证 / GitHub collaboration maintenance verification
 
+本文记录 2026-11-03 时尚未合并的状态，其中“当前”“未来”和“本任务”均指当时状态。保留原结论；当前进度见 [总议题](https://github.com/kairyo/design-standards/issues/1)，现行许可见 [许可说明](../LICENSE-NOTICE.md)。
+
+This is a historical snapshot dated 2026-11-03, when these changes had not yet been merged. “Current,” “future,” and “this task” refer to that time. Preserve the original conclusions; see the [tracking issue](https://github.com/kairyo/design-standards/issues/1) for current progress and the [license notice](../LICENSE-NOTICE.md) for applicable licensing.
+
 ## 首轮范围（历史记录） / Initial scope (historical record)
 
 2026-11-03；基于 `fd2c9f030fe350e57ddd3508294ef93525b69b34` 的独立维护分支。覆盖 README、贡献与 Agent 维护入口、项目管理约定、Issue/PR 模板、文件及链接检查入口和本记录。十章规范、设计模板、示例、技能、来源登记、许可和版本号不变。
@@ -48,7 +52,7 @@ PR #9 当前只对照 PR #4 审阅，不向 PR #4 的功能分支合并。未来
 
 PR #9 is currently reviewed against PR #4; do not merge it into PR #4's feature branch. Once the corresponding merge authorization exists, squash merge PR #4 into main first, then synchronize main into the management feature branch and retarget PR #9 to main. Check the final diff and validation results before separately deciding whether to merge PR #9.
 
-## 当前边界 / Current boundaries
+## 当时边界（2026-11-03 历史快照） / Boundaries at the time (2026-11-03 historical snapshot)
 
 GitHub 协作元数据通过 Issue、标签和里程碑维护。当前 CLI 缺少 Projects 权限，未创建看板或更改账号授权。模板在本 PR 合并前尚未在默认分支启用；本任务不合并 PR。版本仍为 `0.1.0-draft.3` / `REVIEW_CANDIDATE`，许可与正式发布决定保持待办。
 
