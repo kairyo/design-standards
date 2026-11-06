@@ -53,6 +53,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 - [项目总议题](https://github.com/kairyo/design-standards/issues/1)、[里程碑](https://github.com/kairyo/design-standards/milestones)
 - [协作整理验证记录](reviews/2026-11-03-github-management.md)
 - [变量示例与落地页附页验证记录](reviews/2026-11-05-figma-landing.md)
+- [表单纠错与验收判据验证记录](reviews/2026-11-06-form-validation.md)
 - [全库独立内容复核](reviews/2026-11-04-repository-review.md)、[最小文字案例包](reviews/text-cases/README.md)
 - [贡献与公开检查](CONTRIBUTING.md)
 - [本仓库 Agent 维护入口](AGENTS.md)
