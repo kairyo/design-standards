@@ -53,6 +53,7 @@ Only original methods, public source links, and short applicability notes belong
 - [Project tracking issue](https://github.com/kairyo/design-standards/issues/1), [Milestones](https://github.com/kairyo/design-standards/milestones)
 - [Collaboration maintenance verification record](reviews/2026-11-03-github-management.md)
 - [Variable example and landing-page appendix verification record](reviews/2026-11-05-figma-landing.md)
+- [Form correction and acceptance-criteria verification record](reviews/2026-11-06-form-validation.md)
 - [Repository-wide independent content review](reviews/2026-11-04-repository-review.md), [Minimal text-case suite](reviews/text-cases/README.md)
 - [Contributing and publication checks](CONTRIBUTING.md)
 - [Agent maintenance instructions for this repository](AGENTS.md)

@@ -36,6 +36,7 @@ EXPECTED = (
     ".github/pull_request_template.md",
     "reviews/2026-11-03-github-management.md",
     "reviews/2026-11-05-figma-landing.md",
+    "reviews/2026-11-06-form-validation.md",
     "reviews/2026-11-04-repository-review.md",
     "reviews/text-cases/README.md", "reviews/text-cases/inputs.json",
     "reviews/text-cases/rubric.json", "reviews/text-cases/2026-11-04-run.md",
