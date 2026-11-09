@@ -1,5 +1,21 @@
 # 变更记录
 
+## 未发布 — 自适应保真与回归验收 / Unreleased adaptive fidelity and regression verification
+
+2026-11-09，新增通用方法与原创合成案例；版本号、许可和 `REVIEW_CANDIDATE` 状态不变。
+
+- 03 章补充原稿差异与已批准修正的保护、父容器/图片/文字几何读回和字体引用保护；沿用既有二维画布整理方法。
+- 04 章区分图片用途、素材/容器/显示比例与裁剪，补充横向内容的发现和到达；05 章细化功能保留、内容分栏和控件/安全区域的分别核验。
+- 08 章与现有验收模板补充适配矩阵、相邻影响联合复验及问题来源证据；新增不含项目资料或具体尺寸的合成案例，八项产品检查仍为 `NOT_RUN`。
+- 同步双语入口、审阅状态与检查器文件清单；未增加外部来源或官方要求，未修改技能、消费项目采用记录或现有设计。作者检查与独立审阅分别记录于 REVIEW，未执行产品或真机验证。
+
+On 2026-11-09, add general methods and an original synthetic example. Version, licenses, and `REVIEW_CANDIDATE` status remain unchanged.
+
+- Extend chapter 03 with source-delta and approved-fix preservation, parent/image/text geometry readback, and font-reference protection; retain the existing two-dimensional canvas organization method.
+- Distinguish image roles, source/container/display proportions, and cropping in chapter 04, including discovery of and access to horizontal content. Clarify feature preservation, content-based columns, and separate control/safe-area checks in chapter 05.
+- Extend chapter 08 and the existing verification template with an adaptation matrix, joint checks of adjacent effects, and evidence for issue origin. Add a synthetic example without project material or concrete dimensions; all eight product checks remain `NOT_RUN`.
+- Align bilingual entry points, review status, and the checker inventory. Add no external sources or official requirements, and change no skills, consumer adoption records, or existing designs. Record author checks and independent review separately in REVIEW; no product or physical-device validation was performed.
+
 ## 未发布 — 全库复核后续 / Unreleased repository-review follow-ups
 
 2026-11-05 入库整理：以已合并 PR #12 的 main 为基线，保留下面的原轮结果；题面与判据作为可选维护材料，原答和历史评分不作为当前组合的新验证。补记配置证据边界，未重跑历史案例。

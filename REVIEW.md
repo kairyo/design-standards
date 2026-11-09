@@ -4,6 +4,24 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-09：自适应保真与回归增补 / Adaptive fidelity and regression increment
+
+基于 `9dfe4618e58fc2d84f97b19f38f52d0928b96bff` 的文档候选，范围为 03、04、05、08 章、现有验收模板、[合成案例](examples/adaptive-fidelity-regression.md)及相关入口/文件清单。只增加原创团队方法与合成项目选择；未增加或重新认证平台官方事实，没有引用私有项目材料或具体尺寸。
+
+This documentation candidate is based on `9dfe4618e58fc2d84f97b19f38f52d0928b96bff`, covering chapters 03, 04, 05, and 08, the existing verification template, a [synthetic example](examples/adaptive-fidelity-regression.md), and related entry points/inventory. It adds original team methods and synthetic project choices only, without adding or recertifying official platform facts or referencing private project material or concrete dimensions.
+
+- 作者检查：结构校验通过（52 个预期文件、42 份 Markdown、295 个内部链接、23 条来源）；`git diff --check` 通过。已通读完整增量及合成案例，核对双语入口和声明范围。对完整候选文本树做定向公开性检查，未发现所检项目标识、私有链接/路径或新增具体尺寸；这不构成全面隐私或事实认证。
+- 适用边界走查：未知素材比例不推定通过；允许经批准的等比裁剪与排版变化；无溢出时不制造内容；留白不自动判错；共享页面可保留不同状态；背景延展与操作遮挡分开；历史隐藏层不自动清理；原稿更新保护无冲突的已批准修正。以上为作者对条款的内容走查，不是独立模型评测或产品测试。
+- 独立文档审阅：`NOT_RUN`，待安排；历史全库复核不覆盖本次增量。
+- 产品验证：合成案例八项检查全部 `NOT_RUN`；没有 Figma 实操、原型拖动、辅助技术、模拟器或真机证据，不声称方法效果或产品验收通过。
+- 采用与发布：上述结果是提交前的本地自检快照；用户随后授权将候选提交并推送至功能分支。该授权不代表独立审阅、合并、正式发布或消费项目采用已完成。
+
+- Author checks: structural validation passed (52 expected files, 42 Markdown files, 295 internal links, and 23 source entries); `git diff --check` passed. The full increment and synthetic example were read, including bilingual entry points and claim scope. Targeted inspection of the complete candidate text tree found none of the checked project identifiers, private links/paths, or newly added concrete dimensions. This is not comprehensive privacy or factual certification.
+- Applicability walkthrough: unknown source proportions do not establish a pass; approved proportional cropping and typography changes remain allowed; no overflow does not justify invented content; whitespace is not automatically a defect; shared pages may preserve distinct states; background extension and obstructed controls are assessed separately; hidden historical layers are not automatically cleaned up; source updates preserve nonconflicting approved fixes. These are author content checks, not independent model evaluations or product tests.
+- Independent document review: `NOT_RUN`, unassigned; historical repository-wide review does not cover this increment.
+- Product validation: all eight synthetic checks remain `NOT_RUN`. There is no Figma execution, prototype-dragging, assistive-technology, simulator, or physical-device evidence, and no claim of proven effectiveness or product acceptance.
+- Adoption and publication: the results above are a local pre-commit self-check snapshot. The user subsequently authorized committing and pushing the candidate to a feature branch. That authorization does not establish completion of independent review, merge, formal release, or consumer adoption.
+
 ## 内容范围
 
 十个主题已形成正文，另有来源登记、三个模板和六个匿名合成案例。`0.1.0-draft.2` 新增两个原创审阅技能、能力目录与九个技能边界案例；`0.1.0-draft.3` 补充 03 章的 Figma 画布边界、空间组织和整理验证。已纳入 main、尚未正式发布的表单增补扩展 02、04、07、08 章及两个现有模板，新增完整表单合成示例及分步往返示例。官方资料仅以公开链接及短摘要引用；没有复刻设计资源或原样复制第三方文档。
