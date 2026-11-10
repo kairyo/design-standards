@@ -4,6 +4,24 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-10：主线整合与增量复核 / Main integration and incremental review
+
+本轮将 main `de153e4258c187a7983f7d2da6c74320f6c07cf7` 整合进自适应分支 `eca5ea1fbb78e154e8f069f7fdb4a2e662bb6c21`。共同基线为 `9dfe4618e58fc2d84f97b19f38f52d0928b96bff`。唯一合并冲突在 CHANGELOG，保留双方完整段落；07、08 章、验收模板、表单验证记录、双语入口和检查器中的 PR #14 内容均保留。下方 2026-11-09 记录及当时 `NOT_RUN` 独立审阅状态保留为历史快照。
+
+This round integrates main `de153e4258c187a7983f7d2da6c74320f6c07cf7` into adaptive branch `eca5ea1fbb78e154e8f069f7fdb4a2e662bb6c21`, with common base `9dfe4618e58fc2d84f97b19f38f52d0928b96bff`. The only merge conflict was in CHANGELOG; both complete sections are retained. PR #14 content remains in chapters 07 and 08, the verification template, form-validation record, bilingual entry points, and checker. The 2026-11-09 record below, including its then-`NOT_RUN` independent review, remains a historical snapshot.
+
+- 作者检查：整合后的结构检查通过，53 个预期文件、43 份 Markdown、301 个内部链接、23 条来源；`git diff --check` 通过。完整候选清单均为 UTF-8 文本，未新增媒体、字体或二进制。通读完整增量与相邻条款，核对双语、公开边界、待公开历史及作者元数据；该范围不构成全库事实或许可重新认证。
+- 保真检查：独立初审前的组合树 `a6302df964a9600423e8f90bf00d4ddd6ffc9378` 保留两个父版本的全部原行。随后只做下列两项定向澄清及审阅状态/变更记录更新；原主线条款、来源、技能、许可和版本不变。
+- 独立复核：独立上下文的审阅者复核上述组合树的完整增量、保真、声明边界和公开清单；请求配置为 `gpt-6.1-sol` / `high`，没有独立运行时配置读回，不把请求参数当作实际配置证明。初审发现两项：问题归因缺少修复前目标证据（P2）；A08 预期包含加载与恢复，但动作未覆盖（P3）。作者已分别补清 08 章/模板/案例的对照要求和 A08 的分路径动作；审阅者对修订树 `43cfbc254c7fa78fd5d6435e94aba75b353a9724` 定向复核，确认两项解决，所检范围未发现新增问题，并核对拟公开的双语 PR 与提交文字。随后仅更新当前审阅状态说明，历史记录和规范条款保留；这不是合并或产品验收批准。
+- 验证边界：八项自适应产品检查仍为 `NOT_RUN`。历史 F09/B06 读屏子项继续暂缓并保留原受阻结果；没有重跑旧文字案例、产品、Figma、辅助技术、模拟器或真机测试。本地检查不是 GitHub CI 通过，也不是产品验收或方法效果证明。
+- 授权：维护者授权整合、验证、提交、推送并创建中英双语 PR，明确暂不合并。本地视觉技能草案保留不动；不启用自动合并，不正式发布或启用到消费项目。
+
+- Author checks: integrated structure checks passed with 53 expected files, 43 Markdown files, 301 internal links, and 23 sources; `git diff --check` passed. The complete candidate inventory contains UTF-8 text only, with no added media, fonts, or binaries. The full increment and adjacent clauses were read, including bilingual consistency, disclosure boundaries, history to be published, and author metadata. This does not recertify repository-wide facts or licensing.
+- Preservation: the pre-review combined tree `a6302df964a9600423e8f90bf00d4ddd6ffc9378` retained every original line from both parents. Subsequent changes are limited to the two clarifications below and review-status/changelog updates; original main-branch guidance, sources, skills, licenses, and version remain unchanged.
+- Independent review: a reviewer in a separate context checked the full increment, preservation, claim boundaries, and public inventory at that tree. The requested configuration was `gpt-6.1-sol` / `high`; no independent runtime readback was available, so requested parameters are not proof of actual configuration. Two findings were raised: missing pre-fix target evidence for attribution (P2), and A08 expecting loading/recovery without corresponding actions (P3). The author clarified the comparisons in chapter 08, the template, and the example, and added path-specific A08 actions. Focused re-review of corrected tree `43cfbc254c7fa78fd5d6435e94aba75b353a9724` confirmed both findings resolved, with no new issue in the checked scope, and checked the proposed bilingual PR and commit text. Only current review-status statements were subsequently updated; historical records and substantive guidance were retained. This is not merge or product-acceptance approval.
+- Validation limits: all eight adaptive product checks remain `NOT_RUN`. Historical F09/B06 screen-reader subchecks remain deferred with original blocked results retained. Historical text cases, product, Figma, assistive-technology, simulator, and physical-device tests were not rerun. Local checks are not GitHub CI success, product acceptance, or proof of method effectiveness.
+- Authorization: the maintainer authorized integration, validation, committing, pushing, and a bilingual PR, explicitly without merging. The local visual-skill draft remains untouched. Do not enable auto-merge, formally release, or enable consumer adoption.
+
 ## 2026-11-09：自适应保真与回归增补 / Adaptive fidelity and regression increment
 
 基于 `9dfe4618e58fc2d84f97b19f38f52d0928b96bff` 的文档候选，范围为 03、04、05、08 章、现有验收模板、[合成案例](examples/adaptive-fidelity-regression.md)及相关入口/文件清单。只增加原创团队方法与合成项目选择；未增加或重新认证平台官方事实，没有引用私有项目材料或具体尺寸。

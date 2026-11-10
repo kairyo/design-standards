@@ -8,7 +8,7 @@ Cross-project, cross-platform design methods and acceptance guidance. The aim is
 
 **Version: v0.1 / `0.1.0-draft.3`. Status: REVIEW_CANDIDATE. The first repository-wide independent content review is complete; real-world effectiveness validation and formal release remain pending. See the [review record](reviews/2026-11-04-repository-review.md) for its version and scope.**
 
-The new adaptive-fidelity and regression guidance awaits independent review. Historical reviews do not automatically cover this increment; see the [review record](REVIEW.md) for its current scope.
+The new adaptive-fidelity and regression guidance has completed scoped independent document review, with two findings corrected and re-reviewed. All eight product checks remain unexecuted; see the [review record](REVIEW.md) for its current scope.
 
 This repository supports design planning, handoff, and acceptance for Web/HTML, native Apple clients, and Android. Differences in frameworks, operating systems, fonts, and rendering mean that one set of values or one tool workflow cannot be assumed to fit every project. This is not an official platform standard or a skill package that improves visual quality merely by being installed.
 
@@ -57,6 +57,7 @@ Only original methods, public source links, and short applicability notes belong
 - [Project tracking issue](https://github.com/kairyo/design-standards/issues/1), [Milestones](https://github.com/kairyo/design-standards/milestones)
 - [Collaboration maintenance verification record](reviews/2026-11-03-github-management.md)
 - [Variable example and landing-page appendix verification record](reviews/2026-11-05-figma-landing.md)
+- [Form correction and acceptance-criteria verification record](reviews/2026-11-06-form-validation.md)
 - [Repository-wide independent content review](reviews/2026-11-04-repository-review.md), [Minimal text-case suite](reviews/text-cases/README.md)
 - [Contributing and publication checks](CONTRIBUTING.md)
 - [Agent maintenance instructions for this repository](AGENTS.md)

@@ -16,6 +16,26 @@ On 2026-11-09, add general methods and an original synthetic example. Version, l
 - Extend chapter 08 and the existing verification template with an adaptation matrix, joint checks of adjacent effects, and evidence for issue origin. Add a synthetic example without project material or concrete dimensions; all eight product checks remain `NOT_RUN`.
 - Align bilingual entry points, review status, and the checker inventory. Add no external sources or official requirements, and change no skills, consumer adoption records, or existing designs. Record author checks and independent review separately in REVIEW; no product or physical-device validation was performed.
 
+2026-11-10，整合主线表单纠错增补，保留双方内容；按独立初审补清问题归因所需的修复前后目标证据，以及 A08 的加载与失败恢复动作。验证与复核范围见 REVIEW，八项产品检查仍为 `NOT_RUN`。
+
+On 2026-11-10, integrate the main-branch form-correction additions while preserving both sets of guidance. Following independent initial review, clarify the before/after target evidence needed for attribution and A08's loading and failure-recovery actions. See REVIEW for validation and review scope; all eight product checks remain `NOT_RUN`.
+
+## 未发布 — 表单纠错与验收判据 / Unreleased form correction and acceptance criteria
+
+2026-11-06，补充三条团队检查建议；版本、来源与发布状态不变。
+
+- 第 07 章区分仅回看字段、实际编辑与重新提交；已确认的错误不因焦点切换而自行消失。
+- 第 08 章增加纠正后第一次提交的连续操作检查，分别记录指针、键盘、请求与业务结果，不限定固定高度等实现。
+- 验收模板要求拆分组合检查的子项并保留未完成条件；暂缓安排与验收结论分开，历史记录不改写为通过。这些文字增补不新增产品或读屏测试通过结论。
+- 增加[双语验证记录](reviews/2026-11-06-form-validation.md)并同步两个 README 入口与检查器清单；分开历史合成演示、当前文字复核和按需恢复的读屏暂缓安排。
+
+On 2026-11-06, add three team-level checking recommendations; version, sources, and release status remain unchanged.
+
+- Chapter 07 distinguishes revisiting a field, editing it, and resubmitting; confirmed errors do not disappear solely because focus changes.
+- Chapter 08 adds a continuous-action check of the first submission after correction, recording pointer and keyboard paths, requests, and business results separately without prescribing fixed-height layouts or another implementation.
+- The verification template separates composite checks into subchecks and retains outstanding conditions. Deferral is distinct from acceptance, and historical records are not rewritten as passes. These text additions establish no new product or screen-reader test passes.
+- Add a bilingual verification record and align both README entry points and the checker inventory; distinguish the historical synthetic demo, current document review, and deferred screen-reader checks that resume only when requested.
+
 ## 未发布 — 全库复核后续 / Unreleased repository-review follow-ups
 
 2026-11-05 入库整理：以已合并 PR #12 的 main 为基线，保留下面的原轮结果；题面与判据作为可选维护材料，原答和历史评分不作为当前组合的新验证。补记配置证据边界，未重跑历史案例。
