@@ -24,6 +24,7 @@ EXPECTED = (
     "templates/verification-record.md", "examples/anonymous-cases.md",
     "examples/form-submit-recovery.md", "examples/stepped-form-branch-return.md",
     "examples/figma-variable-theme.md", "templates/landing-page-brief.md",
+    "examples/adaptive-fidelity-regression.md",
     "skills/README.md", "skills/review-cases.md",
     "skills/design-direction-review/SKILL.md",
     "skills/design-direction-review/agents/openai.yaml",

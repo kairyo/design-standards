@@ -1,5 +1,25 @@
 # 变更记录
 
+## 未发布 — 自适应保真与回归验收 / Unreleased adaptive fidelity and regression verification
+
+2026-11-09，新增通用方法与原创合成案例；版本号、许可和 `REVIEW_CANDIDATE` 状态不变。
+
+- 03 章补充原稿差异与已批准修正的保护、父容器/图片/文字几何读回和字体引用保护；沿用既有二维画布整理方法。
+- 04 章区分图片用途、素材/容器/显示比例与裁剪，补充横向内容的发现和到达；05 章细化功能保留、内容分栏和控件/安全区域的分别核验。
+- 08 章与现有验收模板补充适配矩阵、相邻影响联合复验及问题来源证据；新增不含项目资料或具体尺寸的合成案例，八项产品检查仍为 `NOT_RUN`。
+- 同步双语入口、审阅状态与检查器文件清单；未增加外部来源或官方要求，未修改技能、消费项目采用记录或现有设计。作者检查与独立审阅分别记录于 REVIEW，未执行产品或真机验证。
+
+On 2026-11-09, add general methods and an original synthetic example. Version, licenses, and `REVIEW_CANDIDATE` status remain unchanged.
+
+- Extend chapter 03 with source-delta and approved-fix preservation, parent/image/text geometry readback, and font-reference protection; retain the existing two-dimensional canvas organization method.
+- Distinguish image roles, source/container/display proportions, and cropping in chapter 04, including discovery of and access to horizontal content. Clarify feature preservation, content-based columns, and separate control/safe-area checks in chapter 05.
+- Extend chapter 08 and the existing verification template with an adaptation matrix, joint checks of adjacent effects, and evidence for issue origin. Add a synthetic example without project material or concrete dimensions; all eight product checks remain `NOT_RUN`.
+- Align bilingual entry points, review status, and the checker inventory. Add no external sources or official requirements, and change no skills, consumer adoption records, or existing designs. Record author checks and independent review separately in REVIEW; no product or physical-device validation was performed.
+
+2026-11-10，整合主线表单纠错增补，保留双方内容；按独立初审补清问题归因所需的修复前后目标证据，以及 A08 的加载与失败恢复动作。验证与复核范围见 REVIEW，八项产品检查仍为 `NOT_RUN`。
+
+On 2026-11-10, integrate the main-branch form-correction additions while preserving both sets of guidance. Following independent initial review, clarify the before/after target evidence needed for attribution and A08's loading and failure-recovery actions. See REVIEW for validation and review scope; all eight product checks remain `NOT_RUN`.
+
 ## 未发布 — 表单纠错与验收判据 / Unreleased form correction and acceptance criteria
 
 2026-11-06，补充三条团队检查建议；版本、来源与发布状态不变。

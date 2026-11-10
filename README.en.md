@@ -8,6 +8,8 @@ Cross-project, cross-platform design methods and acceptance guidance. The aim is
 
 **Version: v0.1 / `0.1.0-draft.3`. Status: REVIEW_CANDIDATE. The first repository-wide independent content review is complete; real-world effectiveness validation and formal release remain pending. See the [review record](reviews/2026-11-04-repository-review.md) for its version and scope.**
 
+The new adaptive-fidelity and regression guidance has completed scoped independent document review, with two findings corrected and re-reviewed. All eight product checks remain unexecuted; see the [review record](REVIEW.md) for its current scope.
+
 This repository supports design planning, handoff, and acceptance for Web/HTML, native Apple clients, and Android. Differences in frameworks, operating systems, fonts, and rendering mean that one set of values or one tool workflow cannot be assumed to fit every project. This is not an official platform standard or a skill package that improves visual quality merely by being installed.
 
 ## Where to start
@@ -29,6 +31,8 @@ Materials for discussion: [Design brief](templates/design-brief.md), [Adoption r
 The `skills/` directory contains two self-contained, original review skills. They remain candidates and have not been globally installed, automatically registered, or enabled in existing projects. Existing third-party design plugins are indexed only; they are not distributed here.
 
 Focused additions: [Figma variable-binding and theme-switching example](examples/figma-variable-theme.md) and [Optional landing-page brief appendix](templates/landing-page-brief.md). The former connects samples, consumers, modes, and restoration across chapters 03, 04, and 08; the latter extends chapter 02 with visitor entry context, the primary action, and evidence for claims. Both contain original methods and synthetic content, without actual Figma execution or landing-page effectiveness validation.
+
+The [synthetic adaptive-fidelity and regression example](examples/adaptive-fidelity-regression.md) connects source versions, image roles and proportions, scroll cues, adjacent layouts, and state preservation, using the existing verification template for a coverage matrix. All eight product checks remain `NOT_RUN`; it prescribes no device dimensions, card ratios, reveal amounts, or column counts.
 
 ## Four distinct claim categories
 
