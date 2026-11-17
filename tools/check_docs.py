@@ -25,6 +25,7 @@ EXPECTED = (
     "examples/form-submit-recovery.md", "examples/stepped-form-branch-return.md",
     "examples/figma-variable-theme.md", "templates/landing-page-brief.md",
     "examples/adaptive-fidelity-regression.md",
+    "examples/adaptive-navigation-materials.md",
     "skills/README.md", "skills/review-cases.md",
     "skills/design-direction-review/SKILL.md",
     "skills/design-direction-review/agents/openai.yaml",
@@ -38,6 +39,7 @@ EXPECTED = (
     "reviews/2026-11-03-github-management.md",
     "reviews/2026-11-05-figma-landing.md",
     "reviews/2026-11-06-form-validation.md",
+    "reviews/2026-11-17-navigation-review.md",
     "reviews/2026-11-04-repository-review.md",
     "reviews/text-cases/README.md", "reviews/text-cases/inputs.json",
     "reviews/text-cases/rubric.json", "reviews/text-cases/2026-11-04-run.md",
@@ -255,8 +257,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 24)}:
-        errors.append("source registry must contain S01 through S23")
+    if source_ids != {f"S{i:02d}" for i in range(1, 25)}:
+        errors.append("source registry must contain S01 through S24")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1

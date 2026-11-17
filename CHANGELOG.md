@@ -1,5 +1,41 @@
 # 变更记录
 
+## 未发布 — PR #17 验证记录与提交整理 / Unreleased PR #17 evidence and submission preparation
+
+2026-11-17，维护者授权将已修订内容与验证记录提交、推送到原功能分支并更新双语 PR 说明；新增公开验证记录与预期文件清单，核心三项条款不再修改。下方本地阶段的未提交与待审说明保留为各自时点的快照。本次不合并、不启用自动合并，主线与固定采用版本保持不变。
+
+On 2026-11-17, the maintainer authorized committing and pushing the corrections and verification records to the original feature branch, and updating the bilingual PR description. Add a public verification record and its expected-file entry without changing the three reviewed rules. Earlier local-stage statements about uncommitted work and pending review remain snapshots of their respective times. Do not merge or enable auto-merge; main and pinned adoption remain unchanged.
+
+## 未发布 — PR #17 复核意见修订 / Unreleased PR #17 review corrections
+
+2026-11-17，针对固定提交 `6ed3ec1b790348643d16f5e242017a354576b5f2` 的一项 P2 与两项 P3 复核意见，仅在本地修订：
+
+- 05 章补回 Apple 工具栏纯文本项的例外，并同步 S02 的定向核对记录及 N02 反例。
+- N06 将同一动作的命中一致性限定在同一语义操作内，保留复合控件的独立子操作；N09 明确模拟结果不能替代真实后台证据。
+- 同步双语审阅状态：首轮独立文档复核已完成，三项修订经定向独立复核确认解决；下方此前候选段落中的待审状态为当时快照，原文保留。N01–N12 仍全部为 NOT_RUN；没有执行产品或后台验收，当前固定采用版本保持不变。本轮未提交、推送、合并或开启自动合并。
+
+On 2026-11-17, address one P2 finding and two P3 suggestions from the review of fixed commit `6ed3ec1b790348643d16f5e242017a354576b5f2` in local changes only:
+
+- Restore the text-only toolbar-item exception in chapter 05, with the scoped S02 recheck and N02 counterexample aligned.
+- Limit N06 hit-region consistency to one semantic operation while preserving independent child actions in composite controls. Clarify in N09 that simulated outcomes do not establish real backend behavior.
+- Align bilingual review status: the first independent document review is complete, and targeted independent review confirmed that the three corrections resolve their respective items. Pending-review statements in the earlier candidate entry below are snapshots of that time and remain unchanged. All N01–N12 remain NOT_RUN; no product or backend acceptance was performed, and pinned adoption is unchanged. No commit, push, merge, or auto-merge was performed in this round.
+
+## 未发布 — 自适应导航、材质与原型 / Unreleased adaptive navigation, materials, and prototypes
+
+2026-11-17，基于当前固定版本增加通用方法；版本号、许可、候选状态及既有验收结论不变。
+
+- 03、04、05、08 章补充控件迁移前的语义映射、嵌套材质与主题绑定、实际热区与目标语义、背景延展及受限主题素材、变量/组件迁移和可恢复的工具执行。
+- 扩展现有验收模板，新增无真实项目标识或参数的合成案例；十二项执行检查均为 NOT_RUN。结构、画面与实际路径分别记录范围，作者检查与独立审阅分开。
+- 定向补读 Apple 导航来源 S02，新增材质来源 S24；没有重新认证其余来源或平台 API。同步双语入口与来源/文件清单，检查器其余逻辑不变。
+- 本轮形成文档候选后，维护者授权提交到 GitHub 并建立专门 Issue/PR，交主管复核，明确不合并。独立审阅仍待完成；正式发布与消费项目采用不在本次范围。
+
+On 2026-11-17, add general methods based on the current pinned version. The version number, licenses, candidate status, and existing verification conclusions remain unchanged.
+
+- Extend chapters 03, 04, 05, and 08 with semantic mapping before control migration, nested materials and theme bindings, actual hit regions and destination semantics, background extension and constrained theme assets, variable/component migration, and recoverable tool execution.
+- Extend the existing verification template and add a synthetic example without real project identifiers or parameters. All twelve execution checks remain NOT_RUN. Structural, visual, and exercised-path coverage are recorded separately, as are author checks and independent review.
+- Re-read the scoped Apple navigation guidance in S02 and add material source S24, without recertifying other sources or platform APIs. Align bilingual entry points and source/file inventories; other checker logic is unchanged.
+- After the documentation candidate was prepared, the maintainer authorized submission to GitHub with a dedicated issue/PR for supervisor review, explicitly without merging. Independent review remains pending; formal release and consumer adoption are outside this scope.
+
 ## 未发布 — 自适应保真与回归验收 / Unreleased adaptive fidelity and regression verification
 
 2026-11-09，新增通用方法与原创合成案例；版本号、许可和 `REVIEW_CANDIDATE` 状态不变。

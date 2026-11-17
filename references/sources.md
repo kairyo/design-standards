@@ -2,6 +2,8 @@
 
 实际读取日期按条目保留：**S01–S16 首次读取为 2026-10-26，S17 为 2026-11-02，S18–S21 为 2026-11-03，S22–S23 为 2026-11-05**；S12 的 2026-11-03 补读范围另列。新增来源不表示旧来源已全部重新核对。以下均为 `READ_SCOPED`，只表示读取了列出的部分；不表示全文、嵌入视频、附件或子链接均已读，也不表示任何产品已采用或通过验证。
 
+2026-11-17 定向补读 S02 的控件位置、标题/符号和背景延展说明，新增 S24 材质来源；未重新认证其余来源或平台 API。
+
 未标不可变版本的网页为动态资料，核对日期不是永久快照。内容只作短摘要和链接，不保存第三方正文。独立复核按 [审阅记录](../REVIEW.md)的具体范围分别记录，读取或复核来源不表示项目已批准采用。权利边界见 [第三方资料声明](../THIRD-PARTY-NOTICES.md)。
 
 2026-11-04 全库复核的实际读取范围及限制见 [独立内容复核记录](../reviews/2026-11-04-repository-review.md)。该记录不覆盖下列首次读取日期，也不把动态页面追溯认定为旧时点的固定快照。
@@ -20,6 +22,8 @@
 - 发布者 / 标题：Apple — Designing for iPhone Duo。
 - URL：https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo
 - 版本：页面 Change log 2026-09-09；读取官方 Markdown 的设备结构、Dynamic layouts、Reserved regions、Vertical controls。
+- 补读：2026-11-17 读取当前官方 Markdown 的 Vertical controls，重点为导航顺序、内容区局部操作、标题/符号及背景延展；页面所示 Change log 仍为 2026-09-09。未执行链接中的 API、视频或设备预览。
+- 修订核对：同日按复核意见再次核对标题/符号段的适用限定；同时提供标题和符号的建议针对非纯文本工具栏项，纯文本项不由此被强制增加符号。未扩大来源读取或平台验收范围。
 - 平台 / 采用范围：iPhone Duo；05 章的内外屏、系统栏及保留区说明。不是所有系统版本的 API 可用性证明。
 - 分类 / 状态：`TEAM_RECOMMENDATION`，以官方设计指导解释适用场景；`READ_SCOPED`，未做项目运行验收。
 - 许可：页面 Apple 版权与 Terms of Use；未复制图片、UI Kit 或 SDK 文件。
@@ -215,6 +219,15 @@
 - 平台 / 采用范围：Figma Design；新示例中的变量关联、容器模式选择、Auto 父级/默认模式继承及模式版本冲突检查。实际权限、模式可用性、库版本及对象支持在消费项目另验；未验证任何账户、文件或界面操作，不据此声称 API、导入导出或 DTCG 兼容。
 - 分类 / 状态：用于 `TEAM_RECOMMENDATION` 的官方产品能力依据；`READ_SCOPED`，不是 `OFFICIAL_REQUIREMENT` 或产品验收。
 - 许可：Figma 资料，全文再分发许可未核定；仅链接和原创短摘要，不转载正文、截图或设计文件。
+
+## S24
+
+- 发布者 / 标题：Apple — Materials。
+- URL：https://developer.apple.com/design/human-interface-guidelines/materials
+- 版本 / 读取日期：动态官方资料，2026-11-17 读取官方 Markdown 的 Liquid Glass 及 Standard materials 开头，重点为材质分层、自定义效果、变体与系统设置；没有据此确认 SDK 版本或链接中的 API 行为。
+- 平台 / 采用范围：05 章中导航/控件层与内容层材质的用途、谨慎使用自定义材质，以及不同背景、减少透明度和增强对比度设置下的检查。具体材质参数、控件尺寸、Figma 效果与原生实现的对应关系由项目另验。
+- 分类 / 状态：`TEAM_RECOMMENDATION`，官方设计指导的有限归纳；`READ_SCOPED`，不是统一采用玻璃的要求或产品验收。
+- 许可：页面 Apple 版权与 Terms of Use；仅公开链接和原创短摘要，未复制正文、图片、UI Kit 或 SDK 文件。
 
 ## 原创部分与未验证项
 
