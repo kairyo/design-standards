@@ -20,6 +20,7 @@
 | React Aria Quality | Adobe / 相应权利人；仅链接并归纳组件能力与产品验证边界。网页全文再分发许可未核定，未携带组件实现。 |
 | axe-core README | Deque / 相应贡献者；所读固定提交 LICENSE 标示 MPL-2.0。这里只说明自动检查边界，不复制源码、规则或报告。 |
 | Elaya ai-design-skills | S22 固定提交根 LICENSE 为 MIT，署名 Elaya；落地页技能内另保留 Taste 的许可/署名说明。本库仅选择性原创归纳样本绑定与落地页 brief 方法，不复制技能文件、表格、模板或资产。 |
+| Impeccable / Interface Design | S25 核对根 LICENSE 首部 Apache-2.0 标示；S26 根 LICENSE 为 MIT，署名 Damola Akinleye。只链接固定版本并原创归纳排版、层级和局部润色方法；不复制技能、引擎、数值表或素材，不推定依赖的许可。 |
 
 技能目录提及的 Taste、Figma 与平台实现技能只是能力索引，不是 vendored 依赖。Taste 所读包级和 taste 组件许可为 MIT；这里只记录该观察，没有复制实现，未来引入仍须核对具体文件的版权链与通知。其余本地技能的独立再分发许可未由此次盘点建立，因此没有原样收录。两个审阅技能的原创文本及界面描述元数据采用 CC BY 4.0，具体范围见许可说明；不包含上述第三方技能的导出文件。
 
@@ -49,6 +50,7 @@ This repository's CC BY 4.0 / MIT grants cover only the original material licens
 | React Aria Quality | Adobe / respective rights holders; links and summaries of component capability and product-validation boundaries only. Permission to redistribute full web pages was not established; no component implementation is included. |
 | axe-core README | Deque / respective contributors; the LICENSE at the fixed commit read identifies MPL-2.0. Only automated-checking limits are described; source, rules, and reports are not copied. |
 | Elaya ai-design-skills | The root LICENSE at S22's fixed commit is MIT, attributed to Elaya; the landing-page skill also retains Taste licensing/attribution. This repository provides only selective original synthesis of bound samples and landing-page brief methods, without copying skill files, tables, templates, or assets. |
+| Impeccable / Interface Design | S25's root LICENSE header identifies Apache-2.0; S26's root LICENSE is MIT, attributed to Damola Akinleye. Fixed-version links and original synthesis of typography, hierarchy, and local refinement only; no skills, engines, value tables, or assets are copied, and dependency licenses are not inferred. |
 
 Taste, Figma, and platform implementation skills mentioned in the skill directory are capability references, not vendored dependencies. The Taste package-level and taste component licenses read were MIT; this records that observation without copying implementations. Future inclusion still requires file-level provenance and notice checks. Independent redistribution rights for the other local skills were not established by that inventory, so they were not imported. The two original review skills' text and interface-description metadata use CC BY 4.0 as scoped in the license notice; they do not contain exports of those third-party skills.
 

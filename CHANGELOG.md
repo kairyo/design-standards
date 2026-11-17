@@ -1,5 +1,11 @@
 # 变更记录
 
+## 未发布 — 视觉技能草案提交整合 / Unreleased visual-skill draft submission integration
+
+2026-11-17，基于主线 `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7` 整合 2026-11-06 的视觉方法草案，准备提交、推送功能分支并创建中英双语 PR；不合并、不启用自动合并，不安装技能或改变采用项目。保留主线新增内容和本地原草案。原草案的 Impeccable S24、Interface Design S25 分别调整为 S25、S26，现有 Apple 材质 S24 原样保留；下方旧条目的编号保留其历史含义。仓库版本保持 `0.1.0-draft.3`，仅 `design-direction-review` 元数据从 `0.1.0-draft.2` 升为 `0.1.0-draft.3`，`adaptive-ui-review` 仍为 `0.1.0-draft.2`。验证范围与整合记录见[视觉方法复核](reviews/2026-11-06-visual-craft.md)。
+
+On 2026-11-17, integrate the 2026-11-06 visual-method draft onto main `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7` for a feature-branch commit, push, and bilingual PR. Do not merge, enable auto-merge, install skills, or change adopting projects. Preserve later main content and the original local draft. Renumber draft Impeccable S24 and Interface Design S25 to S25 and S26; retain the existing Apple materials S24 unchanged. Earlier entries keep their historical numbering. Repository version remains `0.1.0-draft.3`; only `design-direction-review` metadata moves from `0.1.0-draft.2` to `0.1.0-draft.3`, while `adaptive-ui-review` stays at `0.1.0-draft.2`. See the [visual-method review](reviews/2026-11-06-visual-craft.md) for verification scope and integration records.
+
 ## 未发布 — 状态入口提交整理 / Unreleased status entry-point submission preparation
 
 2026-11-17，维护者授权提交、推送状态入口整理，创建中英双语 PR，并按草稿更新 Issue #1；保留 #1 开放，不合并或启用自动合并。在 REVIEW 补充本地独立复核的范围、已解决发现和已审差异标识，并明确下方本地阶段的“未提交”等文字是历史快照。实际提交与 PR 结果由关联台账记录。四文件范围、规范条款、原始结果、版本与许可不变；没有新增产品验收。
@@ -85,6 +91,20 @@ On 2026-11-09, add general methods and an original synthetic example. Version, l
 2026-11-10，整合主线表单纠错增补，保留双方内容；按独立初审补清问题归因所需的修复前后目标证据，以及 A08 的加载与失败恢复动作。验证与复核范围见 REVIEW，八项产品检查仍为 `NOT_RUN`。
 
 On 2026-11-10, integrate the main-branch form-correction additions while preserving both sets of guidance. Following independent initial review, clarify the before/after target evidence needed for attribution and A08's loading and failure-recovery actions. See REVIEW for validation and review scope; all eight product checks remain `NOT_RUN`.
+
+## 未发布 — 视觉细化与方向记录 / Unreleased visual craft and direction records
+
+2026-11-06，本地候选，仓库版本与发布状态不变。
+
+- 补强设计方向审阅技能，新增按需参考；单个技能候选元数据更新至 `0.1.0-draft.3`，保留已有范围与设计权威来源。
+- 增加视觉方向可选记录，由主 brief、02 章与双语 README 接入；登记固定来源 S24–S25 和采用/舍弃边界，不引入第三方技能或素材。
+- 增加[双语验证记录](reviews/2026-11-06-visual-craft.md)，区分合成 CSS 样例、作者文字推演、人的效果证据和独立复核。已有读屏暂缓安排不变；更新检查器文件清单与五个精确 GitHub 来源路径。
+
+On 2026-11-06, prepare a local candidate without changing the repository version or release status.
+
+- Extend the design-direction review skill with optional supporting guidance; advance that skill's candidate metadata to `0.1.0-draft.3` while preserving scope and design authority.
+- Add an optional visual-direction record linked from the main brief, chapter 02, and both READMEs; register pinned S24–S25 and selective-adoption boundaries without importing skills or assets.
+- Add a bilingual verification record separating the synthetic CSS specimen, author text walkthroughs, human-effectiveness evidence, and independent review. Preserve screen-reader deferral; update the checker inventory and five exact GitHub source paths.
 
 ## 未发布 — 表单纠错与验收判据 / Unreleased form correction and acceptance criteria
 

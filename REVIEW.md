@@ -4,6 +4,16 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-17：视觉技能提交候选 / Visual-skill submission candidate
+
+本轮在主线 `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7` 上整合已留存的视觉方法草案，范围与证据见[视觉方法记录](reviews/2026-11-06-visual-craft.md)。维护者授权提交、推送功能分支并创建中英双语 PR；不合并或开启自动合并，不安装技能、改变固定采用版本或关闭总议题 #1。PR #19 已合并；下方状态入口整理等段落均为各自阶段的快照，不代表本次待办或授权。
+
+本候选的仓库 `VERSION` 仍为 `0.1.0-draft.3`；`design-direction-review` 元数据为 `0.1.0-draft.3`，`adaptive-ui-review` 为 `0.1.0-draft.2`。历史段落中“两技能均为 draft.2”只描述旧版。2026-11-06 的 44 项合成断言和 14 张截图保留其原输入与运行范围，本轮仅核对留存材料并验证文档整合；不据此宣称自动加载、跨客户端兼容或实际审美收益通过。
+
+This round integrates the retained visual-method draft onto main `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7`; see the [visual-method record](reviews/2026-11-06-visual-craft.md) for scope and evidence. The maintainer authorizes a feature-branch commit, push, and bilingual PR, excluding merge, auto-merge, skill installation, pinned-adoption changes, or closure of tracking issue #1. PR #19 is merged. The entry-point cleanup and other sections below are snapshots of their respective stages, not this round's tasks or authorization.
+
+In this candidate, repository `VERSION` remains `0.1.0-draft.3`; metadata is `0.1.0-draft.3` for `design-direction-review` and `0.1.0-draft.2` for `adaptive-ui-review`. Historical statements that both skills are draft.2 refer only to the earlier version. The 44 synthetic assertions and 14 screenshots from 2026-11-06 retain their original inputs and execution scope. This round checks retained evidence and document integration only, without establishing automatic loading, cross-client compatibility, or real-world aesthetic benefit.
+
 ## 提交整理与当前授权 / Submission preparation and current authorization — 2026-11-17
 
 维护者已授权将状态入口整理提交并推送到功能分支、创建中英双语 PR，并按已审草稿更新 [Issue #1](https://github.com/kairyo/design-standards/issues/1)。本轮不合并、不启用自动合并、不关闭 #1，也不决定正式发布或消费项目采用。实际候选提交、PR 状态和台账更新结果在关联 PR 与 #1 记录；下方本地快照中的“未提交”“尚未更新 GitHub”只描述提交前阶段。

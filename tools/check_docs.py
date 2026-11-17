@@ -26,9 +26,11 @@ EXPECTED = (
     "examples/figma-variable-theme.md", "templates/landing-page-brief.md",
     "examples/adaptive-fidelity-regression.md",
     "examples/adaptive-navigation-materials.md",
+    "templates/visual-direction-record.md",
     "skills/README.md", "skills/review-cases.md",
     "skills/design-direction-review/SKILL.md",
     "skills/design-direction-review/agents/openai.yaml",
+    "skills/design-direction-review/references/visual-craft.md",
     "skills/adaptive-ui-review/SKILL.md",
     "skills/adaptive-ui-review/agents/openai.yaml",
     "skills/adaptive-ui-review/references/platform-sources.md",
@@ -41,6 +43,7 @@ EXPECTED = (
     "reviews/2026-11-06-form-validation.md",
     "reviews/2026-11-17-navigation-review.md",
     "reviews/2026-11-17-review-scope.md",
+    "reviews/2026-11-06-visual-craft.md",
     "reviews/2026-11-04-repository-review.md",
     "reviews/text-cases/README.md", "reviews/text-cases/inputs.json",
     "reviews/text-cases/rubric.json", "reviews/text-cases/2026-11-04-run.md",
@@ -80,6 +83,11 @@ ALLOWED_GITHUB_PATHS = {
     "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/figma-designer/SKILL.md",
     "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/skills/landing-page-design/SKILL.md",
     "/elayadesign/ai-design-skills/blob/456d9e0d3e2d84c748bb143c6ca3d90c45e16213/LICENSE",
+    "/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/.agents/skills/impeccable/reference/typeset.md",
+    "/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/.agents/skills/impeccable/reference/polish.md",
+    "/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/LICENSE",
+    "/Dammyjay93/interface-design/blob/2f9be3206855bcb2d1d0af262c8bae25cba6658d/.claude/skills/interface-design/SKILL.md",
+    "/Dammyjay93/interface-design/blob/2f9be3206855bcb2d1d0af262c8bae25cba6658d/LICENSE",
 }
 LINK = re.compile(r"(?<!!)\[[^\]\n]*\]\(([^)\n]+)\)")
 REPOSITORY_GITHUB_PATH = re.compile(
@@ -258,8 +266,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 25)}:
-        errors.append("source registry must contain S01 through S24")
+    if source_ids != {f"S{i:02d}" for i in range(1, 27)}:
+        errors.append("source registry must contain S01 through S26")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1
