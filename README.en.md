@@ -8,7 +8,7 @@ Cross-project, cross-platform design methods and acceptance guidance. The aim is
 
 **Version: v0.1 / `0.1.0-draft.3`. Status: REVIEW_CANDIDATE. The first repository-wide independent content review is complete; real-world effectiveness validation and formal release remain pending. See the [review record](reviews/2026-11-04-repository-review.md) for its version and scope.**
 
-The new adaptive-fidelity and regression guidance has completed scoped independent document review, with two findings corrected and re-reviewed. All eight product checks remain unexecuted; see the [review record](REVIEW.md) for its current scope.
+The earlier adaptive-fidelity and regression guidance completed scoped independent document review, with two findings corrected and re-reviewed; all eight product checks remain unexecuted. The navigation, material, and prototype increment added on 2026-11-17 still awaits independent review; see the [review record](REVIEW.md) for the respective scopes.
 
 This repository supports design planning, handoff, and acceptance for Web/HTML, native Apple clients, and Android. Differences in frameworks, operating systems, fonts, and rendering mean that one set of values or one tool workflow cannot be assumed to fit every project. This is not an official platform standard or a skill package that improves visual quality merely by being installed.
 
@@ -33,6 +33,8 @@ The `skills/` directory contains two self-contained, original review skills. The
 Focused additions: [Figma variable-binding and theme-switching example](examples/figma-variable-theme.md) and [Optional landing-page brief appendix](templates/landing-page-brief.md). The former connects samples, consumers, modes, and restoration across chapters 03, 04, and 08; the latter extends chapter 02 with visitor entry context, the primary action, and evidence for claims. Both contain original methods and synthetic content, without actual Figma execution or landing-page effectiveness validation.
 
 The [synthetic adaptive-fidelity and regression example](examples/adaptive-fidelity-regression.md) connects source versions, image roles and proportions, scroll cues, adjacent layouts, and state preservation, using the existing verification template for a coverage matrix. All eight product checks remain `NOT_RUN`; it prescribes no device dimensions, card ratios, reveal amounts, or column counts.
+
+The [synthetic adaptive-navigation, material, and prototype example](examples/adaptive-navigation-materials.md) adds control semantics, nested materials, actual click regions, destinations and return state, background/foreground responsibilities, and tool recovery. All twelve execution checks remain `NOT_RUN`. Full structural inventories, visual samples, and exercised paths have separate coverage records; project parameters and tool success do not substitute for general methods or product acceptance.
 
 ## Four distinct claim categories
 

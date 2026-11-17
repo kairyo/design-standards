@@ -4,6 +4,26 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-17：导航、材质与原型增补 / Navigation, material, and prototype increment
+
+基于 `816adfc55e3564052801b405528b6b1ec39ec9fb` 的本地文档候选，修改 03、04、05、08 章、验收模板和相关入口，新增[合成案例](examples/adaptive-navigation-materials.md)。本轮只提炼通用方法，没有引入真实项目的设计链接、图层标识、资产、设备尺寸或材质参数。当前固定采用版本保持不变。
+
+This local documentation candidate is based on `816adfc55e3564052801b405528b6b1ec39ec9fb`. It updates chapters 03, 04, 05, and 08, the verification template, and related entry points, and adds a [synthetic example](examples/adaptive-navigation-materials.md). It derives general methods without importing real project design links, layer identifiers, assets, device dimensions, or material parameters. The current pinned adoption version remains unchanged.
+
+- 作者检查：结构校验通过（54 个预期文件、44 份 Markdown、319 个内部链接、24 条来源），`git diff --check` 通过。完整候选文件清单均可按 UTF-8 读取；定向检查未发现所检私有项目标识、设计链接、本机路径或新增具体尺寸/透明度数值。已通读完整增量、相邻条款和双语入口；这不构成全库事实、隐私或许可认证。
+- 内容边界走查：核对局部操作与重复导航、视觉标签与徽标/辅助名称、嵌套材质与重复效果、变量/组件消费者、自动布局后的几何、子图标截获、合法变体动作、无前序返回、单项删除与空列表、隐藏历史层、渲染未就绪、抽样覆盖和受限图片变化。澄清官方材质分层中的短暂交互例外，并将来源读取范围写为实际段落。以上为作者对条款与反例的走查，没有执行合成案例或独立评测。
+- 来源：2026-11-17 定向补读 S02 的导航位置、内容区局部操作、标题/符号与背景延展，新增 S24 材质用途及辅助设置来源；具体读取范围见来源登记。未核实 SDK 行为，未重新认证其他来源或许可。
+- 独立文档审阅：`NOT_RUN`，由维护者安排主管复核；作者内容走查不构成独立批准。
+- 实际执行：合成案例 N01–N12 全部 `NOT_RUN`；没有执行该合成应用的 Figma 操作、原型、辅助技术、模拟器、真机或后台验证。历史产品和文字案例未重跑，成绩保持原记录。
+- 授权与边界：上述结果是本地自检快照。维护者随后授权提交、推送并创建写明改进与验证边界的双语 Issue/PR，交主管复核，明确不合并；最终提交与远端状态在 GitHub 交接中记录。本次不正式发布、安装技能或修改消费项目/全局规则。自检时 GitHub CI 未运行。
+
+- Author checks: structural validation passed (54 expected files, 44 Markdown files, 319 internal links, 24 sources), as did `git diff --check`. The full candidate file inventory is readable as UTF-8. Targeted checks found none of the inspected private project identifiers, design links, local paths, or newly added numeric dimensions/opacity values. The full increment, adjacent clauses, and bilingual entry points were read; this does not certify repository-wide facts, privacy, or licensing.
+- Content-boundary walkthrough: checked local actions versus duplicate navigation, visual labels versus badges/accessibility names, nested versus duplicated materials, variable/component consumers, post-layout geometry, child-icon interception, valid variant actions, return without prior history, single-item deletion versus an empty list, hidden history, render readiness, sample coverage, and constrained image edits. Clarified the transient-interaction exception in official material guidance and recorded the actual paragraphs read. These are author checks of guidance and counterexamples, not synthetic-case execution or independent evaluation.
+- Sources: on 2026-11-17, re-read the scoped S02 guidance on navigation placement, content-local actions, titles/symbols, and background extension; add S24 on material roles and accessibility settings. The registry records exact scope. SDK behavior was not verified, and other sources or licenses were not recertified.
+- Independent document review: `NOT_RUN`; the maintainer will arrange supervisor review. Author content checks are not independent approval.
+- Execution: all synthetic checks N01–N12 remain `NOT_RUN`. No Figma, prototype, assistive-technology, simulator, physical-device, or backend validation of the synthetic application was performed. Historical product and text cases were not rerun; their recorded results remain unchanged.
+- Authorization and boundaries: the results above are a local self-check snapshot. The maintainer subsequently authorized committing, pushing, and creating a bilingual issue/PR describing improvements and validation limits for supervisor review, explicitly without merging. The final commit and remote state are recorded in the GitHub handoff. Formal release, skill installation, and consumer/global-rule changes are excluded. GitHub CI had not run at the time of the self-check.
+
 ## 2026-11-10：主线整合与增量复核 / Main integration and incremental review
 
 本轮将 main `de153e4258c187a7983f7d2da6c74320f6c07cf7` 整合进自适应分支 `eca5ea1fbb78e154e8f069f7fdb4a2e662bb6c21`。共同基线为 `9dfe4618e58fc2d84f97b19f38f52d0928b96bff`。唯一合并冲突在 CHANGELOG，保留双方完整段落；07、08 章、验收模板、表单验证记录、双语入口和检查器中的 PR #14 内容均保留。下方 2026-11-09 记录及当时 `NOT_RUN` 独立审阅状态保留为历史快照。

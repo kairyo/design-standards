@@ -1,5 +1,21 @@
 # 变更记录
 
+## 未发布 — 自适应导航、材质与原型 / Unreleased adaptive navigation, materials, and prototypes
+
+2026-11-17，基于当前固定版本增加通用方法；版本号、许可、候选状态及既有验收结论不变。
+
+- 03、04、05、08 章补充控件迁移前的语义映射、嵌套材质与主题绑定、实际热区与目标语义、背景延展及受限主题素材、变量/组件迁移和可恢复的工具执行。
+- 扩展现有验收模板，新增无真实项目标识或参数的合成案例；十二项执行检查均为 NOT_RUN。结构、画面与实际路径分别记录范围，作者检查与独立审阅分开。
+- 定向补读 Apple 导航来源 S02，新增材质来源 S24；没有重新认证其余来源或平台 API。同步双语入口与来源/文件清单，检查器其余逻辑不变。
+- 本轮形成文档候选后，维护者授权提交到 GitHub 并建立专门 Issue/PR，交主管复核，明确不合并。独立审阅仍待完成；正式发布与消费项目采用不在本次范围。
+
+On 2026-11-17, add general methods based on the current pinned version. The version number, licenses, candidate status, and existing verification conclusions remain unchanged.
+
+- Extend chapters 03, 04, 05, and 08 with semantic mapping before control migration, nested materials and theme bindings, actual hit regions and destination semantics, background extension and constrained theme assets, variable/component migration, and recoverable tool execution.
+- Extend the existing verification template and add a synthetic example without real project identifiers or parameters. All twelve execution checks remain NOT_RUN. Structural, visual, and exercised-path coverage are recorded separately, as are author checks and independent review.
+- Re-read the scoped Apple navigation guidance in S02 and add material source S24, without recertifying other sources or platform APIs. Align bilingual entry points and source/file inventories; other checker logic is unchanged.
+- After the documentation candidate was prepared, the maintainer authorized submission to GitHub with a dedicated issue/PR for supervisor review, explicitly without merging. Independent review remains pending; formal release and consumer adoption are outside this scope.
+
 ## 未发布 — 自适应保真与回归验收 / Unreleased adaptive fidelity and regression verification
 
 2026-11-09，新增通用方法与原创合成案例；版本号、许可和 `REVIEW_CANDIDATE` 状态不变。
