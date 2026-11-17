@@ -23,6 +23,7 @@
 - URL：https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo
 - 版本：页面 Change log 2026-09-09；读取官方 Markdown 的设备结构、Dynamic layouts、Reserved regions、Vertical controls。
 - 补读：2026-11-17 读取当前官方 Markdown 的 Vertical controls，重点为导航顺序、内容区局部操作、标题/符号及背景延展；页面所示 Change log 仍为 2026-09-09。未执行链接中的 API、视频或设备预览。
+- 修订核对：同日按复核意见再次核对标题/符号段的适用限定；同时提供标题和符号的建议针对非纯文本工具栏项，纯文本项不由此被强制增加符号。未扩大来源读取或平台验收范围。
 - 平台 / 采用范围：iPhone Duo；05 章的内外屏、系统栏及保留区说明。不是所有系统版本的 API 可用性证明。
 - 分类 / 状态：`TEAM_RECOMMENDATION`，以官方设计指导解释适用场景；`READ_SCOPED`，未做项目运行验收。
 - 许可：页面 Apple 版权与 Terms of Use；未复制图片、UI Kit 或 SDK 文件。

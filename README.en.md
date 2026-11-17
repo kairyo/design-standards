@@ -8,7 +8,7 @@ Cross-project, cross-platform design methods and acceptance guidance. The aim is
 
 **Version: v0.1 / `0.1.0-draft.3`. Status: REVIEW_CANDIDATE. The first repository-wide independent content review is complete; real-world effectiveness validation and formal release remain pending. See the [review record](reviews/2026-11-04-repository-review.md) for its version and scope.**
 
-The earlier adaptive-fidelity and regression guidance completed scoped independent document review, with two findings corrected and re-reviewed; all eight product checks remain unexecuted. The navigation, material, and prototype increment added on 2026-11-17 still awaits independent review; see the [review record](REVIEW.md) for the respective scopes.
+The earlier adaptive-fidelity and regression guidance completed scoped independent document review, with two findings corrected and re-reviewed; all eight product checks remain unexecuted. The navigation, material, and prototype increment added on 2026-11-17 has completed its first independent document review, and the three findings/suggestions have been corrected and confirmed resolved by targeted independent review. See the [review record](REVIEW.md) for the corrections, verification evidence, and current scope; all twelve execution checks remain unexecuted.
 
 This repository supports design planning, handoff, and acceptance for Web/HTML, native Apple clients, and Android. Differences in frameworks, operating systems, fonts, and rendering mean that one set of values or one tool workflow cannot be assumed to fit every project. This is not an official platform standard or a skill package that improves visual quality merely by being installed.
 

@@ -4,6 +4,40 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-17：修订与验证记录的提交整理 / Packaging corrections and verification records
+
+维护者已授权将三项修订和验证记录提交、推送到 PR #17 的原功能分支，并更新中英双语说明；不合并、不启用自动合并，不改变主线或固定采用版本。下方“本地未提交”等表述是上一阶段的历史快照，不描述后续远端状态。
+
+新增[公开验证记录](reviews/2026-11-17-navigation-review.md)，保留初审版本、三项发现与修订、十个作者文字对照、独立复核结论及未验证项。提交整理只增加记录、文件清单及入口/状态说明，不再修改已审的三项规则。最终远端 SHA 和状态以 PR 的提交及说明为准；未执行产品检查仍为 NOT_RUN。
+
+作者提交整理检查：结构校验通过（55 个预期文件、45 份 Markdown、326 个内部链接、24 条来源），差异格式检查通过。此结果覆盖新增公开记录的候选树；不改写下方本地修订阶段 54/44/319/24 的历史结果，也不是 GitHub CI 或产品验收成绩。
+
+The maintainer authorized committing and pushing the three corrections and verification records to the original branch for PR #17, and updating bilingual information. Merging and auto-merge remain excluded; main and pinned adoption stay unchanged. Statements such as “uncommitted local changes” below are historical snapshots of the preceding stage, not later remote status.
+
+The new [public verification record](reviews/2026-11-17-navigation-review.md) retains the initial review version, findings and corrections, ten author text comparisons, independent-review conclusions, and limitations. Packaging only adds evidence, the file inventory, and entry/status information; it does not change the three reviewed rules. The PR commits and description identify final remote SHA and status. Unexecuted product checks remain NOT_RUN.
+
+Author packaging checks passed: 55 expected files, 45 Markdown files, 326 internal links, and 24 sources, plus diff-format checking. These results cover the candidate tree including the new public record; they do not rewrite the earlier local-stage 54/44/319/24 snapshot and are not GitHub CI or product-acceptance results.
+
+## 2026-11-17：PR #17 三项意见的本地修订 / Local corrections for three PR #17 review items
+
+固定提交 `6ed3ec1b790348643d16f5e242017a354576b5f2` 已完成独立文档复核，发现一项 P2：05 章遗漏纯文本工具栏项的例外；以及两项 P3 非阻塞建议：N06 需限定同一语义操作的热区，N09 需明确模拟结果也不证明后台行为。下方较早的作者自检与待审状态保留为历史快照。
+
+该提交上的本地未提交修订已补回上述限定，同步 N02、N06、N09、两条反例、S02 核对记录及双语入口。此次没有新增来源、改变版本或许可，也未更改验收模板的必需子项汇总规则。
+
+- 作者定向复验：对照旧、新文字走查十个正常、例外、异常与信息不足场景，未发现三项问题继续存在；标题/辅助语义、合法子操作与变体、未知结果及缺分支的保护规则保留。这是文档判断，不是十个真实交互测试。
+- 作者结构检查：54 个预期文件、44 份 Markdown、319 个内部链接、24 条来源通过；差异格式检查通过。最终本地差异及验证证据另行保留，不把未提交工作目录冒充新提交 SHA。
+- 修订的独立复核：独立执行者对三项修订及相邻条款逐项复核，确认 R1、R2、R3 均已解决，所检规则未发现新增问题。另提示 CHANGELOG 的历史待审文字可能与当前状态混淆，已在新条目标明旧段为当时快照并保留原文。复核仅覆盖文档修订，不代表产品或合并批准。
+- 未验证与授权：N01–N12 全部保持 NOT_RUN；未执行 Figma、原型、辅助技术、模拟器、真机或后台验证，历史案例未重跑。本轮仅本地修订，未提交、推送、合并或开启自动合并，未更改主线或固定采用版本；没有新增 GitHub CI 结果。
+
+Independent document review of fixed commit `6ed3ec1b790348643d16f5e242017a354576b5f2` found one P2 issue: chapter 05 omitted the text-only toolbar-item exception. Two non-blocking P3 suggestions asked N06 to scope hit regions to one semantic operation and N09 to state that simulated outcomes also do not prove backend behavior. The earlier author checks and pending-review status below remain historical snapshots.
+
+Uncommitted local changes on that commit restore these boundaries and align N02, N06, N09, two counterexamples, the S02 recheck, and bilingual entry points. No sources were added, version or licensing changed, or mandatory-subcheck aggregation rules in the verification template altered.
+
+- Author targeted recheck: compare old and new wording across ten normal, exceptional, failure, and insufficient-information scenarios. The three issues no longer appear in these textual judgments. Title/accessibility semantics, valid child actions and variants, unknown outcomes, and missing-branch safeguards remain intact. These are document checks, not ten real interaction tests.
+- Author structural checks: passed with 54 expected files, 44 Markdown files, 319 internal links, and 24 sources; diff-format checking also passed. Final local differences and verification evidence are retained separately; an uncommitted working tree is not presented as a new commit SHA.
+- Independent review of the corrections: a separate reviewer checked each correction and adjacent guidance, confirmed R1, R2, and R3 resolved, and found no new issues in the reviewed rules. The reviewer also noted possible confusion between historical pending-review wording in CHANGELOG and current status; the new entry now identifies the earlier wording as a historical snapshot and preserves it. This review covers document corrections only, not product or merge approval.
+- Limitations and authorization: all N01–N12 remain NOT_RUN. No Figma, prototype, assistive-technology, simulator, physical-device, or backend checks were performed; historical cases were not rerun. This round only changes local files: no commit, push, merge, or auto-merge, and no changes to main or pinned adoption. No new GitHub CI result exists.
+
 ## 2026-11-17：导航、材质与原型增补 / Navigation, material, and prototype increment
 
 基于 `816adfc55e3564052801b405528b6b1ec39ec9fb` 的本地文档候选，修改 03、04、05、08 章、验收模板和相关入口，新增[合成案例](examples/adaptive-navigation-materials.md)。本轮只提炼通用方法，没有引入真实项目的设计链接、图层标识、资产、设备尺寸或材质参数。当前固定采用版本保持不变。

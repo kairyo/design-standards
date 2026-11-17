@@ -1,5 +1,25 @@
 # 变更记录
 
+## 未发布 — PR #17 验证记录与提交整理 / Unreleased PR #17 evidence and submission preparation
+
+2026-11-17，维护者授权将已修订内容与验证记录提交、推送到原功能分支并更新双语 PR 说明；新增公开验证记录与预期文件清单，核心三项条款不再修改。下方本地阶段的未提交与待审说明保留为各自时点的快照。本次不合并、不启用自动合并，主线与固定采用版本保持不变。
+
+On 2026-11-17, the maintainer authorized committing and pushing the corrections and verification records to the original feature branch, and updating the bilingual PR description. Add a public verification record and its expected-file entry without changing the three reviewed rules. Earlier local-stage statements about uncommitted work and pending review remain snapshots of their respective times. Do not merge or enable auto-merge; main and pinned adoption remain unchanged.
+
+## 未发布 — PR #17 复核意见修订 / Unreleased PR #17 review corrections
+
+2026-11-17，针对固定提交 `6ed3ec1b790348643d16f5e242017a354576b5f2` 的一项 P2 与两项 P3 复核意见，仅在本地修订：
+
+- 05 章补回 Apple 工具栏纯文本项的例外，并同步 S02 的定向核对记录及 N02 反例。
+- N06 将同一动作的命中一致性限定在同一语义操作内，保留复合控件的独立子操作；N09 明确模拟结果不能替代真实后台证据。
+- 同步双语审阅状态：首轮独立文档复核已完成，三项修订经定向独立复核确认解决；下方此前候选段落中的待审状态为当时快照，原文保留。N01–N12 仍全部为 NOT_RUN；没有执行产品或后台验收，当前固定采用版本保持不变。本轮未提交、推送、合并或开启自动合并。
+
+On 2026-11-17, address one P2 finding and two P3 suggestions from the review of fixed commit `6ed3ec1b790348643d16f5e242017a354576b5f2` in local changes only:
+
+- Restore the text-only toolbar-item exception in chapter 05, with the scoped S02 recheck and N02 counterexample aligned.
+- Limit N06 hit-region consistency to one semantic operation while preserving independent child actions in composite controls. Clarify in N09 that simulated outcomes do not establish real backend behavior.
+- Align bilingual review status: the first independent document review is complete, and targeted independent review confirmed that the three corrections resolve their respective items. Pending-review statements in the earlier candidate entry below are snapshots of that time and remain unchanged. All N01–N12 remain NOT_RUN; no product or backend acceptance was performed, and pinned adoption is unchanged. No commit, push, merge, or auto-merge was performed in this round.
+
 ## 未发布 — 自适应导航、材质与原型 / Unreleased adaptive navigation, materials, and prototypes
 
 2026-11-17，基于当前固定版本增加通用方法；版本号、许可、候选状态及既有验收结论不变。
