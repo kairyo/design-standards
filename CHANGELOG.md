@@ -1,5 +1,25 @@
 # 变更记录
 
+## 未发布 — 状态入口提交整理 / Unreleased status entry-point submission preparation
+
+2026-11-17，维护者授权提交、推送状态入口整理，创建中英双语 PR，并按草稿更新 Issue #1；保留 #1 开放，不合并或启用自动合并。在 REVIEW 补充本地独立复核的范围、已解决发现和已审差异标识，并明确下方本地阶段的“未提交”等文字是历史快照。实际提交与 PR 结果由关联台账记录。四文件范围、规范条款、原始结果、版本与许可不变；没有新增产品验收。
+
+On 2026-11-17, the maintainer authorized committing and pushing the entry-point cleanup, creating a bilingual PR, and updating Issue #1 from its draft. Keep #1 open; do not merge or enable auto-merge. REVIEW adds the local independent-review scope, resolved findings, and reviewed-diff identifier, and identifies earlier uncommitted wording as historical local-stage snapshots. The linked register records actual commit and PR outcomes. The four-file scope, standards clauses, original results, versions, and licenses remain unchanged; no product acceptance is added.
+
+## 未发布 — 当前状态入口整理 / Unreleased current-state entry-point cleanup
+
+2026-11-17，基于主线 `04a59c89ac63d7fbb35d346d10dfefb1b1890af0`，同步两个 README 的 #7 已结项、#1 仍开放及正式发布待决定状态；在 [REVIEW](REVIEW.md) 增加当前状态摘要，将本库维护待办、维护者决定、历史证据限制和采用环境检查分开。旧“待决定 / 未验证”清单折叠保留，原文与原始结果不改。
+
+本轮只在本地整理四个状态入口文件，并另行准备 Issue #1 的中英双语更新稿；未提交、推送或更新 GitHub。十章正文、模板、示例、技能内容及元数据、版本和许可保持原样，没有重跑案例或继续演示验收。总议题的结项条件与正式发布决定不在本轮改变。
+
+On 2026-11-17, use main `04a59c89ac63d7fbb35d346d10dfefb1b1890af0` to align both READMEs with #7's closure, #1's open status, and the pending formal-release decision. Add a current status summary to [REVIEW](REVIEW.md), separating repository maintenance tasks, maintainer decisions, historical evidence limits, and adoption-environment checks. Fold the former pending/unverified list while preserving its original text and results.
+
+This round changes four status entry-point files locally and prepares a separate bilingual Issue #1 draft, without committing, pushing, or updating GitHub. All ten chapters, templates, examples, skill content and metadata, versions, and licenses remain unchanged. No cases were rerun or demo acceptance continued. This round changes neither the tracking issue's closure criteria nor the formal-release decision.
+
+以下条目保留各自阶段的事实与授权。“未发布”表示尚未正式发行，不等于内容尚未合入 main；“未提交”“待审”等文字不能单独用于判断后续状态。当前状态见上方关联的 REVIEW 摘要；历史证据不因此升级为新的通过结论。
+
+Entries below retain the facts and authorization of their respective stages. “Unreleased” means not formally released, not necessarily absent from main. Wording such as uncommitted or awaiting review cannot alone establish later status. See the linked REVIEW summary for current state; historical evidence does not thereby become a new pass result.
+
 ## 未发布 — 复核范围与验证记录归属 / Unreleased review scope and evidence ownership
 
 2026-11-17，新增规范问题、执行偏差与实际项目验收的双语索引，整理 Issue #7 的完成条件及阅读合成试点六项发现的归属；同步双语入口、验收模板的用途说明及历史记录导航。历史正文、原始结果、十章规范、示例执行栏、版本与许可保持原样；检查器只增加新索引的文件清单项。

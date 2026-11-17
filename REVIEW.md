@@ -4,6 +4,33 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 提交整理与当前授权 / Submission preparation and current authorization — 2026-11-17
+
+维护者已授权将状态入口整理提交并推送到功能分支、创建中英双语 PR，并按已审草稿更新 [Issue #1](https://github.com/kairyo/design-standards/issues/1)。本轮不合并、不启用自动合并、不关闭 #1，也不决定正式发布或消费项目采用。实际候选提交、PR 状态和台账更新结果在关联 PR 与 #1 记录；下方本地快照中的“未提交”“尚未更新 GitHub”只描述提交前阶段。
+
+The maintainer has authorized committing and pushing the status entry-point cleanup to a feature branch, creating a bilingual PR, and updating [Issue #1](https://github.com/kairyo/design-standards/issues/1) from the reviewed draft. Do not merge, enable auto-merge, close #1, or decide formal release or consumer-project adoption in this round. The linked PR and #1 record the actual candidate commit, PR state, and register-update outcome. Uncommitted and not-yet-updated statements in the local snapshot below describe the pre-submission stage only.
+
+本地独立复核覆盖四文件差异与 Issue #1 双语草稿；完成勾选的范围与证据、持续公开前关口、专项归档范围和草稿阶段表述四项发现均已修订并回核，限定范围内无剩余发现。已审本地补丁 SHA-256 为 `dc208d93c2544a465fde624b5c7b357af537031ad86e1452f7e921e0a9a990fa`；这是提交整理前的差异标识，不是提交 SHA。本轮只补充阶段与证据说明，未修改规范条款或重跑产品验收；最终候选仍按公开前要求核对。
+
+Local independent review covered the four-file diff and bilingual Issue #1 draft. All four findings on completed-gate scope/evidence, continuing publication gates, archived-test scope, and draft-stage wording were corrected and rechecked, with no remaining findings within scope. The reviewed local patch SHA-256 is `dc208d93c2544a465fde624b5c7b357af537031ad86e1452f7e921e0a9a990fa`; this identifies the diff before submission preparation, not a commit. This round adds stage and evidence notes only, without changing standards clauses or rerunning product acceptance. The final candidate still receives the required pre-publication checks.
+
+## 提交前本地状态快照 / Pre-submission local status snapshot — 2026-11-17
+
+核对主线基线为 `04a59c89ac63d7fbb35d346d10dfefb1b1890af0`：[PR #18](https://github.com/kairyo/design-standards/pull/18) 已合并，[Issue #7](https://github.com/kairyo/design-standards/issues/7) 已由维护者确认按“规范复核与执行一致性”的限定范围结项。[总议题 #1](https://github.com/kairyo/design-standards/issues/1) 仍开放。本轮状态入口整理是该基线之上的本地未提交增量；Issue #1 更新稿另行准备，尚未更新 GitHub。
+
+The checked main baseline is `04a59c89ac63d7fbb35d346d10dfefb1b1890af0`: [PR #18](https://github.com/kairyo/design-standards/pull/18) is merged, and the maintainer confirmed [Issue #7](https://github.com/kairyo/design-standards/issues/7) complete within its defined scope of standards review and execution consistency. [Tracking issue #1](https://github.com/kairyo/design-standards/issues/1) remains open. This entry-point cleanup is an uncommitted local increment on that baseline; a separate Issue #1 update draft has been prepared but not applied to GitHub.
+
+| 归属 / Category | 当前处置 / Current disposition |
+| --- | --- |
+| 本库维护待办 / Repository maintenance tasks | 审阅本轮状态入口差异与 Issue #1 草稿；后续提交、推送及台账更新须按维护者授权执行。本轮不修改结项条件，不关闭 #1。/ Review this entry-point diff and the Issue #1 draft. Subsequent commits, pushes, and register updates require maintainer authorization. This round neither changes closure criteria nor closes #1. |
+| 维护者待决定 / Maintainer decisions | 总议题的结项范围、时机与正式发布分别决定。子议题完成不自动关闭总议题，也不创建稳定发布标签。/ Decide the tracking issue's closure scope and timing separately from formal release. Completing a child issue neither closes the tracking issue automatically nor creates a stable-release tag. |
+| 历史证据与限制 / Historical evidence and limitations | 首轮复核、增量修订及复验按各自版本解释；原始结果与范围保留。已确认规范问题的处置见 #7 及[范围索引](reviews/2026-11-17-review-scope.md)，不据局部记录宣称当前全库重新通过。#7 归档备忘仅涉及 F09/B06 两项实际读屏：已移出本库待办、结项前提和固定提醒，仅供查询；实际读屏 NOT_RUN 与历史父项 BLOCKED 保留。该决定不改变其他检查的范围。/ Interpret the initial review, incremental corrections, and rechecks within their own versions; retain original results and scope. See #7 and the [scope index](reviews/2026-11-17-review-scope.md) for dispositions of confirmed standards issues, without claiming a fresh whole-repository pass. The archived memo in #7 concerns only actual F09/B06 screen-reader checks: removed from repository tasks, closure prerequisites, and recurring reminders, for reference only; actual execution remains NOT_RUN and historical parent results remain BLOCKED. This decision does not change the scope of other checks. |
+| 采用项目与环境验证 / Adopting projects and environment checks | 具体产品验收、SDK/账户能力、技能加载与自动选择、跨客户端兼容及实际效果由相应采用范围决定。缺少证据仍是未验证；不是本库内容复核的一揽子前提。本轮未执行这些检查。/ Product acceptance, SDK/account capabilities, skill loading and automatic selection, cross-client compatibility, and real-world effects depend on the relevant adoption scope. Missing evidence remains unverified, not a blanket prerequisite for repository content review. None of these checks ran in this round. |
+
+版本标识分别保留：仓库 `VERSION` 为 `0.1.0-draft.3`，两个技能的元数据为 `0.1.0-draft.2`；本轮不改号，不据这些标识推断正式发行、宿主兼容或实际采用。许可继续按现有说明执行。下方日期条目与折叠的旧“待决定 / 未验证”清单均是历史记录，其中“未提交”“待审”“未启用”等表述只描述各自时点，不覆盖本摘要或相应项目的后续证据。
+
+Retain the version identifiers separately: repository `VERSION` is `0.1.0-draft.3`, while both skills' metadata says `0.1.0-draft.2`. This round changes neither identifier and infers no formal release, host compatibility, or actual adoption from them. Existing licensing remains in effect. Dated entries below and the folded former pending/unverified list are historical records: statements such as uncommitted, awaiting review, or not enabled describe their respective stages, rather than overriding this summary or later evidence from the relevant project.
+
 ## 2026-11-17：规范复核范围与记录归属 / Standards-review scope and record ownership
 
 本轮基于本地提交 `13203a6564f737609a2b6a81a507bd1d6d7a2ac2` 整理 Issue #7 的记录归属；见[范围索引](reviews/2026-11-17-review-scope.md)。规范问题、执行偏差与实际项目验收分别记录，技能宿主能力另归采用环境验证。历史各轮结论只覆盖其原版本、载体与输入；下方包含“未合并”等当时阶段说明，不用于判断后续远端状态。
@@ -239,6 +266,12 @@ On 2026-11-05, local additions introduce a Figma variable/theme example, an opti
 - 原创性、公开性、许可和实际可用性；作者检查不替代独立复核。
 - 技能的触发边界、自包含性和真实使用效果；平台建议不得变成默认改配置、设备操作或委派授权。
 
+<details>
+<summary>历史清单原样保留：整理前的待决定与未验证项 / Historical list retained verbatim: pending and unverified items before this cleanup</summary>
+
+以下原文保留整理前的状态与结论边界；当前待办及责任归属见上方状态摘要，不把旧清单直接作为新的任务安排。
+The original text below preserves the prior state and evidence boundaries. See the status summary above for current tasks and ownership; this historical list does not itself schedule new work.
+
 ## 待决定 / 未验证
 
 - 首轮全库独立内容复核已完成，后续修订及复验分别记录；技能加载、实际产品效果和维护者的正式发布决定仍未完成，不创建稳定发布标签。
@@ -247,3 +280,5 @@ On 2026-11-05, local additions introduce a Figma variable/theme example, an opti
 - 没有证据证明采用此文档能提高某个可量化的审美评分；可用性应在获准的代表性任务中评估。
 - 没有安装、配置或建立自动更新机制。
 - 新技能尚未完成宿主自动选择、跨客户端兼容、独立行为评估或真实项目验收；未创建插件分发包。
+
+</details>
