@@ -1,5 +1,15 @@
 # 变更记录
 
+## 未发布 — 复核范围与验证记录归属 / Unreleased review scope and evidence ownership
+
+2026-11-17，新增规范问题、执行偏差与实际项目验收的双语索引，整理 Issue #7 的完成条件及阅读合成试点六项发现的归属；同步双语入口、验收模板的用途说明及历史记录导航。历史正文、原始结果、十章规范、示例执行栏、版本与许可保持原样；检查器只增加新索引的文件清单项。
+
+本轮仅本地整理，并在仓库外准备 Issue #7 的双语更新稿；未提交、推送或更新 GitHub，没有继续修演示、重跑案例或开启读屏。两项读屏继续暂缓，失败不因重新归类变为通过；规范复核结项与实际项目验收、正式发布分别决定。
+
+On 2026-11-17, add a bilingual index distinguishing standards issues, execution deviations, and consumer-project acceptance, including proposed Issue #7 completion criteria and classification of six synthetic reading-pilot findings. Align bilingual entry points, the verification template's usage note, and navigation from historical records. Historical bodies/results, all ten chapters, example execution fields, version, and licenses remain intact; the checker only gains the new index in its file inventory.
+
+This round is local only, with a bilingual Issue #7 draft prepared outside the repository. No commit, push, or GitHub update occurred; no further demo repairs, case reruns, or screen-reader checks were performed. The two screen-reader checks remain deferred; reclassification does not turn failures into passes. Standards-review closure, consumer-project acceptance, and formal release remain separate decisions.
+
 ## 未发布 — PR #17 验证记录与提交整理 / Unreleased PR #17 evidence and submission preparation
 
 2026-11-17，维护者授权将已修订内容与验证记录提交、推送到原功能分支并更新双语 PR 说明；新增公开验证记录与预期文件清单，核心三项条款不再修改。下方本地阶段的未提交与待审说明保留为各自时点的快照。本次不合并、不启用自动合并，主线与固定采用版本保持不变。

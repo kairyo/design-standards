@@ -1,5 +1,9 @@
 # PR #17：导航、材质与原型修订验证记录
 
+> 2026-11-17 归属说明：本记录按原日期、版本和范围保留；后续如何区分规范问题、执行偏差与实际项目验收，见[复核范围索引](2026-11-17-review-scope.md)。本次只增加入口，不改写以下历史结论或执行状态，也不表示重新运行。
+>
+> Scope note, 2026-11-17: this record retains its original date, version, and scope. See the [review-scope index](2026-11-17-review-scope.md) for the distinction between standards issues, execution deviations, and consumer-project acceptance. This entry neither rewrites the historical conclusions/results below nor reports a rerun.
+
 日期：2026-11-17。关联 [Issue #16](https://github.com/kairyo/design-standards/issues/16) 和 [PR #17](https://github.com/kairyo/design-standards/pull/17)。本记录是原创文档检查证据，不是产品或平台符合性证明。
 
 ## 版本与范围

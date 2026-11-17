@@ -6,9 +6,9 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 
 跨项目、跨平台的设计方法与验收指南。目标是让设计决定有依据、实现可追溯、质量可验证，而不是让所有产品长得一样。
 
-**版本：v0.1 / `0.1.0-draft.3`。状态：REVIEW_CANDIDATE。首轮全库独立内容复核已完成，实际效果验证与正式发布仍待完成；版本与范围见 [复核记录](reviews/2026-11-04-repository-review.md)。**
+**版本：v0.1 / `0.1.0-draft.3`。状态：REVIEW_CANDIDATE。首轮全库独立内容复核已完成，后续增补按各自记录复核；这些结果不合并为当前全库认证。Issue #7 聚焦规范质量与执行一致性，实际项目验收由采用项目负责；正式发布仍待决定。见[复核范围与记录归属](reviews/2026-11-17-review-scope.md)。**
 
-此前自适应保真与回归条款已完成限定范围的独立文档复核，两项发现已修订并复核；八项产品检查仍未执行。2026-11-17 新增的导航、材质与原型条款已完成首轮独立文档复核，三项意见已修订并通过定向独立复核；修订、验证记录及当前范围见 [审阅记录](REVIEW.md)，十二项执行检查仍未运行。
+此前自适应保真与回归条款已完成限定范围的独立文档复核，两项发现已修订并复核。2026-11-17 新增的导航、材质与原型条款已完成首轮独立文档复核，三项意见已修订并通过定向独立复核；见[审阅记录](REVIEW.md)。对应示例的八项与十二项执行栏仍为 NOT_RUN；单独试点的限定证据另记，不回填示例或自动转为本库的结项前提。
 
 适用于 Web/HTML、Apple 原生客户端和 Android 的设计规划、交接与验收。框架、操作系统、字体和渲染方式不同，不能保证一套数值或一个工具流程直接适用所有项目。本仓库不是平台官方规范，也不是“安装即提高审美”的技能包。
 
@@ -26,11 +26,11 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 | 项目采用、例外、更新与退出 | [10 采用与维护](docs/10-adoption-maintenance.md) |
 | 用技能执行设计方向或自适应审阅 | [技能目录与复用边界](skills/README.md)、[边界案例](skills/review-cases.md) |
 
-可直接讨论的材料：[设计 brief](templates/design-brief.md)、[采用记录](templates/adoption-record.md)、[验收记录](templates/verification-record.md)、[匿名合成案例](examples/anonymous-cases.md)、[表单提交与纠错完整示例](examples/form-submit-recovery.md)、[分步表单往返示例](examples/stepped-form-branch-return.md)。完整示例串联 02、04、07、08 章，分步示例补充草稿、有效数据和焦点的往返检查；所有产品检查均未执行，不表示本仓库已有可运行表单。
+可直接讨论的材料：[设计 brief](templates/design-brief.md)、[采用记录](templates/adoption-record.md)、[验收记录](templates/verification-record.md)、[匿名合成案例](examples/anonymous-cases.md)、[表单提交与纠错完整示例](examples/form-submit-recovery.md)、[分步表单往返示例](examples/stepped-form-branch-return.md)。完整示例串联 02、04、07、08 章，分步示例补充草稿、有效数据和焦点的往返检查；示例执行栏保留 NOT_RUN，仓库外历史演示的限定结果另见[表单记录](reviews/2026-11-06-form-validation.md)，不表示本仓库已有可运行表单。
 
 `skills/` 内新增两个自包含的原创审阅技能；它们仍是候选，没有全局安装、自动注册或启用到现有项目。已有第三方设计插件只作能力索引，不随本仓库分发。
 
-专项补充：[Figma 变量绑定与主题切换示例](examples/figma-variable-theme.md)、[落地页 brief 可选附页](templates/landing-page-brief.md)。前者串联 03、04、08 章的样本、消费者、模式与恢复；后者补充 02 章的来访入口、主要动作和主张证据。两者均为原创方法与合成内容，尚无实际 Figma 操作或落地页效果验证。
+专项补充：[Figma 变量绑定与主题切换示例](examples/figma-variable-theme.md)、[落地页 brief 可选附页](templates/landing-page-brief.md)。前者串联 03、04、08 章的样本、消费者、模式与恢复；后者补充 02 章的来访入口、主要动作和主张证据。两者均为原创方法与合成内容；变量示例自身的执行栏保持 NOT_RUN，单独阅读试点的 Figma 样本不替代该记录，落地页效果仍未验证。
 
 [自适应保真与回归合成案例](examples/adaptive-fidelity-regression.md)连接原稿版本、图片用途与比例、滚动提示、相邻布局和状态保留，并复用验收模板记录覆盖矩阵。八项产品检查均为 `NOT_RUN`，不规定设备尺寸、卡片比例、露出量或分栏数量。
 
@@ -55,6 +55,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 
 ## 维护与状态
 
+- [规范复核、执行偏差与项目验收](reviews/2026-11-17-review-scope.md)
 - [GitHub 项目管理与双语约定](PROJECT_MANAGEMENT.md)
 - [项目总议题](https://github.com/kairyo/design-standards/issues/1)、[里程碑](https://github.com/kairyo/design-standards/milestones)
 - [协作整理验证记录](reviews/2026-11-03-github-management.md)

@@ -1,5 +1,9 @@
 # 表单纠错与验收判据验证 / Form correction and acceptance-criteria verification
 
+> 2026-11-17 归属说明：本记录按原日期、版本和范围保留；后续如何区分规范问题、执行偏差与实际项目验收，见[复核范围索引](2026-11-17-review-scope.md)。本次只增加入口，不改写以下历史结论或执行状态，也不表示重新运行。
+>
+> Scope note, 2026-11-17: this record retains its original date, version, and scope. See the [review-scope index](2026-11-17-review-scope.md) for the distinction between standards issues, execution deviations, and consumer-project acceptance. This entry neither rewrites the historical conclusions/results below nor reports a rerun.
+
 ## 范围与版本 / Scope and version
 
 2026-11-06，基于 `9dfe4618e58fc2d84f97b19f38f52d0928b96bff`，补充 [07 章](../docs/07-inclusive-design.md)、[08 章](../docs/08-implementation-acceptance.md) 和 [验收模板](../templates/verification-record.md)。三条增补仍属 `TEAM_RECOMMENDATION`；版本号、来源、许可和发布状态不变。本记录所在提交的文件树标识最终文档候选，不把下述旧版演示结果当作该候选的新运行验证。关联 [Issue #7](https://github.com/kairyo/design-standards/issues/7)，不据此关闭其余验收工作。
