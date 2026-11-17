@@ -1,5 +1,9 @@
 # 变量示例与落地页附页验证 / Variable example and landing-page appendix verification
 
+> 2026-11-17 归属说明：本记录按原日期、版本和范围保留；后续如何区分规范问题、执行偏差与实际项目验收，见[复核范围索引](2026-11-17-review-scope.md)。本次只增加入口，不改写以下历史结论或执行状态，也不表示重新运行。
+>
+> Scope note, 2026-11-17: this record retains its original date, version, and scope. See the [review-scope index](2026-11-17-review-scope.md) for the distinction between standards issues, execution deviations, and consumer-project acceptance. This entry neither rewrites the historical conclusions/results below nor reports a rerun.
+
 ## PR 候选整理 / PR candidate preparation — 2026-11-05
 
 维护者随后授权提交、推送并创建双语 PR，暂不合并。本次以实际远端 main `4102b2bf8ce2bd29a69c0cde5436aa8fba64f322` 整理独立候选：只包含下述两个增补、相关入口/来源及本记录，不携带上轮全库复核资料、文字案例包或检查器的 JSON 扩展。原工作副本保留。下文 51 文件的本地验证记录是先前组合候选的历史证据，不代表此 PR 文件树。

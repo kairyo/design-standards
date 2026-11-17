@@ -1,5 +1,9 @@
 # 最小文字案例包 / Minimal text-case suite
 
+> 2026-11-17 归属说明：本记录按原日期、版本和范围保留；后续如何区分规范问题、执行偏差与实际项目验收，见[复核范围索引](../2026-11-17-review-scope.md)。本次只增加入口，不改写以下历史结论或执行状态，也不表示重新运行。
+>
+> Scope note, 2026-11-17: this record retains its original date, version, and scope. See the [review-scope index](../2026-11-17-review-scope.md) for the distinction between standards issues, execution deviations, and consumer-project acceptance. This entry neither rewrites the historical conclusions/results below nor reports a rerun.
+
 ## 中文
 
 本包用于检查规范能否支持有边界的文字判断，包含正常、异常、信息不足、补充场景和符合性边界。它不是产品测试、自动评分器或技能效果认证。题面是原创合成材料，不含真实用户、项目或设备数据。

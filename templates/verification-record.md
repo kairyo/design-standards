@@ -2,6 +2,10 @@
 
 分类：`TEAM_RECOMMENDATION`。适用于已明确授权的验证，记录存于项目自己的受控位置。
 
+使用范围：本模板主要记录具体设计或实现的验证与交付验收。规范维护仅选用与本次规则判断有关的部分，并分别记录“原始执行结果”“规范问题/执行偏差/实际项目验收归属”与“对规范的判断”；不要求为完成文档复核而验收一个完整产品。见[复核范围说明](../reviews/2026-11-17-review-scope.md)。范围调整不改写原始结果，也不放宽下方适用必需子项的父项汇总规则。
+
+Usage scope: this template primarily records verification and delivery acceptance for a specific design or implementation. Standards maintenance uses only the parts relevant to the rule assessment, separately recording the original execution result, ownership as a standards issue/execution deviation/consumer-project acceptance item, and the standards assessment. Completing document review does not require accepting an entire product; see the [review-scope note](../reviews/2026-11-17-review-scope.md). Scope changes neither rewrite original results nor relax the mandatory-subcheck aggregation rule below.
+
 ## 一次验证的上下文
 
 写明任务/设计版本、源版本和运行产物身份、环境与实际窗口、语言/主题/文字缩放、fixture、输入方式、可改与保护范围。没有运行产物的设计阶段写“不适用：本轮仅设计评审”，不伪填构建信息。

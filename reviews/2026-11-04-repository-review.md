@@ -1,5 +1,9 @@
 # 全库独立内容复核 / Repository-wide independent content review
 
+> 2026-11-17 归属说明：本记录按原日期、版本和范围保留；后续如何区分规范问题、执行偏差与实际项目验收，见[复核范围索引](2026-11-17-review-scope.md)。本次只增加入口，不改写以下历史结论或执行状态，也不表示重新运行。
+>
+> Scope note, 2026-11-17: this record retains its original date, version, and scope. See the [review-scope index](2026-11-17-review-scope.md) for the distinction between standards issues, execution deviations, and consumer-project acceptance. This entry neither rewrites the historical conclusions/results below nor reports a rerun.
+
 ## 入库整理 / Publication preparation — 2026-11-05
 
 维护者授权将本轮复核资料和文字案例包单独提交、推送并创建双语 PR，暂不合并。当前候选基于 main `ac4e89cbdb789f502ea609427bdec84256ab7d55`，保留已合入的 Figma 变量示例、落地页附页及其验证记录。本次整理不重做下文的全库来源核验、六例文字运行或旧新版对照，不把历史成绩追认到当前组合。

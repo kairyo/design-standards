@@ -4,6 +4,16 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-17：规范复核范围与记录归属 / Standards-review scope and record ownership
+
+本轮基于本地提交 `13203a6564f737609a2b6a81a507bd1d6d7a2ac2` 整理 Issue #7 的记录归属；见[范围索引](reviews/2026-11-17-review-scope.md)。规范问题、执行偏差与实际项目验收分别记录，技能宿主能力另归采用环境验证。历史各轮结论只覆盖其原版本、载体与输入；下方包含“未合并”等当时阶段说明，不用于判断后续远端状态。
+
+阅读合成试点的六项发现保留为五项实现执行偏差与一项验证执行偏差；失败未修复、未改为通过。本轮没有重跑案例、修演示或补做产品/读屏验收。两项实际读屏继续暂缓；示例 NOT_RUN 与历史 BLOCKED 保留，实际项目的必需子项汇总规则不变。是否完成规范复核仍由维护者按明确范围决定，不自动关闭 Issue #7 或发布。
+
+This round uses local commit `13203a6564f737609a2b6a81a507bd1d6d7a2ac2` to reorganize Issue #7 record ownership; see the [scope index](reviews/2026-11-17-review-scope.md). Standards issues, execution deviations, and consumer-project acceptance are recorded separately; skill-host capabilities belong to adoption-environment verification. Historical conclusions retain their original version, carrier, and input scope. Earlier statements such as “not merged” describe their own stage, not subsequent remote status.
+
+The six synthetic reading-pilot findings remain five implementation-execution deviations and one verification-execution deviation; failures have not been fixed or converted to passes. No cases, demo repairs, product acceptance, or screen-reader checks were run in this round. The two actual screen-reader checks remain deferred. Example NOT_RUN and historical BLOCKED states, and the project mandatory-subcheck aggregation rule, remain intact. The maintainer still decides whether the defined standards-review scope is complete; this does not automatically close Issue #7 or authorize release.
+
 ## 2026-11-17：修订与验证记录的提交整理 / Packaging corrections and verification records
 
 维护者已授权将三项修订和验证记录提交、推送到 PR #17 的原功能分支，并更新中英双语说明；不合并、不启用自动合并，不改变主线或固定采用版本。下方“本地未提交”等表述是上一阶段的历史快照，不描述后续远端状态。
