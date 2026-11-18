@@ -229,6 +229,24 @@
 - 分类 / 状态：`TEAM_RECOMMENDATION`，官方设计指导的有限归纳；`READ_SCOPED`，不是统一采用玻璃的要求或产品验收。
 - 许可：页面 Apple 版权与 Terms of Use；仅公开链接和原创短摘要，未复制正文、图片、UI Kit 或 SDK 文件。
 
+## S25
+
+- 发布者 / 标题：pbakaus / Impeccable — typeset、polish。
+- URL：[typeset](https://github.com/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/.agents/skills/impeccable/reference/typeset.md)、[polish](https://github.com/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/.agents/skills/impeccable/reference/polish.md)、[根 LICENSE](https://github.com/pbakaus/impeccable/blob/c3bb418ee38ee49a6b999b7752c1368f3123a2bd/LICENSE)。
+- 版本 / 读取日期：固定提交 `c3bb418ee38ee49a6b999b7752c1368f3123a2bd`；2026-11-06 读取两个参考文件全文，并核对根 LICENSE 首部 Apache-2.0 标示。未运行外部工具、下载引擎或审计依赖。
+- 平台 / 采用范围：设计方向审阅技能、02 章及视觉方向记录的排版角色、内容压力、局部润色与渲染证据方法。按实际语言与任务判断，不采用固定行长/字号、检测器、钩子、自动下载或委派流程，也不继承其权限与发布行为。
+- 分类 / 状态：`TEAM_RECOMMENDATION` 的第三方参考；`READ_SCOPED`。原创合成例为 `PROJECT_CHOICE`，不是技能效果或原生平台验证。
+- 许可：根 LICENSE 首部标示 Apache-2.0；仅链接与原创有限归纳，没有复制技能、源码、数值表或素材，不推定附属资产与依赖的许可。
+
+## S26
+
+- 发布者 / 标题：Damola Akinleye / Interface Design — SKILL.md。
+- URL：[SKILL.md](https://github.com/Dammyjay93/interface-design/blob/2f9be3206855bcb2d1d0af262c8bae25cba6658d/.claude/skills/interface-design/SKILL.md)、[根 LICENSE](https://github.com/Dammyjay93/interface-design/blob/2f9be3206855bcb2d1d0af262c8bae25cba6658d/LICENSE)。
+- 版本 / 读取日期：固定提交 `2f9be3206855bcb2d1d0af262c8bae25cba6658d`；2026-11-06 读取该技能全文与根 MIT LICENSE，未执行技能或审计其他命令。
+- 平台 / 采用范围：产品界面的任务、视觉层级、信息密度与组间节奏；用于审阅技能及视觉记录的原创归纳。不将产品 UI 方法扩成营销页或原生平台统一要求；不采用固定字体比例、像素/间距公式、风格禁令、命中区 WCAG 概括、动效数值或其专属记录路径。
+- 分类 / 状态：`TEAM_RECOMMENDATION` 的第三方参考；`READ_SCOPED`。没有安装、效果对照试验或平台背书。
+- 许可：根 LICENSE 为 MIT，Copyright (c) 2026 Damola Akinleye。只链接并作原创有限归纳，未复制技能正文、表格、代码或资产；本库许可不覆盖外部文件。
+
 ## 原创部分与未验证项
 
 探索流程、交接包结构、分层验收、匿名案例、完整表单示例、维护方法和新增审阅技能为本仓库原创团队建议，不声称出自平台官方。表单状态、校验时机、查询/防重复前提及文案是合成项目选择；没有产品或服务实现证据。平台实际 SDK 兼容性、账户功能、技能自动选择、产品质量和方法效果均未由本次文档编写验证；具体项目采用前继续记录为 `UNVERIFIED`。

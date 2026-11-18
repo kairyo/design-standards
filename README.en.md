@@ -36,6 +36,8 @@ The [synthetic adaptive-fidelity and regression example](examples/adaptive-fidel
 
 The [synthetic adaptive-navigation, material, and prototype example](examples/adaptive-navigation-materials.md) adds control semantics, nested materials, actual click regions, destinations and return state, background/foreground responsibilities, and tool recovery. All twelve execution checks remain `NOT_RUN`. Full structural inventories, visual samples, and exercised paths have separate coverage records; project parameters and tool success do not substitute for general methods or product acceptance.
 
+Visual-method additions: [Visual-direction record](templates/visual-direction-record.md) and [Historical verification and current integration](reviews/2026-11-06-visual-craft.md). Selectively synthesize typography, product hierarchy, and local-refinement methods from pinned sources; separate synthetic browser results from human preference/comprehension evidence. The skill remains uninstalled.
+
 ## Four distinct claim categories
 
 - `OFFICIAL_REQUIREMENT`: an official normative requirement with a clear source and applicability conditions. Not every official recommendation belongs here.

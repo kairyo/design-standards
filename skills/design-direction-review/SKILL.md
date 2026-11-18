@@ -3,7 +3,7 @@ name: design-direction-review
 description: "Review visual hierarchy, aesthetic coherence and design directions for Web or native interfaces using supplied evidence. Use for visual critique or comparing directions, not build-only work, implementation-only requests or a formal accessibility audit."
 license: "CC-BY-4.0; see LICENSE and attribution below."
 metadata:
-  version: "0.1.0-draft.2"
+  version: "0.1.0-draft.3"
   provenance: "Original design-standards workflow; not an official platform skill."
 ---
 
@@ -28,11 +28,15 @@ metadata:
 
 把发现分成三类：影响任务完成的问题、偏离已批准设计的不一致、可选择的风格建议。不要把个人喜好伪装成官方要求；没有测量依据时，不给出精确对比度、字号合规或“审美提升百分比”。
 
+涉及排版、产品界面密度或局部润色时，按需读 [视觉细化参考](references/visual-craft.md)，把判断落实到具体文字角色、内容组和状态；普通概念讨论不必展开全部检查。方向需要跨轮保留时，记录受众与任务、气质、文字/颜色角色、密度、识别特征、取舍及依据；已有项目记录可承载，不另建平行设计真相源。
+
 ## 比较与收敛
 
 方向尚未确定时，以相同内容和任务比较少量有实质差异的方案，例如改变阅读顺序、导航组织或信息密度，而不只是换色。数量由决定难度决定；明确的小修不需要强制多稿。
 
 建议应说明保留什么、改什么、为什么以及代价。局部问题优先提出局部调整；需要替换品牌、控件行为或已有设计决定时，单列待批准取舍。素材许可未确定时，不把参考图、字体或付费组件复制进交付物。
+
+前后对照固定 brief、内容、任务、视口、主题与起始状态，列出真正改变的变量。分别记录可见差异、人的视觉偏好、理解正确性和任务结果；未实际观察的一项保持未验证。自动走通只证明所测路径能运行，同一作者制作与评价的样例不能证明技能带来因果提升；不要求旧版失败，也不把自评分或偏好票当作可用性结论。
 
 ## 交付与结束
 
