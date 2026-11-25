@@ -255,56 +255,72 @@
 
 - Apple HIG 的 [Designing for tvOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos) 与 [App icons](https://developer.apple.com/design/human-interface-guidelines/app-icons)。读取平台特点、观看距离、共用屏幕、输入方式和 Top Shelf，以及 tvOS 图标的图层、焦点视差及 Xcode 堆栈说明。
 - 05 章用于确定设计情境。观看距离和遥控器须结合目标设备记录，分类为 `TEAM_RECOMMENDATION`。
+- HIG 的 Change log 最新所列日期分别为 Designing for tvOS 的 2022-09-14 和 App icons 的 2026-10-28。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用 Apple 各页条款，见 [Apple 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S28
 
 - Apple HIG 的 [Focus and selection](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection) 与 [Remotes](https://developer.apple.com/design/human-interface-guidelines/remotes)。读取焦点与选择、当前对象消失、tvOS 控件状态、手势及遥控器按键。UIKit 的 [About focus interactions for Apple TV](https://developer.apple.com/documentation/uikit/about-focus-interactions-for-apple-tv) 补充系统标签等控件停焦后自动选择，以及焦点引擎如何根据方向寻找下一对象。
 - 05、07 章用于检查遥控浏览和激活、焦点反馈、Back 与 Play/Pause。游戏的暂停行为以及定向输入时原焦点对象消失的处理都有各自前提。分类为 `TEAM_RECOMMENDATION`。
+- Focus and selection 的 Change log 最新所列日期为 2023-10-24。所读 Remotes 与 UIKit 页面未列 Change log。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用 Apple 各页条款，见 [Apple 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S29
 
 - Apple HIG 的 [Managing accounts](https://developer.apple.com/design/human-interface-guidelines/managing-accounts) 与 [Virtual keyboards](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards)。读取两页的 tvOS 部分，覆盖共享设备上的用户资料、通过其他设备认证、系统键盘与辅助输入。
 - 05 章用于减少遥控录入和设计账户切换。具体登录协议、过期处理与数据隔离策略由采用项目核实。分类为 `TEAM_RECOMMENDATION`。
+- Virtual keyboards 的 Change log 最新所列日期为 2025-06-09。所读 Managing accounts 页面未列 Change log。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用 Apple 各页条款，见 [Apple 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S30
 
 - Apple HIG 的 [Playing video](https://developer.apple.com/design/human-interface-guidelines/playing-video) 与 [Top Shelf](https://developer.apple.com/design/human-interface-guidelines/top-shelf)。读取系统播放控制、音轨与字幕、与系统 TV App 整合时的观看者和续播及退出，以及 Top Shelf 概述、备用静态图、操作和详情轮播的目的地。
 - 05 章及电视附页用于已提供媒体或对应系统入口的应用。按入口实际提供的按钮检验“播放”和“更多信息”，分类为 `TEAM_RECOMMENDATION`。
+- Playing video 的 Change log 最新所列日期为 2023-09-12。所读 Top Shelf 页面未列 Change log。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用 Apple 各页条款，见 [Apple 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S31
 
-- Android Developers 的 [Design for TV](https://developer.android.com/design/ui/tv/guides/foundations/design-for-tv)（2023-05-08）、[Layouts](https://developer.android.com/design/ui/tv/guides/styles/layouts)（2025-05-09）与 [Typography](https://developer.android.com/design/ui/tv/guides/styles/typography)（2026-07-06）。读取远距与共用情境、画布与密度、overscan、排版角色和可读性。
+- Android Developers 的 [Design for TV](https://developer.android.com/design/ui/tv/guides/foundations/design-for-tv)（原页更新 2023-05-08 UTC）、[Layouts](https://developer.android.com/design/ui/tv/guides/styles/layouts)（原页更新 2025-05-09 UTC）与 [Typography](https://developer.android.com/design/ui/tv/guides/styles/typography)（原页更新 2026-07-06 UTC）。读取远距与共用情境、画布与密度、overscan、排版角色和可读性。
 - 06 章及电视附页采用安全区域与背景分开处理的设计方法。Layouts 的原则段举例为左右 48 dp、上下 27 dp。Overscan margins 段的算式又将 27 dp 取整为 24 dp，其后正文举例为左右 58 dp、上下 28 dp。约 5% 用作设计起点，具体边界由项目实测。分类为 `TEAM_RECOMMENDATION`。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S32
 
-- Android Developers 的 [Focus system](https://developer.android.com/design/ui/tv/guides/styles/focus-system)（2024-03-21）、[TV navigation](https://developer.android.com/training/tv/get-started/navigation)（2026-10-23）、[Use Jetpack Compose on Android TV](https://developer.android.com/training/tv/playback/compose)（2026-10-28）及 [Manage TV controllers](https://developer.android.com/training/tv/get-started/controllers)（2026-10-26）。读取焦点反馈、同页与深链返回、Live 标签直达播放及其例外、两种首键路径、Compose 组件的输入特点和控制器重连。
+- Android Developers 的 [Focus system](https://developer.android.com/design/ui/tv/guides/styles/focus-system)（原页更新 2024-03-21 UTC）、[TV navigation](https://developer.android.com/training/tv/get-started/navigation)（原页更新 2026-10-23 UTC）、[Use Jetpack Compose on Android TV](https://developer.android.com/training/tv/playback/compose)（原页更新 2026-10-28 UTC）及 [Manage TV controllers](https://developer.android.com/training/tv/get-started/controllers)（原页更新 2026-10-26 UTC）。读取焦点反馈、同页与深链返回、Live 标签直达播放及其例外、两种首键路径、Compose 组件的输入特点和控制器重连。
 - 06 章用于方向图、返回落点及已接入 Live 的合作方深链。Compose 作为实现选项，分类为 `TEAM_RECOMMENDATION`。Live 的条件性返回要求与 S33 的 TV-DL 对读。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S33
 
-- Android Developers 的 [TV app quality](https://developer.android.com/docs/quality-guidelines/tv-app-quality)（2026-11-17）与 [Create and run a TV app](https://developer.android.com/training/tv/get-started/create)（2026-09-28）。核对 Tier 3 的启动器、overscan、遥控与手柄、返回与 Live、最低 SDK（TV-PS）、播放与后台媒体控件、Ambient Mode，以及 Tier 2 的 TV-4K。读取 TV Activity、leanback 及触屏声明、图标和横幅的设置条件。
+- Android Developers 的 [TV app quality](https://developer.android.com/docs/quality-guidelines/tv-app-quality)（原页更新 2026-11-17 UTC）与 [Create and run a TV app](https://developer.android.com/training/tv/get-started/create)（原页更新 2026-09-28 UTC）。核对 Tier 3 的启动器、overscan、遥控与手柄、返回与 Live、最低 SDK（TV-PS）、播放与后台媒体控件、Ambient Mode，以及 Tier 2 的 TV-4K。读取 TV Activity、leanback 及触屏声明、图标和横幅的设置条件。
 - 06 章只在对应 Android TV 等级、分发及功能适用时使用 `OFFICIAL_REQUIREMENT`。TV-PC 的左右定位顺序与 S34 有文字分歧，该点单列 `UNVERIFIED`。本库没有进行商店认证。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S34
 
-- Android Developers 的 [Playback controls on TV](https://developer.android.com/training/tv/playback/controls)（2026-10-23）。读取控制汇总表、播放或暂停、定位和进度预览。
+- Android Developers 的 [Playback controls on TV](https://developer.android.com/training/tv/playback/controls)（原页更新 2026-10-23 UTC）。读取控制汇总表、播放或暂停、定位和进度预览。
 - 06 章及电视附页分别记录播放器上下文、实际按键及播放位置。汇总表写右键前进、左键回退，S33 的 TV-PC 以相反顺序描述。左右键映射的官方一致性为 `UNVERIFIED`，其余动作按各自适用范围核对。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S35
 
-- Android Developers 的 [Accessibility best practices for Android TV](https://developer.android.com/training/tv/accessibility)（2026-11-17）及 [TalkBack evaluation examples for TV apps](https://developer.android.com/training/tv/accessibility/talkback)（2026-10-23）。读取文本缩放、辅助音轨支持与 TalkBack 首次使用、遥控导航示例。
+- Android Developers 的 [Accessibility best practices for Android TV](https://developer.android.com/training/tv/accessibility)（原页更新 2026-11-17 UTC）及 [TalkBack evaluation examples for TV apps](https://developer.android.com/training/tv/accessibility/talkback)（原页更新 2026-10-23 UTC）。读取文本缩放、辅助音轨支持与 TalkBack 首次使用、遥控导航示例。
 - 07 章及电视附页用于为项目选择可用设置、实际遥控输入与可核对的反馈。分类为 `TEAM_RECOMMENDATION`。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S36
 
-- Android Developers 的 [On-screen keyboard](https://developer.android.com/training/tv/get-started/onscreen-keyboard)（2026-10-23）及 [Authenticate across form factors](https://developer.android.com/identity/form-factors)（2026-10-12）。读取电视键盘的输入方式与位置，以及后者的 Android TV 部分，包括共享设备、跨设备通行密钥与系统、Google 服务和手机前提。
+- Android Developers 的 [On-screen keyboard](https://developer.android.com/training/tv/get-started/onscreen-keyboard)（原页更新 2026-10-23 UTC）及 [Authenticate across form factors](https://developer.android.com/identity/form-factors)（原页更新 2026-10-12 UTC）。读取电视键盘的输入方式与位置，以及后者的 Android TV 部分，包括共享设备、跨设备通行密钥与系统、Google 服务和手机前提。
 - 06 章及电视附页用于搜索和认证流程。项目需核实所用输入法、设备与登录方式，分类为 `TEAM_RECOMMENDATION`。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用各页的 Content License，见 [Android Developers 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## S37
 
 - Apple 的 [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/)（App Store Connect 的 Apple TV 表）及 [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)（2.1、2.3.3、2.4.3）。读取电视截图规格、实际使用画面、含账户功能时的审核访问和演示模式条件，以及遥控器、可选外设和必需手柄的元数据要求。
 - 05 章与电视附页只在准备 App Store 提交时使用 `OFFICIAL_REQUIREMENT`。HIG 的图标、焦点及 Top Shelf 建议另见 S27、S28、S30。实际提审结果由项目记录。
+- App Review Guidelines 页脚标明 Last Updated 为 2026-10-16。所读 Screenshot specifications 页面未标示更新日期。
+- 动态网页实际读取于 2026-11-25（`READ_SCOPED`）。本库仅链接并作原创归纳。外部资料适用 Apple 各页条款，见 [Apple 许可说明](../THIRD-PARTY-NOTICES.md#中文)。
 
 ## 原创部分与未验证项
 

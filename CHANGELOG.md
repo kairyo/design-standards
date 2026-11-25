@@ -1,5 +1,11 @@
 # 变更记录
 
+## 未发布 — 电视遥控焦点审阅 / Unreleased TV remote focus review
+
+2026-11-25，[自适应审阅技能](skills/adaptive-ui-review/SKILL.md)更新至 `0.1.0-draft.3`，补充远距安全区、遥控器方向焦点、确认与返回，以及列表刷新后的焦点恢复。新增一对[技能选择案例](skills/review-cases.md)。[来源登记 S27–S37](references/sources.md#s27)逐条标明读取日期、范围状态和许可入口，并分别注明 Apple 原页可见的变更标记和 Android 原页的 UTC 更新日期。
+
+On 2026-11-25, the [adaptive review skill](skills/adaptive-ui-review/SKILL.md) moves to `0.1.0-draft.3` and adds safe areas at viewing distance, directional remote focus, activation, Back and focus recovery after list updates. Two [skill selection cases](skills/review-cases.md) cover the scope boundary. Each [source entry S27–S37](references/sources.md#s27) now carries its reading date, scoped-read status and licensing reference. Published Apple change markers and Android page update dates in UTC are identified separately.
+
 ## 未发布 — Apple TV 与 Android TV 设计及验收 / Unreleased Apple TV and Android TV design and verification
 
 2026-11-25，05、06 章新增两端各自的远距布局、遥控焦点、返回、账户、媒体及商店交付条件。07、08 章补充辅助操作与代表流程的证据要求。[电视设计与排查附页](templates/tv-design-review.md)提供设计交接字段及十二项按功能选用的排查动作。补读 S01、S03 并登记 S27–S37。Android 官方资料对左右定位键的描述有分歧，登记为待核实。合成例保留待执行状态，实际产品和商店结果由采用项目记录。

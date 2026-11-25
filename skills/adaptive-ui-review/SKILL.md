@@ -1,15 +1,15 @@
 ---
 name: adaptive-ui-review
-description: "Review responsive or adaptive UI behavior across window resizing, split views, fold states and changing content or input on Web, Apple or Android. Use for layout and state-continuity reviews, not unrelated style edits, build-only work or API-only migrations."
+description: "Review adaptive layouts and state continuity across window resizing, split views, fold states, and changing content or input on Web, Apple or Android. Includes TV viewing distance, overscan and remote focus across navigation, Back or list updates. Pure visual styling, build work and API-only migrations are outside scope."
 license: "CC-BY-4.0; see LICENSE and attribution below."
 metadata:
-  version: "0.1.0-draft.2"
+  version: "0.1.0-draft.3"
   provenance: "Original design-standards workflow; not an official platform skill."
 ---
 
 # 自适应界面审阅
 
-检查空间变化后“还能完成什么、当前位置与输入是否保留”，不只是缩放后的外观。以下是团队方法建议，不是 SDK 迁移指令，也不因读到问题就获得代码、设备或服务操作权限。
+检查空间、内容或输入方式变化后，用户能否继续原来的任务，当前位置、焦点与输入能否保留。以下是团队审阅方法。实际操作设备、修改代码或启动服务依任务授权执行。
 
 ## 界定本次判断
 
@@ -24,6 +24,14 @@ metadata:
 3. **状态连续性**：列出此次变化应保留的具体状态，例如当前对象、导航位置、未提交输入、焦点和阅读位置。哪些状态允许重置由产品决定，不自造一套全局策略。
 
 布局断点、尺寸单位和控件最小值应来自实际平台与内容压力，不从设计画布等比例除算、不跨平台复制数值。只在问题涉及绘制或对齐时核对像素精度，不将整数尺寸强制施加到所有布局计算。
+
+## 电视上的可见范围与遥控焦点
+
+审阅 tvOS 或 Android TV 的远距布局时，记录目标观看距离和电视的显示设置。背景可以延伸到屏边。检查长标题、操作和放大后的焦点轮廓在过扫描（overscan）裁切后是否仍完整可见，在目标距离能否辨认。安全区按各平台来源和目标电视核对。
+
+审阅遥控操作时，标出首个焦点和关键控件在四个方向上的可达邻项。用 Siri Remote 的方向输入或 Android TV 的 D-pad，分别记录移动、停留与按下确认的结果。tvOS 的 UIKit 系统标签可在短暂停焦后切换面板。经过普通卡片可以显示约定的预览，收藏、购买等业务动作应等用户主动确认。
+
+从列表进入详情或打开面板后，按返回并核对目的地、滚动位置和重新接收输入的控件。异步重排后按内容身份核对焦点。原项换了格位时，检查焦点是否跟随它，下一次确认是否仍打开同一项。定向输入时若原项已下架，检查焦点是否落在可见、合理的邻项。若列表已空，检查遥控器能否返回上一级。画面有重试等操作时，再检查这些控件能否获焦并执行。只有静态画面时，记录预期路径，把焦点恢复与真机裁切留待实测。
 
 ## 选择能暴露风险的验证
 
