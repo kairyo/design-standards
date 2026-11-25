@@ -21,7 +21,8 @@ EXPECTED = (
     "docs/08-implementation-acceptance.md", "docs/09-reference-library.md",
     "docs/10-adoption-maintenance.md", "references/sources.md",
     "templates/design-brief.md", "templates/adoption-record.md",
-    "templates/verification-record.md", "examples/anonymous-cases.md",
+    "templates/verification-record.md", "templates/tv-design-review.md",
+    "examples/anonymous-cases.md",
     "examples/form-submit-recovery.md", "examples/stepped-form-branch-return.md",
     "examples/figma-variable-theme.md", "templates/landing-page-brief.md",
     "examples/adaptive-fidelity-regression.md",
@@ -266,8 +267,8 @@ def main():
             source_ids = set(matches)
             if len(matches) != len(source_ids):
                 errors.append("duplicate source IDs")
-    if source_ids != {f"S{i:02d}" for i in range(1, 27)}:
-        errors.append("source registry must contain S01 through S26")
+    if source_ids != {f"S{i:02d}" for i in range(1, 38)}:
+        errors.append("source registry must contain S01 through S37")
     if errors:
         print("FAIL\n" + "\n".join(errors))
         return 1

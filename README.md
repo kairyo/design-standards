@@ -20,6 +20,7 @@ GitHub 协作内容与入口提供中英双语；十章正文、设计记录模�
 | 组织 Figma、准备实现输入 | [03 Figma 与交接](docs/03-figma-handoff.md) |
 | 建立可复用视觉语言 | [04 设计系统](docs/04-design-systems.md) |
 | 处理系统与窗口差异 | [05 Apple](docs/05-apple.md)、[06 Android](docs/06-android.md) |
+| 设计电视应用，排查遥控器、焦点与播放 | [Apple TV（tvOS）](docs/05-apple.md#tvos)、[Android TV](docs/06-android.md#android-tv)、[电视设计与排查附页](templates/tv-design-review.md) |
 | 本地化、主题与无障碍 | [07 包容性设计](docs/07-inclusive-design.md) |
 | 从设计到真实运行验收 | [08 实现与验收](docs/08-implementation-acceptance.md) |
 | 判断资料是否可信、是否适用 | [09 来源与经验](docs/09-reference-library.md)、[来源登记](references/sources.md) |

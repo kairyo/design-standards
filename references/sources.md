@@ -4,6 +4,8 @@
 
 2026-11-17 定向补读 S02 的控件位置、标题/符号和背景延展说明，新增 S24 材质来源；未重新认证其余来源或平台 API。
 
+2026-11-25 为电视端补读 S01、S03，新增 S27–S37。以下电视条目均为 `READ_SCOPED`，列出实际核对的页面与主题。Apple HIG 和 UIKit 读取官方 Markdown，App Store 提交条件读取官方网页。Android 条目括号内为原页所示的 UTC 更新日期。两者均只收录公开链接与原创归纳。Apple 资料遵循其页面条款，Android Developers 资料适用各页的 Content License。
+
 未标不可变版本的网页为动态资料，核对日期不是永久快照。内容只作短摘要和链接，不保存第三方正文。独立复核按 [审阅记录](../REVIEW.md)的具体范围分别记录，读取或复核来源不表示项目已批准采用。权利边界见 [第三方资料声明](../THIRD-PARTY-NOTICES.md)。
 
 2026-11-04 全库复核的实际读取范围及限制见 [独立内容复核记录](../reviews/2026-11-04-repository-review.md)。该记录不覆盖下列首次读取日期，也不把动态页面追溯认定为旧时点的固定快照。
@@ -13,6 +15,7 @@
 - 发布者 / 标题：Apple — Layout。
 - URL：https://developer.apple.com/design/human-interface-guidelines/layout
 - 版本：页面 Change log 最新所示 2026-09-09；读取官方 Markdown 正文，重点为 Visual hierarchy、Adaptability、Size classes、Guides and safe areas。
+- 2026-11-25 补读 Platform considerations 中的 tvOS，核对主要内容的屏边内距、额外焦点空间及屏幕边缘可能裁切的条件，供 05 章使用。
 - 平台 / 采用范围：Apple 的布局判断；01、05 章只选择层级、可用空间、安全区和适配建议，不采用其他平台的固定尺寸表。
 - 分类 / 状态：`TEAM_RECOMMENDATION`，官方设计建议的有限归纳；`READ_SCOPED`，采用待复核。
 - 许可：页面 Apple 版权与 Terms of Use；无再分发内容。
@@ -33,6 +36,7 @@
 - 发布者 / 标题：Apple — Accessibility。
 - URL：https://developer.apple.com/design/human-interface-guidelines/accessibility
 - 版本：动态页面，未据此确认固定发行号；读取 Introduction、Vision、Hearing、Mobility、Speech 的相关段落。
+- 2026-11-25 补读 Vision 中各平台系统字号及自定义字体建议、Hearing 的字幕与音频描述，以及辅助技术和减少动态的相关说明。05、07 章只将 tvOS 的 pt 值用于对应平台与文字类型。
 - 平台 / 采用范围：Apple；07 章对放大、提示、读屏、控制与输入的检查建议，不导入全平台统一字号或命中数值。
 - 分类 / 状态：`TEAM_RECOMMENDATION`；`READ_SCOPED`，不是符合性证明。
 - 许可：页面 Apple 版权与 Terms of Use；只链接和归纳。
@@ -246,6 +250,61 @@
 - 平台 / 采用范围：产品界面的任务、视觉层级、信息密度与组间节奏；用于审阅技能及视觉记录的原创归纳。不将产品 UI 方法扩成营销页或原生平台统一要求；不采用固定字体比例、像素/间距公式、风格禁令、命中区 WCAG 概括、动效数值或其专属记录路径。
 - 分类 / 状态：`TEAM_RECOMMENDATION` 的第三方参考；`READ_SCOPED`。没有安装、效果对照试验或平台背书。
 - 许可：根 LICENSE 为 MIT，Copyright (c) 2026 Damola Akinleye。只链接并作原创有限归纳，未复制技能正文、表格、代码或资产；本库许可不覆盖外部文件。
+
+## S27
+
+- Apple HIG 的 [Designing for tvOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-tvos) 与 [App icons](https://developer.apple.com/design/human-interface-guidelines/app-icons)。读取平台特点、观看距离、共用屏幕、输入方式和 Top Shelf，以及 tvOS 图标的图层、焦点视差及 Xcode 堆栈说明。
+- 05 章用于确定设计情境。观看距离和遥控器须结合目标设备记录，分类为 `TEAM_RECOMMENDATION`。
+
+## S28
+
+- Apple HIG 的 [Focus and selection](https://developer.apple.com/design/human-interface-guidelines/focus-and-selection) 与 [Remotes](https://developer.apple.com/design/human-interface-guidelines/remotes)。读取焦点与选择、当前对象消失、tvOS 控件状态、手势及遥控器按键。UIKit 的 [About focus interactions for Apple TV](https://developer.apple.com/documentation/uikit/about-focus-interactions-for-apple-tv) 补充系统标签等控件停焦后自动选择，以及焦点引擎如何根据方向寻找下一对象。
+- 05、07 章用于检查遥控浏览和激活、焦点反馈、Back 与 Play/Pause。游戏的暂停行为以及定向输入时原焦点对象消失的处理都有各自前提。分类为 `TEAM_RECOMMENDATION`。
+
+## S29
+
+- Apple HIG 的 [Managing accounts](https://developer.apple.com/design/human-interface-guidelines/managing-accounts) 与 [Virtual keyboards](https://developer.apple.com/design/human-interface-guidelines/virtual-keyboards)。读取两页的 tvOS 部分，覆盖共享设备上的用户资料、通过其他设备认证、系统键盘与辅助输入。
+- 05 章用于减少遥控录入和设计账户切换。具体登录协议、过期处理与数据隔离策略由采用项目核实。分类为 `TEAM_RECOMMENDATION`。
+
+## S30
+
+- Apple HIG 的 [Playing video](https://developer.apple.com/design/human-interface-guidelines/playing-video) 与 [Top Shelf](https://developer.apple.com/design/human-interface-guidelines/top-shelf)。读取系统播放控制、音轨与字幕、与系统 TV App 整合时的观看者和续播及退出，以及 Top Shelf 概述、备用静态图、操作和详情轮播的目的地。
+- 05 章及电视附页用于已提供媒体或对应系统入口的应用。按入口实际提供的按钮检验“播放”和“更多信息”，分类为 `TEAM_RECOMMENDATION`。
+
+## S31
+
+- Android Developers 的 [Design for TV](https://developer.android.com/design/ui/tv/guides/foundations/design-for-tv)（2023-05-08）、[Layouts](https://developer.android.com/design/ui/tv/guides/styles/layouts)（2025-05-09）与 [Typography](https://developer.android.com/design/ui/tv/guides/styles/typography)（2026-07-06）。读取远距与共用情境、画布与密度、overscan、排版角色和可读性。
+- 06 章及电视附页采用安全区域与背景分开处理的设计方法。Layouts 的原则段举例为左右 48 dp、上下 27 dp。Overscan margins 段的算式又将 27 dp 取整为 24 dp，其后正文举例为左右 58 dp、上下 28 dp。约 5% 用作设计起点，具体边界由项目实测。分类为 `TEAM_RECOMMENDATION`。
+
+## S32
+
+- Android Developers 的 [Focus system](https://developer.android.com/design/ui/tv/guides/styles/focus-system)（2024-03-21）、[TV navigation](https://developer.android.com/training/tv/get-started/navigation)（2026-10-23）、[Use Jetpack Compose on Android TV](https://developer.android.com/training/tv/playback/compose)（2026-10-28）及 [Manage TV controllers](https://developer.android.com/training/tv/get-started/controllers)（2026-10-26）。读取焦点反馈、同页与深链返回、Live 标签直达播放及其例外、两种首键路径、Compose 组件的输入特点和控制器重连。
+- 06 章用于方向图、返回落点及已接入 Live 的合作方深链。Compose 作为实现选项，分类为 `TEAM_RECOMMENDATION`。Live 的条件性返回要求与 S33 的 TV-DL 对读。
+
+## S33
+
+- Android Developers 的 [TV app quality](https://developer.android.com/docs/quality-guidelines/tv-app-quality)（2026-11-17）与 [Create and run a TV app](https://developer.android.com/training/tv/get-started/create)（2026-09-28）。核对 Tier 3 的启动器、overscan、遥控与手柄、返回与 Live、最低 SDK（TV-PS）、播放与后台媒体控件、Ambient Mode，以及 Tier 2 的 TV-4K。读取 TV Activity、leanback 及触屏声明、图标和横幅的设置条件。
+- 06 章只在对应 Android TV 等级、分发及功能适用时使用 `OFFICIAL_REQUIREMENT`。TV-PC 的左右定位顺序与 S34 有文字分歧，该点单列 `UNVERIFIED`。本库没有进行商店认证。
+
+## S34
+
+- Android Developers 的 [Playback controls on TV](https://developer.android.com/training/tv/playback/controls)（2026-10-23）。读取控制汇总表、播放或暂停、定位和进度预览。
+- 06 章及电视附页分别记录播放器上下文、实际按键及播放位置。汇总表写右键前进、左键回退，S33 的 TV-PC 以相反顺序描述。左右键映射的官方一致性为 `UNVERIFIED`，其余动作按各自适用范围核对。
+
+## S35
+
+- Android Developers 的 [Accessibility best practices for Android TV](https://developer.android.com/training/tv/accessibility)（2026-11-17）及 [TalkBack evaluation examples for TV apps](https://developer.android.com/training/tv/accessibility/talkback)（2026-10-23）。读取文本缩放、辅助音轨支持与 TalkBack 首次使用、遥控导航示例。
+- 07 章及电视附页用于为项目选择可用设置、实际遥控输入与可核对的反馈。分类为 `TEAM_RECOMMENDATION`。
+
+## S36
+
+- Android Developers 的 [On-screen keyboard](https://developer.android.com/training/tv/get-started/onscreen-keyboard)（2026-10-23）及 [Authenticate across form factors](https://developer.android.com/identity/form-factors)（2026-10-12）。读取电视键盘的输入方式与位置，以及后者的 Android TV 部分，包括共享设备、跨设备通行密钥与系统、Google 服务和手机前提。
+- 06 章及电视附页用于搜索和认证流程。项目需核实所用输入法、设备与登录方式，分类为 `TEAM_RECOMMENDATION`。
+
+## S37
+
+- Apple 的 [Screenshot specifications](https://developer.apple.com/help/app-store-connect/reference/app-information/screenshot-specifications/)（App Store Connect 的 Apple TV 表）及 [App Review Guidelines](https://developer.apple.com/app-store/review/guidelines/)（2.1、2.3.3、2.4.3）。读取电视截图规格、实际使用画面、含账户功能时的审核访问和演示模式条件，以及遥控器、可选外设和必需手柄的元数据要求。
+- 05 章与电视附页只在准备 App Store 提交时使用 `OFFICIAL_REQUIREMENT`。HIG 的图标、焦点及 Top Shelf 建议另见 S27、S28、S30。实际提审结果由项目记录。
 
 ## 原创部分与未验证项
 

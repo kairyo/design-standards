@@ -20,6 +20,7 @@ This repository supports design planning, handoff, and acceptance for Web/HTML, 
 | Organize Figma and prepare implementation inputs | [03 Figma and handoff](docs/03-figma-handoff.md) |
 | Establish a reusable visual language | [04 Design systems](docs/04-design-systems.md) |
 | Handle system and window differences | [05 Apple](docs/05-apple.md), [06 Android](docs/06-android.md) |
+| Design TV apps and verify remote input, focus, and playback | [Apple TV (tvOS)](docs/05-apple.md#tvos), [Android TV](docs/06-android.md#android-tv), [TV design and verification worksheet](templates/tv-design-review.md) |
 | Address localization, themes, and accessibility | [07 Inclusive design](docs/07-inclusive-design.md) |
 | Move from design to real-product acceptance | [08 Implementation and acceptance](docs/08-implementation-acceptance.md) |
 | Assess source reliability and applicability | [09 Sources and experience](docs/09-reference-library.md), [Source registry](references/sources.md) |
