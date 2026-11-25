@@ -8,7 +8,7 @@
 
 | 来源 | 归属与本仓库处理方式 |
 | --- | --- |
-| Apple Human Interface Guidelines | Apple；原页面保留其版权和使用条款。本仓库不复制图像、UI Kit、SF Symbols、字体或 SDK 内容。 |
+| Apple Human Interface Guidelines、UIKit、App Store Connect 与 App Review 文档 | 原页面保留 Apple 的版权与使用条款。本仓库只链接和归纳相关内容，没有复制图像、UI Kit、SF Symbols、字体或 SDK 文件。 |
 | Android Developers | Google / 相应贡献者；页面声明内容与代码受其 Content License 约束。本仓库没有转载代码或资源，后续使用须逐项核对。 |
 | Figma Help Center | Figma / 相应权利人；仅链接说明功能，不再分发 Community 文件或商业设计资产。 |
 | W3C WCAG / WCAG2ICT | W3C；遵守相应文档的版权与使用声明，不把参考摘要当作完整标准。 |
@@ -38,7 +38,7 @@ This repository's CC BY 4.0 / MIT grants cover only the original material licens
 
 | Source | Ownership and treatment in this repository |
 | --- | --- |
-| Apple Human Interface Guidelines | Apple; original pages retain their copyright and terms. No images, UI Kits, SF Symbols, fonts, or SDK material are copied here. |
+| Apple Human Interface Guidelines, UIKit, App Store Connect and App Review documentation | Apple's copyright and terms apply to the original pages. This repository links to them and provides original summaries. No images, UI Kits, SF Symbols, fonts or SDK files are copied here. |
 | Android Developers | Google / respective contributors; pages state that their content and code are subject to the Content License. This repository reproduces no code or assets; future use requires individual review. |
 | Figma Help Center | Figma / respective rights holders; links and feature explanations only, without redistributing Community files or commercial design assets. |
 | W3C WCAG / WCAG2ICT | W3C; retain the applicable document copyright and use statements. Reference summaries are not the complete standards. |

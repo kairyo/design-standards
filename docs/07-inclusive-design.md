@@ -41,6 +41,12 @@ Android 的指导强调可理解的标签、辅助操作、标准控件能力与
 
 [完整表单示例](../examples/form-submit-recovery.md)列出具体动作与待执行检查；未取得运行证据前，例子的存在不能证明流程可访问。
 
+## 电视端的远距识别与辅助操作
+
+在约定的观看距离辨认焦点、操作与状态，换长文案、增强对比或减少动态等可用设置后再看。焦点放大减弱时仍应有清晰的轮廓或形态线索。对共享遥控器场景，分别检查视觉焦点和辅助技术实际读出的名称、角色、选中状态与错误。把 VoiceOver（tvOS）、TalkBack（Android TV）及其各自实际使用的遥控手势和系统版本记在对应平台行。[S03](../references/sources.md#s03) · [S28](../references/sources.md#s28) · [S35](../references/sources.md#s35)
+
+有媒体时，字幕、包含重要声音提示的听障字幕以及对关键视觉内容的音频描述分别核对。选择带相应轨道的样片，走到选择入口，验证真实输出、字幕位置和控制层遮挡。轨道来源、可用语言和系统偏好支持以项目实际范围为准。[S03](../references/sources.md#s03) · [S35](../references/sources.md#s35) · [电视排查动作](../templates/tv-design-review.md)
+
 ## WCAG 的适用边界
 
 `OFFICIAL_REQUIREMENT`（条件性）：若对 Web 内容声明 WCAG 2.2 AA 符合性，应满足其 A/AA 成功准则与全部符合性要求，包括完整页面、完整流程及相应技术支持条件；局部截图、单个组件或自动扫描结果不足以支撑整站声明。精确要求以固定版本原文为准。[S12](../references/sources.md#s12)

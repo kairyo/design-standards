@@ -1,5 +1,11 @@
 # 变更记录
 
+## 未发布 — Apple TV 与 Android TV 设计及验收 / Unreleased Apple TV and Android TV design and verification
+
+2026-11-25，05、06 章新增两端各自的远距布局、遥控焦点、返回、账户、媒体及商店交付条件。07、08 章补充辅助操作与代表流程的证据要求。[电视设计与排查附页](templates/tv-design-review.md)提供设计交接字段及十二项按功能选用的排查动作。补读 S01、S03 并登记 S27–S37。Android 官方资料对左右定位键的描述有分歧，登记为待核实。合成例保留待执行状态，实际产品和商店结果由采用项目记录。
+
+On 2026-11-25, chapters 05 and 06 add platform-specific guidance for viewing distance, remote focus, Back, accounts, media and store submissions. Chapters 07 and 08 cover accessibility and evidence for a representative flow. The [TV worksheet](templates/tv-design-review.md) adds design handoff fields and twelve checks to select by feature. S01 and S03 were revisited and S27–S37 added. The two Android sources disagree on left/right seeking, which remains unverified. The synthetic example awaits execution. Adopting projects record their own device and store results.
+
 ## 未发布 — 视觉技能草案提交整合 / Unreleased visual-skill draft submission integration
 
 2026-11-17，基于主线 `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7` 整合 2026-11-06 的视觉方法草案，准备提交、推送功能分支并创建中英双语 PR；不合并、不启用自动合并，不安装技能或改变采用项目。保留主线新增内容和本地原草案。原草案的 Impeccable S24、Interface Design S25 分别调整为 S25、S26，现有 Apple 材质 S24 原样保留；下方旧条目的编号保留其历史含义。仓库版本保持 `0.1.0-draft.3`，仅 `design-direction-review` 元数据从 `0.1.0-draft.2` 升为 `0.1.0-draft.3`，`adaptive-ui-review` 仍为 `0.1.0-draft.2`。验证范围与整合记录见[视觉方法复核](reviews/2026-11-06-visual-craft.md)。

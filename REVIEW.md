@@ -4,6 +4,36 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-25 · 电视端设计与排查 / TV design and verification
+
+本地候选基于 `29bd9e8f1adf467640933bc7fdc8b14887322c8d`。定向补读 S01、S03，并将 25 个官方页面登记在 S27–S37。作者核对双语入口、两端章节、十二条排查动作与合成例。[来源登记](references/sources.md#s27) · [电视附页](templates/tv-design-review.md)
+
+文档走查涵盖停焦与确认、原项下架、普通返回与 Live 深链、共享账户与缺少手机、媒体中断与遥控重连、两家商店交付，以及真机与辅助技术的证据条件。结构检查通过，覆盖 60 个必需文件、50 份 Markdown、456 个内部链接和 37 条来源，`git diff --check` 通过。电视附页的表格与两端 `NOT_RUN` 示例均可正常解析。在临时副本分别移除附页及 S37，检查器均按预期报错，恢复后通过。
+
+独立复核对照官方原文，修正了系统标签停焦、Live 直达播放与返回、后台音频与视频、旧设备认证前提、TV 商店素材与输入硬件等适用条件。Android 左右定位键的官方符合性仍为 `UNVERIFIED`。报告只覆盖规范、来源与文字场景。运行、辅助技术、SDK 兼容和商店审核由实际项目取证。
+
+This local candidate is based on `29bd9e8f1adf467640933bc7fdc8b14887322c8d`. The author revisited S01 and S03, registered 25 official pages in S27–S37 and checked both README entry points, the platform chapters, twelve checks and the synthetic example. [Source register](references/sources.md#s27) · [TV worksheet](templates/tv-design-review.md)
+
+Document walkthroughs covered focus versus activation, a removed item, ordinary Back and Live deep links, a shared account without a phone, playback interruptions and remote reconnection, store deliverables, and the evidence needed for hardware and assistive technology. The structural check passed for 60 required files, 50 Markdown documents, 456 internal links and 37 source entries. `git diff --check` passed. The worksheet tables and both `NOT_RUN` examples parsed correctly. Removing the worksheet or S37 from a temporary copy caused the checker to fail, and restoring each fixture restored the passing result.
+
+Independent review against official sources led to corrections for focus-driven tab selection, Live playback and Back, background audio and video, authentication on older devices, store assets and input hardware. Official Android left/right seek conformance remains `UNVERIFIED`. This review covers the standards, sources and text scenarios. Adopting projects provide runtime, assistive technology, SDK compatibility and store-review evidence.
+
+### 会议室预约电视应用的文字案例 / Meeting-room booking TV app text cases
+
+本轮使用上述本地候选，电视附页的 Git 文件对象为 `fa7e55ae4ecf830f26f9a63dac259957ecefc350`。作者先记录判定，再由未见预期答案的独立审阅者按相同条文判读三个案例。下表中的录像、输入和预约记录都是题设。
+
+The author recorded the expected decisions before an independent reader applied the same local candidate to the three cases without seeing those decisions. The TV worksheet is identified by the Git blob above. The recording, inputs and booking event below are hypothetical.
+
+| 案例 / Case | 条文在本题中的判定 | Decision within the case |
+| --- | --- | --- |
+| 功能范围 / Feature scope | 两端均能浏览会议室、选择时段、确认预约和返回。该版本没有音视频，TV08 播放与 TV09 字幕、音轨均记 `NOT_APPLICABLE` 并写明原因。TV02 焦点、TV03 确认、TV04 返回仍适用，实际执行另行记录。 | Both platforms support choosing a room and time, booking it and returning. With no audio or video, TV08 playback and TV09 captions and tracks are `NOT_APPLICABLE`, with the reason recorded. TV02 focus, TV03 activation and TV04 Back still apply. Execution is recorded separately. |
+| 停焦与预约 / Focus and booking | 在 UIKit 系统标签「本周」停焦后切换面板，符合该控件约定。普通「确认预约」按钮只有停焦、没有按下，却创建了预约，题内为 `FAIL`，归为执行偏差。 | Dwelling on the UIKit “This week” tab may switch panels. In the second sequence, dwelling on the ordinary “Confirm booking” button created a booking without a press. That action is a `FAIL` in the fixture and an implementation deviation. |
+| 两端证据 / Platform evidence | 两端都要求验证返回与物理遥控器休眠重连。题设录像完整显示 Apple TV 按 Back 回到原会议室和原列表位置，只有这一子项可判 `PASS`。Apple TV 重连未执行。Android TV 只有设计截图，返回与重连均未执行。这三项各记 `NOT_RUN`，保留已验子项，两端合并不能判通过。 | Back and physical remote reconnection are required on both platforms. The hypothetical recording supports `PASS` only for Apple TV Back to the original room and list position. Apple TV reconnection was not run. Android TV has only design screenshots and neither action was run. These three subchecks remain `NOT_RUN`, so the combined flow cannot pass. |
+
+三题的两次判读一致，现有条文足以识别题内偏差和证据缺口。本轮规范抽查完成，实际产品验收未执行。Both readers reached the same decision on all three cases. The clauses distinguish the execution deviation and missing evidence. The standards check is complete. Product acceptance was not run.
+
+判定依据 / Rules used · [电视附页 / TV worksheet](templates/tv-design-review.md) · [tvOS 焦点 / tvOS focus](docs/05-apple.md#tvos) · [子项与汇总 / Subchecks and aggregation](templates/verification-record.md) · [问题归属 / Finding ownership](reviews/2026-11-17-review-scope.md)
+
 ## 2026-11-17：视觉技能提交候选 / Visual-skill submission candidate
 
 本轮在主线 `881ef4a81b1226e48a3be1194f0ebc62ac5fb4b7` 上整合已留存的视觉方法草案，范围与证据见[视觉方法记录](reviews/2026-11-06-visual-craft.md)。维护者授权提交、推送功能分支并创建中英双语 PR；不合并或开启自动合并，不安装技能、改变固定采用版本或关闭总议题 #1。PR #19 已合并；下方状态入口整理等段落均为各自阶段的快照，不代表本次待办或授权。

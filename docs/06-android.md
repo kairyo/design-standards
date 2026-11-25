@@ -1,6 +1,6 @@
 # 06 Android：自适应与平台行为
 
-分类：`TEAM_RECOMMENDATION`，适用于 Android 手机、平板、折叠屏与多窗口。Compose、Views 或 Web 容器的能力和验证方式不同，选择由项目决定。
+本章覆盖 Android 手机、平板、折叠屏、多窗口和 [Android TV](#android-tv)。默认分类为 `TEAM_RECOMMENDATION`，有明确适用条件的官方条目另行标记。Compose、Views 或 Web 容器的能力和验证方式不同，选择由项目决定。
 
 ## 从窗口开始
 
@@ -25,3 +25,37 @@ Android 的 window size classes 基于应用窗口，不由设备营销名称决
 覆盖项目实际支持的窄/宽/矮窗口、断点两侧、内外屏与适用折叠姿态、多窗口、字体缩放及系统导航。键盘、鼠标、触控笔和 TalkBack 按产品支持范围检查。对于 Web 容器，还需区分原生窗口 inset、Web viewport 与桥接行为。
 
 模拟器或预览可发现布局问题，但不能独自证明真实设备输入、系统恢复和整条用户流程。未取得的环境标记 `NOT_RUN` 或 `BLOCKED`，不把它删出验收清单。
+
+## Android TV
+
+### 远距布局与遥控操作
+
+Android TV 和 Google TV 上的电视应用要考虑约三米观看、横向画面和家庭共用。Google 的布局指南以 960 × 540 的 mdpi 设计画布及约 5% 的 overscan 保护区作为起点。视觉规格注明画布、密度与单位，布局用 dp，文字按可缩放字号表达。将标题、操作与焦点提示留在可见区，允许背景铺满。长标题、文字放大和焦点外扩应在目标电视上检查。指南两处保护边距的 dp 示例不一致，交付时记录所用基准及实测可见边界。[S31](../references/sources.md#s31)
+
+用四个方向键移动，中心键操作。逐步走过顶部导航、横排内容、纵向分区和详情面板，检查反向能否走回，以及长按连续移动后停在哪里。焦点、按下和当前已选分开表达，给边框或放大效果留出空间。返回详情来源时优先按内容标识找回原条目和滚动位置。采用 Compose 时，可从提供电视焦点反馈与遥控输入的 TV Material 组件开始；自定义控件同样要实测方向键路径。[S32](../references/sources.md#s32)
+
+### 返回、外部入口与分发条件
+
+应用内 Back 回到导航栈的上一目的地，连续返回应能到达系统主屏。从菜单移动到同页中段卡片后再按 Back，顶导航布局应滚回页首并聚焦菜单，左侧导航布局应聚焦侧栏当前选项。普通详情深链按手动导航的逻辑层级返回，启动画面不进入返回栈。检查键盘和对话框能否逐层退出，避免退出确认或菜单循环拦住返回。[S32](../references/sources.md#s32)
+
+已将线性直播接入 Google TV 或 Android TV 的 Live 标签时，TV-DL 同时检查直达播放与返回。点选有权观看的频道，应直接看到所选直播。冷启动可显示启动画面，调台可在实际加载期间显示品牌，付费频道在未登录或未订阅时可进入登录或订阅流程。通过带 `exit_on_back=true` 的入口进入后，若首个按键是 Back，一次就应回到 Live 标签。若先按过其他键，则按正常返回栈处理。[S32](../references/sources.md#s32) · [S33](../references/sources.md#s33)
+
+`OFFICIAL_REQUIREMENT` 仅在所列 Android TV 质量或分发条件下使用。核对 Tier 3（TV Ready）时，TV-DP 要求五向遥控能操作应用功能，已声明需要手柄的游戏按 TV-GP / TV-DK 核对。即使遥控器没有专用 Menu 键也要能到达控件（TV-DM），屏边文字及功能须完整可见（TV-OV），连续按 Back 应能退到系统主屏（TV-DB）。[S33](../references/sources.md#s33)
+
+向 Google Play 提交电视应用时，启动 Activity 声明 `ACTION_MAIN` 和 `CATEGORY_LEANBACK_LAUNCHER`，声明 `android.hardware.touchscreen` 非必需。声明 `android.software.leanback` 时，手机和电视共用应用设 `required=false`，设为 true 会把 Play 可见范围限制为电视。按 TV-LB / TV-BN 交付 320 × 180 px 横幅、至少 160 × 160 px（xhdpi）图标，横幅含应用名，各支持语言的启动素材要可用。有 Tier 2（TV Optimized）目标时，另按 TV-4K 核对图标、横幅和内容卡等高分辨率素材。发布负责人按目标等级核对完整清单。[S33](../references/sources.md#s33)
+
+### 输入、共享设备与播放
+
+给搜索和电视端的登录操作提供遥控路径，语音可作为补充。使用电视系统键盘时检查实际位置、长输入、清空、取消与失败后重试。共享电视上说明当前账户、搜索记录与个人推荐的展示范围。存在多个匹配凭据时，应让用户选择。[S31](../references/sources.md#s31) · [S36](../references/sources.md#s36)
+
+选用 Credential Manager 时，官方 TV 文档列出 Android 14（API 34）及以上、GMS 2026W30 及以上。跨设备通行密钥还需要带摄像头和蓝牙的手机。与此同时，TV Ready 的 TV-PS 要求应用 `minSdkVersion` 为 31 或以下。若两者都在范围内，应分别核实构建、登录方案与旧设备回退，兼容结论在取得证据前为 `UNVERIFIED`。用遥控器测试开始、取消、过期和重试，检查较旧电视、服务版本不足或没有辅助手机时可采用的登录方式或出口。[S33](../references/sources.md#s33) · [S36](../references/sources.md#s36)
+
+对提供音视频的项目，检查播放中按中心键暂停、暂停后再按继续，以及遥控器独立播放／暂停键的实际结果。在播放画面按上或下查看进度时视频应继续播放，定位前后的播放或暂停状态应一致。分开记录全屏播放、进度条及控制层中动作前的焦点和动作后的播放位置。[S34](../references/sources.md#s34) · [S33](../references/sources.md#s33)
+
+Google 的播放控制表写右键前进、左键回退，质量清单 TV-PC 的左右顺序文字相反。项目可记录选用的映射与真机表现，方向的官方符合性保留为 `UNVERIFIED`，待来源澄清后复核。两份来源一致的播放／暂停行为可单独判断。[S34](../references/sources.md#s34) · [S33](../references/sources.md#s33)
+
+检查环境模式（Ambient Mode）时分开准备三种状态。核对 Tier 3 时，用户主动播放视频期间应防止进入环境模式（TV-BU），没有用户主动播放视频或动画时应允许进入（TV-BY）。纯音频播放也应允许进入，伴随非静态画面的体验按 TV-BA 的条件核对。记录系统等待时间、画面和音频是否按各自预期继续或恢复。[S33](../references/sources.md#s33) · [电视设计与排查附页](../templates/tv-design-review.md)
+
+离开应用另做一项检查。Tier 3 的 TV-NP 要求切到主屏或另一应用时暂停视频，视频应用不得使用该条为后台音频定义的系统媒体控件。若音频继续后台播放，系统需提供可返回应用的媒体控件。按 TV-PA，选中后应到达可以暂停播放的画面。分别记录离开时的声音、系统入口及按下暂停后的结果。[S33](../references/sources.md#s33)
+
+用蓝牙遥控器再做一次恢复检查。让遥控器在列表闲置或长视频播放时休眠断开，重连后按方向或暂停，核对应用是否意外重启、焦点与播放位置是否丢失。需要手柄的游戏也应考虑断开提示、暂停及恢复。[S32](../references/sources.md#s32)
