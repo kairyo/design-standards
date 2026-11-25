@@ -1,4 +1,4 @@
 interface:
   display_name: "自适应界面审阅"
-  short_description: "检查窗口、内容与输入变化下的布局和状态连续性，区分静态与运行证据"
-  default_prompt: "使用 $adaptive-ui-review 检查本次界面的窗口适配与状态连续性，给出最小风险验证计划；不要擅自操作设备或修改配置。"
+  short_description: "审阅窗口与内容变化后的布局和状态，涵盖电视远距布局与遥控焦点"
+  default_prompt: "使用 $adaptive-ui-review 审阅本次布局或焦点变化，说明用户能否继续原任务，并给出最小验证步骤。"

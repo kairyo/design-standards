@@ -4,6 +4,16 @@
 
 2026-11-04 许可状态更新：本版本原创文档采用 CC BY 4.0、原创代码采用 MIT，范围和贡献条件见 [许可说明](LICENSE-NOTICE.md)。以下各日期的“许可待定”均保留为历史快照；许可变更不补认全库审阅或产品验收。
 
+## 2026-11-25 · 电视技能选择与来源核对 / TV skill selection and source checks
+
+本轮以 `8d74d5e3ec308df1fbe911103569573a8aa35de9` 为基线，审阅 `adaptive-ui-review` 候选 `0.1.0-draft.3`。作者在独立复制的技能文件夹中核对入口、界面元数据、包内链接和许可，并核实八个电视官方入口。逐条对照 [S27–S37](references/sources.md#s27) 的 25 个页面及 14 个 Android 原页更新日期，保留 S33/S34 分歧。两条[合成请求](skills/review-cases.md)用于判读技能边界。宿主自然触发与真机表现留待实际环境验证。
+
+The baseline is `8d74d5e3ec308df1fbe911103569573a8aa35de9` for the `adaptive-ui-review` candidate `0.1.0-draft.3`. The author checked the entry point, interface metadata, local links and license in a standalone copy, and verified eight official TV source routes. All 25 pages and 14 original Android update dates in [S27–S37](references/sources.md#s27) were compared with the baseline, preserving the S33/S34 disagreement. Two [synthetic requests](skills/review-cases.md) exercise skill selection. Natural selection in a host and behavior on a physical TV await testing in those environments.
+
+独立审阅者先读取两个技能包，再对两个未见参考答案的变体作文字判读。展览清单重排后的焦点归入自适应审阅，电视界面中两张海报的配色归入视觉方向审阅。随后复核差异，补记了 Apple 原页可见的变更日期，区分空列表的遥控返回与可聚焦操作，并明确旧案例表的日期。
+
+An independent reviewer read both skill packages and assessed two variations before seeing the expected answers. Focus after an exhibition list reorders fell within adaptive review. A palette comparison for posters in the TV interface fell within visual direction review. Following diff review, the author recorded the available Apple change dates, distinguished remote Back from focusable actions in an empty list and identified the historical case table by date.
+
 ## 2026-11-25 · 电视端设计与排查 / TV design and verification
 
 本地候选基于 `29bd9e8f1adf467640933bc7fdc8b14887322c8d`。定向补读 S01、S03，并将 25 个官方页面登记在 S27–S37。作者核对双语入口、两端章节、十二条排查动作与合成例。[来源登记](references/sources.md#s27) · [电视附页](templates/tv-design-review.md)
